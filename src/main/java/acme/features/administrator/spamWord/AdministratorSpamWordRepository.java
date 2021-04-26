@@ -18,4 +18,6 @@ public interface AdministratorSpamWordRepository extends AbstractRepository {
 	@Query("select s from SpamWord s")
 	Collection<SpamWord> findMany();
 	
+
+	
 }

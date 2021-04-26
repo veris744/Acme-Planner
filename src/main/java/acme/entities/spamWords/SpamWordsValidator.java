@@ -8,6 +8,7 @@ import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import acme.features.administrator.parametes.AdministratorParametersRepository;
 import acme.features.administrator.spamWord.AdministratorSpamWordRepository;
 
 public class SpamWordsValidator implements ConstraintValidator<SpamWordsConstraint, String> {
@@ -16,25 +17,34 @@ public class SpamWordsValidator implements ConstraintValidator<SpamWordsConstrai
 	@Autowired
 	protected AdministratorSpamWordRepository spamWordRepository;
 	
+	@Autowired
+	protected AdministratorParametersRepository parameters;
 	
-	//private List<String> spamWords2;
 
 	private List<String> spamWords;
+	private Double threshold;
 	
 	@Override
     public void initialize(final SpamWordsConstraint Spam) {
 		this.spamWords = this.spamWordRepository.findWords().stream().collect(Collectors.toList());
+		this.threshold = this.parameters.findThreshold();
     }
 
     @Override
     public boolean isValid(final String field, final ConstraintValidatorContext cxt) {
-
+    	
+    	int n;
+    	n = 0;
+    	
     	for (int i = 0; i< this.spamWords.size(); i++) {
 			if(field.toLowerCase().contains(this.spamWords.get(i)) || 
 				field.toLowerCase().contains(this.spamWords.get(i).replace(" ", ""))) {
-				return false;
+				n += 1;
 			}
 		}
+    	System.out.println(n*100/field.split(" ").length);
+    	if (n*100/field.split(" ").length > this.threshold) 
+    		return false;
     	return true;
     }
 }

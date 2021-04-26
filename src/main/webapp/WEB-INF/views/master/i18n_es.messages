@@ -30,6 +30,14 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.recent-shouts = Ver gritos recientes
+master.menu.anonymous.create-shout = ¡Grita!
+master.menu.anonymous.recent-tasks = Ver tareas publicas no acabadas
+
+# master.menu.authenticated #######################################################
+
+master.menu.authenticated = Autentificado
+master.menu.authenticated.finished-task = Ver tareas publicas acabadas
 
 # master.menu.administrator ###################################################
 
@@ -38,6 +46,8 @@ master.menu.administrator.dashboard = Panel de indicadores
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
+master.menu.administrator.parameters.show = Ver parametros personalizables
+master.menu.administrator.spam-word.list = Ver palabras de spam
 master.menu.administrator.shutdown = Parar el sistema
 
 # master.menu.provider ########################################################

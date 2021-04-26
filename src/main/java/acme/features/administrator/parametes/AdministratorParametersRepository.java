@@ -1,7 +1,5 @@
 package acme.features.administrator.parametes;
 
-import java.util.Collection;
-
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
@@ -16,7 +14,7 @@ public interface AdministratorParametersRepository extends AbstractRepository {
 	Parameters find();
 	
 	@Query("select p.threshold from Parameters p")
-	Collection<Parameters> findThreshold();
+	Double findThreshold();
 	
 	
 }

@@ -42,7 +42,6 @@ public class SpamWordsValidator implements ConstraintValidator<SpamWordsConstrai
 				n += 1;
 			}
 		}
-    	System.out.println(n*100/field.split(" ").length);
     	if (n*100/field.split(" ").length > this.threshold) 
     		return false;
     	return true;

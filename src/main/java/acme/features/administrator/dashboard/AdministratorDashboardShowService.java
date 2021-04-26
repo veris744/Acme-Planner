@@ -17,9 +17,9 @@ import java.util.Date;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.config.Task;
 import org.springframework.stereotype.Service;
 
-import acme.entities.tasks.Task;
 import acme.forms.Dashboard;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -51,9 +51,6 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert model != null;
 
 		request.unbind(entity, model, //
-			"averageNumberOfJobsPerEmployer", "averageNumberOfApplicationsPerWorker", // 
-			"avegageNumberOfApplicationsPerEmployer", "ratioOfPendingApplications", //
-			"ratioOfRejectedApplications", "ratioOfAcceptedApplications",
 			"numberOfPublicTasks", "numberOfPrivateTasks", "numberOfFinishedTasks", "numberOfNonFinishedTasks", 
 			"minimumWorkload", "maximumWorkload", "averageWorkload", "deviationWorkload", 
 			"minimumPeriod", "maximumPeriod", "averagePeriod", "deviationPeriod");
@@ -68,12 +65,6 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		current = java.util.Calendar.getInstance().getTime();
 		
 		Dashboard result;
-		final Double averageNumberOfApplicationsPerEmployer;
-		Double averageNumberOfApplicationsPerWorker;
-		Double averageNumberOfJobsPerEmployer;
-		Double ratioOfPendingApplications;
-		Double ratioOfAcceptedApplications;
-		Double ratioOfRejectedApplications;
 		Integer numberOfPublicTasks;
 		Integer numberOfPrivateTasks;
 		Integer numberOfFinishedTasks;
@@ -109,13 +100,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		deviationPeriod = Math.sqrt(deviationPeriod/tasks.size());
 		
 		
-		
-		averageNumberOfApplicationsPerEmployer = this.repository.averageNumberOfApplicationsPerEmployer();
-		averageNumberOfApplicationsPerWorker = this.repository.averageNumberOfApplicationsPerWorker();
-		averageNumberOfJobsPerEmployer = this.repository.averageNumberOfJobsPerEmployer();
-		ratioOfPendingApplications = this.repository.ratioOfPendingApplications();
-		ratioOfAcceptedApplications = this.repository.ratioOfAcceptedApplications();
-		ratioOfRejectedApplications = this.repository.ratioOfRejectedApplications();
+
 		numberOfPublicTasks = this.repository.numberOfPublicTasks();
 		numberOfPrivateTasks = this.repository.numberOfPrivateTasks();
 		numberOfFinishedTasks = this.repository.numberOfFinishedTasks(current);
@@ -127,12 +112,6 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		
 		result = new Dashboard();
-		result.setAvegageNumberOfApplicationsPerEmployer(averageNumberOfApplicationsPerEmployer);
-		result.setAverageNumberOfApplicationsPerWorker(averageNumberOfApplicationsPerWorker);
-		result.setAverageNumberOfJobsPerEmployer(averageNumberOfJobsPerEmployer);
-		result.setRatioOfPendingApplications(ratioOfPendingApplications);
-		result.setRatioOfAcceptedApplications(ratioOfAcceptedApplications);
-		result.setRatioOfRejectedApplications(ratioOfRejectedApplications);
 		result.setNumberOfPublicTasks(numberOfPublicTasks);
 		result.setNumberOfPrivateTasks(numberOfPrivateTasks);
 		result.setNumberOfFinishedTasks(numberOfFinishedTasks);

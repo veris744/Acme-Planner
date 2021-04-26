@@ -1,4 +1,4 @@
-# NOTICE.txt
+# CONTRIBUTORS.txt
 #
 # Copyright (c) 2012-2021 Rafael Corchuelo.
 #
@@ -9,3 +9,9 @@
 # they accept any liabilities with respect to them.
 
 - Rafael Corchuelo (corchu@us.es)
+- Isabel de Vergara (isadede@alum.us.es)
+- Fernando González (fergongar1@alum.us.es)
+- Beatriz Llamas (beallasai@alum.us.es)
+- Jorge Luis Ruiz-Henestrosa (jorruirui1@alum.us.es)
+- Alejandro Sanabria (alesancab@alum.us.es)
+- Ivan Romero (ivarromcos@alum.us.es)

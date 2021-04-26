@@ -1,0 +1,13 @@
+authenticated.task.list.label.title = Título
+authenticated.task.list.label.startPeriod = Comienzo periodo de ejecución
+authenticated.task.list.label.endPeriod = Finalización periodo de ejecución
+authenticated.task.list.label.workload = Carga de trabajo
+
+authenticated.task.form.label.title = Titulo: 
+authenticated.task.form.label.startPeriod = Inicio: 
+authenticated.task.form.label.endPeriod = Fin: 
+authenticated.task.form.label.workload = Carga de trabajo: 
+authenticated.task.form.label.description = Descripcion: 
+authenticated.task.form.label.link = Link: 
+
+authenticated.task.form.button.return = Volver

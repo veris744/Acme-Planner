@@ -23,6 +23,7 @@
 			<acme:menu-suboption code="master.menu.anonymous.recent-shouts" action="/anonymous/shout/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.create-shout" action="/anonymous/shout/create"/>
 			<acme:menu-suboption code="master.menu.anonymous.recent-task" action="/anonymous/task/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.recent-workplan" action="/anonymous/work-plan/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
@@ -43,7 +44,8 @@
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.manager" access="hasRole('Manager')">
-			TO-DO
+			<acme:menu-suboption code="master.menu.manager.work-plan" action="/manager/work-plan/list"/>
+			<acme:menu-suboption code="master.menu.manager.create-work-plan" action="/manager/work-plan/create"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">

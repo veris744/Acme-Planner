@@ -32,7 +32,8 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.recent-shouts = Ver gritos recientes
 master.menu.anonymous.create-shout = ¡Grita!
-master.menu.anonymous.recent-tasks = Ver tareas publicas no acabadas
+master.menu.anonymous.recent-tasks = Ver tareas públicas no acabadas
+master.menu.anonymous.recent-workplan = Ver planes de trabajo públicos no acabados
 
 # master.menu.authenticated #######################################################
 
@@ -53,6 +54,8 @@ master.menu.administrator.shutdown = Parar el sistema
 # master.menu.manager ###################################################
 
 master.menu.manager = Manager
+master.menu.manager.work-plan = Ver mis planes de trabajo
+master.menu.manager.create-work-plan = Crear un plan de trabajo
 
 # master.menu.provider ########################################################
 

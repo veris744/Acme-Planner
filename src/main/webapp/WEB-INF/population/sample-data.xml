@@ -19,4 +19,102 @@
 
 	<import resource="classpath:/WEB-INF/population/conversion-service.xml"/>	
 
+
+
+	<!-- shouts -->
+		
+	<bean id="shout01" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/16 17:00"/>
+		<property name="author" value="John Doe"/>
+		<property name="text" value="I'm happy!"/>
+		<property name="info"><null/></property>
+	</bean>
+	
+	<bean id="shout02" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2020/08/01 15:39"/>
+		<property name="author" value="Jane Doe"/>
+		<property name="text" value="I'm the master of my room!"/>
+		<property name="info" value="http://www.example.org"/>
+	</bean>
+	
+	<bean id="shout03" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2020/02/01 19:39"/>
+		<property name="author" value="Foo Difai"/>
+		<property name="text" value="I'm not happy!"/>
+		<property name="info"><null/></property>
+	</bean>
+	
+	<bean id="shout04" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/13 9:00"/>
+		<property name="author" value="Alipiti doo"/>
+		<property name="text" value="I'm shouting!"/>
+		<property name="info" value="http://www.web.org"/>
+	</bean>
+	
+	
+	<!-- tasks -->
+		
+	<bean id="task01" class="acme.entities.tasks.Task">
+		<property name="title" value="Create a Causes functionality"/>
+		<property name="startPeriod" value="2021/04/16 17:00"/>
+		<property name="endPeriod" value="2021/04/16 18:00"/>
+		<property name="workload" value="1.0"/>
+		<property name="description" value="As a client, we can create a cause that contains a name and description (string), a budget target (numeric), and an acti-ve non profit organization (string) that will use the budget for the cause."/>
+		<property name="link" value="http://www.spring.com"/>
+		<property name="isPublic" value="true"/>
+	</bean>
+	
+	<bean id="task02" class="acme.entities.tasks.Task">
+		<property name="title" value="Create a technical report"/>
+		<property name="startPeriod" value="2021/04/18 15:30"/>
+		<property name="endPeriod" value="2021/04/19 15:00"/>
+		<property name="workload" value="24.30"/>
+		<property name="description" value="create a technical report entitled “Métricas de Proceso Ágil y Recursos”."/>
+		<property name="link" value="http://www.scrum.com"/>
+		<property name="isPublic" value="false"/>
+	</bean>
+	
+	<bean id="task03" class="acme.entities.tasks.Task">
+		<property name="title" value="Implement SonarCloud"/>
+		<property name="startPeriod" value="2021/04/27 19:25"/>
+		<property name="endPeriod" value="2021/04/27 21:00"/>
+		<property name="workload" value="2.35"/>
+		<property name="description" value="Implement SonarCloud in project"/>
+		<property name="link" value="http://www.sonarcloud.com"/>
+		<property name="isPublic" value="true"/>
+	</bean>
+	
+	<bean id="task04" class="acme.entities.tasks.Task">
+		<property name="title" value="Create an appendix"/>
+		<property name="startPeriod" value="2021/04/28 17:00"/>
+		<property name="endPeriod" value="2021/04/29 17:00"/>
+		<property name="workload" value="24.0"/>
+		<property name="description" value="Create an appendix in the technical report created as a result of implement SonarCloud"/>
+		<property name="link" value="http://www.stackoverflow.com"/>
+		<property name="isPublic" value="false"/>
+	</bean>
+	
+	<bean id="task05" class="acme.entities.tasks.Task">
+		<property name="title" value="Do intesting task"/>
+		<property name="startPeriod" value="2021/04/04 8:00"/>
+		<property name="endPeriod" value="2021/04/15 19:00"/>
+		<property name="workload" value="10.0"/>
+		<property name="description" value="Do something interesting"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+	</bean>
+	
+	<bean id="task06" class="acme.entities.tasks.Task">
+		<property name="title" value="Initiate starter"/>
+		<property name="startPeriod" value="2021/04/01 14:00"/>
+		<property name="endPeriod" value="2021/04/18 14:00"/>
+		<property name="workload" value="5.5"/>
+		<property name="description" value="Initiate starter in github repository master branch"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+	</bean>
+	
+	<!--  Spamwords -->
+
+	
 </beans>

@@ -51,20 +51,15 @@ ApplicationStatus
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>98</x>
-      <y>434</y>
+      <x>119</x>
+      <y>399</y>
       <w>245</w>
-      <h>238</h>
+      <h>189</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Form&gt;&gt;
 Dashboard
 --
-+ averageNumberOfJobsPerEmployer: double
-+ averageNumberOfApplicationsPerWorker: double
-+ avegageNumberOfApplicationsPerEmployer: double
-+ ratioOfPendingApplications: double
-+ ratioOfAcceptedApplications: double
-+ ratioOfRejectedApplications: double
+
 + numberOfPublicTasks: integer
 + numberOfPrivateTasks: integer
 + numberOfFinishedTasks: integer

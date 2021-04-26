@@ -17,9 +17,9 @@ import java.util.Date;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.config.Task;
 import org.springframework.stereotype.Service;
 
+import acme.entities.tasks.Task;
 import acme.forms.Dashboard;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -128,4 +128,5 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		return result;
 	}
 
+	
 }

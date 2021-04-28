@@ -50,6 +50,10 @@ master.menu.administrator.parameters.show = Ver parametros personalizables
 master.menu.administrator.spam-word.list = Ver palabras de spam
 master.menu.administrator.shutdown = Parar el sistema
 
+# master.menu.manager ###################################################
+
+master.menu.manager = Manager
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor

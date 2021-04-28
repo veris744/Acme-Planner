@@ -54,6 +54,8 @@ master.menu.administrator.shutdown = Shut down
 # master.menu.manager ###################################################
 
 master.menu.manager = Manager
+master.menu.manager.create-task = Create task
+master.menu.manager.list-tasks = List tasks
 
 # master.menu.provider ########################################################
 

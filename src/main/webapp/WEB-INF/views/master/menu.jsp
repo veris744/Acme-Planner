@@ -43,7 +43,8 @@
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.manager" access="hasRole('Manager')">
-			TO-DO
+			<acme:menu-suboption code="master.menu.manager.create-task" action="/manager/task/create"/>
+			<acme:menu-suboption code="master.menu.manager.list-tasks" action="/manager/task/list"/>	
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">

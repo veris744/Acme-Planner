@@ -51,6 +51,10 @@ master.menu.administrator.parameters.show = See customisation parameters
 master.menu.administrator.spam-word.list = See spam words
 master.menu.administrator.shutdown = Shut down
 
+# master.menu.manager ###################################################
+
+master.menu.manager = Manager
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider

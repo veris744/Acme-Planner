@@ -5,12 +5,14 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.spamWords.SpamWordsConstraint;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -28,6 +30,7 @@ public class Task extends DomainEntity{
 
 	@NotEmpty
 	@Length(min = 1, max = 80)
+	@SpamWordsConstraint
 	protected String			title;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -39,10 +42,12 @@ public class Task extends DomainEntity{
 	protected Date				endPeriod;
 	
 	@NotNull
+	@Min(0)
 	protected Double			workload;
 	
 	@NotEmpty
 	@Length(min = 1, max = 500)
+	@SpamWordsConstraint
 	protected String			description;
 	
 	@URL

@@ -6,6 +6,11 @@
        
 <tiles-definitions>
 
+
+	<definition name="manager/task/form" extends="master">
+		<put-attribute name="body" type="template" value="../manager/task/form.jsp" />
+  </definition>
+    
 	<definition name="manager/task/list" extends="master">
 		<put-attribute name="body" type="template" value="../manager/task/list.jsp" />
 	</definition>

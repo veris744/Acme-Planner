@@ -17,11 +17,15 @@ import acme.framework.entities.Manager;
 @RequestMapping("/manager/task/")
 public class ManagerTaskController extends AbstractController<Manager, Task>{
 	
+  @Autowired
+	private ManagerTaskListService listService;
+  
 	@Autowired
 	private ManagerTaskCreateService createService;
-	
+  
 	@PostConstruct
 	private void initialise() {
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 	}
 

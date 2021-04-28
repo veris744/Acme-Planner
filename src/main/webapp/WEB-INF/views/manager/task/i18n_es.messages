@@ -1,0 +1,12 @@
+
+manager.task.form.label.title = Titulo: 
+manager.task.form.label.startPeriod = Inicio: 
+manager.task.form.label.endPeriod = Fin: 
+manager.task.form.label.workload = Carga de trabajo: 
+manager.task.form.label.description = Descripcion: 
+manager.task.form.label.link = Link: 
+manager.task.form.label.isPublic = Es publica: 
+
+manager.task.form.button.create = Crear
+manager.task.form.button.update = Actualizar
+manager.task.form.button.return = Volver

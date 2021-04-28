@@ -1,0 +1,4 @@
+manager.task.list.label.title = Título
+manager.task.list.label.startPeriod = Comienzo periodo de ejecución
+manager.task.list.label.endPeriod = Finalización periodo de ejecución
+manager.task.list.label.workload = Carga de trabajo

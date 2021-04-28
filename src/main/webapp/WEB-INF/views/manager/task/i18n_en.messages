@@ -1,0 +1,4 @@
+manager.task.list.label.title = Title
+manager.task.list.label.startPeriod = Start execution period
+manager.task.list.label.endPeriod = End execution period
+manager.task.list.label.workload = Workload

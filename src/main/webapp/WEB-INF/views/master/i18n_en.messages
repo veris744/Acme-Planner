@@ -33,6 +33,7 @@ master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.recent-shouts = List recent shouts
 master.menu.anonymous.create-shout = Shout!
 master.menu.anonymous.recent-task = List non-finished public tasks
+master.menu.anonymous.recent-workplan = List non-finished public work plans
 
 # master.menu.authenticated #######################################################
 
@@ -54,6 +55,8 @@ master.menu.administrator.shutdown = Shut down
 # master.menu.manager ###################################################
 
 master.menu.manager = Manager
+master.menu.manager.work-plan = List my work plans
+master.menu.manager.create-work-plan = Create a work plan
 master.menu.manager.create-task = Create task
 master.menu.manager.list-tasks = List tasks
 

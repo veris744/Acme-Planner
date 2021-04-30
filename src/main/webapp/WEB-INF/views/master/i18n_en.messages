@@ -57,6 +57,8 @@ master.menu.administrator.shutdown = Shut down
 master.menu.manager = Manager
 master.menu.manager.work-plan = List my work plans
 master.menu.manager.create-work-plan = Create a work plan
+master.menu.manager.create-task = Create task
+master.menu.manager.list-tasks = List tasks
 
 # master.menu.provider ########################################################
 

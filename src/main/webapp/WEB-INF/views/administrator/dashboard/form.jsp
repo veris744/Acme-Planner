@@ -143,6 +143,110 @@
 			<acme:print value="${deviationPeriod}"/>
 		</td>
 	</tr>
+	<tr>
+		<td>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.number-of-public-workPlans"/>
+		</th>
+		<td>
+			<acme:print value="${numberOfPublicWorkPlans}"/>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.number-of-private-workPlans"/>
+		</th>
+		<td>
+			<acme:print value="${numberOfPrivateWorkPlans}"/>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.number-of-finished-workPlans"/>
+		</th>
+		<td>
+			<acme:print value="${numberOfFinishedWorkPlans}"/>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.number-of-non-finished-workPlans"/>
+		</th>
+		<td>
+			<acme:print value="${numberOfNonFinishedWorkPlans}"/>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.minimum-workload-workPlans"/>
+		</th>
+		<td>
+			<acme:print value="${minimumWorkloadWorkPlans}"/>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.maximum-workload-workPlans"/>
+		</th>
+		<td>
+			<acme:print value="${maximumWorkloadWorkPlans}"/>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.average-workload-workPlans"/>
+		</th>
+		<td>
+			<acme:print value="${averageWorkloadWorkPlans}"/>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.deviation-workload-workPlans"/>
+		</th>
+		<td>
+			<acme:print value="${deviationWorkloadWorkPlans}"/>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.minimum-period-workPlans"/>
+		</th>
+		<td>
+			<acme:print value="${minimumPeriodWorkPlans}"/>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.maximum-period-workPlans"/>
+		</th>
+		<td>
+			<acme:print value="${maximumPeriodWorkPlans}"/>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.average-period-workPlans"/>
+		</th>
+		<td>
+			<acme:print value="${averagePeriod}"/>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.deviation-period-workPlans"/>
+		</th>
+		<td>
+			<acme:print value="${deviationPeriodWorkPlans}"/>
+		</td>
+	</tr>
 </table>
 
 <h2>

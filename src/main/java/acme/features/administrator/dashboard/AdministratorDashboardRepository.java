@@ -19,6 +19,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.tasks.Task;
+import acme.entities.workPlans.WorkPlan;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
@@ -52,6 +53,35 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 
 	@Query("select t from Task t")
 	Collection<Task> getTasks();
+	
+	
+	//Work plans
+	@Query("select count(w) from WorkPlan w where w.isPublic = true")
+	Integer numberOfPublicWorkPlans();
+
+	@Query("select count(w) from WorkPlan w where w.isPublic = false")
+	Integer numberOfPrivateWorkPlans();
+
+	@Query("select count(w) from WorkPlan w where w.endPeriod < :current")
+	Integer numberOfFinishedWorkPlans(Date current);
+
+	@Query("select count(w) from WorkPlan w where w.endPeriod > :current")
+	Integer numberOfNonFinishedWorkPlans(Date current);
+	
+	@Query("select min(w.workload) from WorkPlan w")
+	Double minimumWorkloadWorkPlans();
+
+	@Query("select max(w.workload) from WorkPlan w")
+	Double maximumWorkloadWorkPlans();
+	
+	@Query("select avg(w.workload) from WorkPlan w")
+	Double averageWorkloadWorkPlans();
+
+	@Query("select sum((w.workload - :average)*(w.workload - :average)) from WorkPlan w")
+	Double deviationWorkloadWorkPlans(Double average);
+
+	@Query("select w from WorkPlan w")
+	Collection<WorkPlan> getWorkPlans();
 	
 
 }

@@ -45,12 +45,17 @@ public class WorkPlan extends DomainEntity{
 		protected Date				endPeriod;
 		
 		@NotNull
-		protected Boolean			isPublic;
+		protected Boolean			isPublic;	
+		
 
 		// Derived attributes -----------------------------------------------------
 
 		public Double getWorkload() {
 			return this.tasks.stream().mapToDouble(Task::getWorkload).sum();
+		}
+		
+		public Double getPeriod() {
+			return ((double) this.endPeriod.getTime() - (double) this.startPeriod.getTime())/3600000;
 		}
 		
 		// Relationships ----------------------------------------------------------

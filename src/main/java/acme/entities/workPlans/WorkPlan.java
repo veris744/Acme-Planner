@@ -5,6 +5,8 @@ import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
@@ -56,6 +58,9 @@ public class WorkPlan extends DomainEntity{
 		// Relationships ----------------------------------------------------------
 		
 		@ManyToMany(fetch = FetchType.EAGER)
+		@JoinTable(name = "task_work_plan", 
+        joinColumns = @JoinColumn(name = "work_plan_id"), 
+        inverseJoinColumns = @JoinColumn(name = "task_id"))
 		protected Collection<@Valid Task> 		tasks;
 		
 		@NotNull

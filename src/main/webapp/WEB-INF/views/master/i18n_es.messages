@@ -30,6 +30,15 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.recent-shouts = Ver gritos recientes
+master.menu.anonymous.create-shout = ¡Grita!
+master.menu.anonymous.recent-tasks = Ver tareas públicas no acabadas
+master.menu.anonymous.recent-workplan = Ver planes de trabajo públicos no acabados
+
+# master.menu.authenticated #######################################################
+
+master.menu.authenticated = Autentificado
+master.menu.authenticated.finished-task = Ver tareas publicas acabadas
 
 # master.menu.administrator ###################################################
 
@@ -38,7 +47,16 @@ master.menu.administrator.dashboard = Panel de indicadores
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
+master.menu.administrator.parameters.show = Ver parametros personalizables
+master.menu.administrator.spam-word.list = Ver palabras de spam
 master.menu.administrator.shutdown = Parar el sistema
+
+# master.menu.manager ###################################################
+
+master.menu.manager = Manager
+master.menu.manager.work-plan = Ver mis planes de trabajo
+master.menu.manager.create-work-plan = Crear un plan de trabajo
+master.menu.manager.create-task = Crear tarea
 
 # master.menu.provider ########################################################
 

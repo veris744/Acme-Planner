@@ -1,0 +1,11 @@
+anonymous.work-plan.list.label.title = Título
+anonymous.work-plan.list.label.startPeriod = Comienzo periodo de ejecución
+anonymous.work-plan.list.label.endPeriod = Finalización periodo de ejecución
+anonymous.work-plan.list.label.workload = Carga de trabajo
+
+anonymous.work-plan.form.label.title = Titulo: 
+anonymous.work-plan.form.label.startPeriod = Inicio: 
+anonymous.work-plan.form.label.endPeriod = Fin: 
+anonymous.work-plan.form.label.workload = Carga de trabajo:
+
+anonymous.work-plan.form.button.return = Volver

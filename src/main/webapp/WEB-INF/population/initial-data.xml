@@ -73,4 +73,52 @@
 		<property name="userAccount" ref="administratorUserAccount" />
 	</bean>
 	
+		<!--  Spamwords -->
+	
+	<bean id="spamWord01" class="acme.entities.spamWords.SpamWord">
+		<property name="word" value="sex"/>
+	</bean>
+	
+	<bean id="spamWord02" class="acme.entities.spamWords.SpamWord">
+		<property name="word" value="hard core"/>
+	</bean>
+	
+	<bean id="spamWord03" class="acme.entities.spamWords.SpamWord">
+		<property name="word" value="viagra"/>
+	</bean>
+	
+	<bean id="spamWord04" class="acme.entities.spamWords.SpamWord">
+		<property name="word" value="cialis"/>
+	</bean>
+	
+	<bean id="spamWord05" class="acme.entities.spamWords.SpamWord">
+		<property name="word" value="nigeria"/>
+	</bean>
+	
+	<bean id="spamWord06" class="acme.entities.spamWords.SpamWord">
+		<property name="word" value="you’ve won"/>
+	</bean>
+	
+	<bean id="spamWord07" class="acme.entities.spamWords.SpamWord">
+		<property name="word" value="million dollar"/>
+	</bean>
+	
+	<bean id="spamWord08" class="acme.entities.spamWords.SpamWord">
+		<property name="word" value="sexo"/>
+	</bean>
+
+	<bean id="spamWord09" class="acme.entities.spamWords.SpamWord">
+		<property name="word" value="has ganado"/>
+	</bean>
+	
+	<bean id="spamWord10" class="acme.entities.spamWords.SpamWord">
+		<property name="word" value="millon de dolares"/>
+	</bean>
+	
+	
+	<!-- Customisation Parameters -->
+	
+	<bean id="parameter1" class="acme.entities.parameters.Parameters">
+		<property name="threshold" value="10.00"/>
+	</bean>
 </beans>

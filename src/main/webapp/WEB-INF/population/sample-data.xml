@@ -62,6 +62,7 @@
 		<property name="description" value="As a client, we can create a cause that contains a name and description (string), a budget target (numeric), and an acti-ve non profit organization (string) that will use the budget for the cause."/>
 		<property name="link" value="http://www.spring.com"/>
 		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager"/>
 	</bean>
 	
 	<bean id="task02" class="acme.entities.tasks.Task">
@@ -72,6 +73,7 @@
 		<property name="description" value="create a technical report entitled “Métricas de Proceso Ágil y Recursos”."/>
 		<property name="link" value="http://www.scrum.com"/>
 		<property name="isPublic" value="false"/>
+		<property name="manager" ref="manager2"/>
 	</bean>
 	
 	<bean id="task03" class="acme.entities.tasks.Task">
@@ -82,6 +84,7 @@
 		<property name="description" value="Implement SonarCloud in project"/>
 		<property name="link" value="http://www.sonarcloud.com"/>
 		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager"/>
 	</bean>
 	
 	<bean id="task04" class="acme.entities.tasks.Task">
@@ -92,6 +95,7 @@
 		<property name="description" value="Create an appendix in the technical report created as a result of implement SonarCloud"/>
 		<property name="link" value="http://www.stackoverflow.com"/>
 		<property name="isPublic" value="false"/>
+		<property name="manager" ref="manager2"/>
 	</bean>
 	
 	<bean id="task05" class="acme.entities.tasks.Task">
@@ -102,6 +106,7 @@
 		<property name="description" value="Do something interesting"/>
 		<property name="link"><null/></property>
 		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager"/>
 	</bean>
 	
 	<bean id="task06" class="acme.entities.tasks.Task">
@@ -112,6 +117,7 @@
 		<property name="description" value="Initiate starter in github repository master branch"/>
 		<property name="link"><null/></property>
 		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager2"/>
 	</bean>
 	
 	<!-- Managers -->
@@ -143,4 +149,74 @@
 		<property name="userAccount" ref="managerUserAccount" />
 	</bean>
 	
+	<bean name="manager2UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="manager2" />
+		<property name="password" value="manager" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Manager 2" />
+				<property name="surname" value="Acme.com" />
+				<property name="email" value="manager2@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="manager2Manager" />
+				<ref bean="manager2Authenticated" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean name="manager2Manager" class="acme.framework.entities.Manager">
+		<property name="userAccount" ref="manager2UserAccount" />
+	</bean>
+
+	<bean name="manager2Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="manager2UserAccount" />
+	</bean>
+
+	<!-- Work Plans -->
+
+	<bean id="workplan01" class="acme.entities.workPlans.WorkPlan">
+		<property name="title" value="Work Plan for Acme Jobs application"/>
+		<property name="startPeriod" value="2021/03/30 12:00"/>
+		<property name="endPeriod" value="2021/05/04 12:00"/>
+		<property name="isPublic" value="true"/>
+		<property name="tasks">
+			<list>
+				<ref bean="task01"/>
+				<ref bean="task03"/>
+			</list>
+		</property>
+		<property name="manager" ref="manager2Manager"/>
+	</bean>
+
+	<bean id="workplan02" class="acme.entities.workPlans.WorkPlan">
+		<property name="title" value="Private Plan"/>
+		<property name="startPeriod" value="2021/03/30 12:00"/>
+		<property name="endPeriod" value="2021/05/04 12:00"/>
+		<property name="isPublic" value="false"/>
+		<property name="tasks">
+			<list>
+				<ref bean="task02"/>
+				<ref bean="task04"/>
+			</list>
+		</property>
+		<property name="manager" ref="managerManager"/>
+
+	</bean>
+
+	<bean id="workplan03" class="acme.entities.workPlans.WorkPlan">
+		<property name="title" value="Finished Plan"/>
+		<property name="startPeriod" value="2021/03/28 12:00"/>
+		<property name="endPeriod" value="2021/04/10 12:00"/>
+		<property name="isPublic" value="true"/>
+		<property name="tasks">
+			<list>
+				<ref bean="task06"/>
+			</list>
+		</property>
+		<property name="manager" ref="managerManager"/>
+	</bean>
 </beans>

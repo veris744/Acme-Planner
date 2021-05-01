@@ -1,0 +1,17 @@
+manager.work-plan.list.label.title = Título
+manager.work-plan.list.label.startPeriod = Comienzo periodo de ejecución
+manager.work-plan.list.label.endPeriod = Finalización periodo de ejecución
+manager.work-plan.list.label.workload = Carga de trabajo
+
+manager.work-plan.form.label.title = Título: 
+manager.work-plan.form.label.startPeriod = Inicio: 
+manager.work-plan.form.label.endPeriod = Fin: 
+manager.work-plan.form.label.workload = Carga de trabajo:
+manager.work-plan.form.label.isPublic = Público
+manager.work-plan.form.label.taskList = Tareas:
+manager.work-plan.form.label.empty = No hay tareas
+
+manager.work-plan.form.button.create = Crear
+manager.work-plan.form.button.update = Actualizar
+manager.work-plan.form.button.delete = Borrar
+manager.work-plan.form.button.return = Volver

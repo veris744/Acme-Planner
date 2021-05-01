@@ -9,6 +9,7 @@ manager.task.form.label.isPublic = Es publica:
 
 manager.task.form.button.create = Crear
 manager.task.form.button.update = Actualizar
+manager.task.form.button.delete = Eliminar
 manager.task.form.button.return = Volver
 
 manager.task.list.label.title = Título

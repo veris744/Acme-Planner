@@ -20,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.tasks.Task;
+import acme.entities.workPlans.WorkPlan;
 import acme.forms.Dashboard;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -53,7 +54,11 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		request.unbind(entity, model, //
 			"numberOfPublicTasks", "numberOfPrivateTasks", "numberOfFinishedTasks", "numberOfNonFinishedTasks", 
 			"minimumWorkload", "maximumWorkload", "averageWorkload", "deviationWorkload", 
-			"minimumPeriod", "maximumPeriod", "averagePeriod", "deviationPeriod");
+			"minimumPeriod", "maximumPeriod", "averagePeriod", "deviationPeriod",
+			"numberOfPublicWorkPlans","numberOfPrivateWorkPlans","numberOfFinishedWorkPlans",
+			"numberOfNonFinishedWorkPlans","minimumWorkloadWorkPlans","maximumWorkloadWorkPlans",
+			"averageWorkloadWorkPlans","deviationWorkloadWorkPlans","minimumPeriodWorkPlans",
+			"maximumPeriodWorkPlans","averagePeriodWorkPlans","deviationPeriodWorkPlans");
 	}
 
 	@Override
@@ -77,6 +82,20 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		Double maximumPeriod;
 		Double averagePeriod;
 		Double deviationPeriod;
+		
+		Integer numberOfPublicWorkPlans;
+		Integer numberOfPrivateWorkPlans;
+		Integer numberOfFinishedWorkPlans;
+		Integer numberOfNonFinishedWorkPlans;
+		Double minimumWorkloadWorkPlans;
+		Double maximumWorkloadWorkPlans;
+		Double averageWorkloadWorkPlans;
+		Double deviationWorkloadWorkPlans;
+		Double minimumPeriodWorkPlans;
+		Double maximumPeriodWorkPlans;
+		Double averagePeriodWorkPlans;
+		Double deviationPeriodWorkPlans;
+
 
 
 		final Collection<Task> tasks = this.repository.getTasks();
@@ -100,6 +119,27 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		deviationPeriod = Math.sqrt(deviationPeriod/tasks.size());
 		
 		
+		
+		final Collection<WorkPlan> workPlans = this.repository.getWorkPlans();
+		minimumPeriodWorkPlans = workPlans.stream().collect(Collectors.toList()).get(0).getPeriod();
+		maximumPeriodWorkPlans = workPlans.stream().collect(Collectors.toList()).get(0).getPeriod();
+		averagePeriodWorkPlans = 0.0;
+		for (final WorkPlan w:workPlans) {
+			if(minimumPeriodWorkPlans > w.getPeriod()) {
+				minimumPeriodWorkPlans = w.getPeriod();
+			}
+			if(maximumPeriodWorkPlans < w.getPeriod()) {
+				maximumPeriodWorkPlans = w.getPeriod();
+			}
+			averagePeriodWorkPlans += w.getPeriod();
+		}
+		averagePeriodWorkPlans = averagePeriodWorkPlans/workPlans.size();
+		deviationPeriodWorkPlans = 0.0;
+		for (final WorkPlan w:workPlans) {
+			deviationPeriodWorkPlans += Math.pow(w.getPeriod()-averagePeriodWorkPlans, 2);
+		}
+		deviationPeriodWorkPlans = Math.sqrt(deviationPeriodWorkPlans/workPlans.size());
+		
 
 		numberOfPublicTasks = this.repository.numberOfPublicTasks();
 		numberOfPrivateTasks = this.repository.numberOfPrivateTasks();
@@ -109,6 +149,18 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		maximumWorkload = this.repository.maximumWorkload();
 		averageWorkload = this.repository.averageWorkload();
 		deviationWorkload = Math.sqrt(this.repository.deviationWorkload(averageWorkload)/this.repository.getTasks().size());
+		
+		
+		numberOfPublicWorkPlans = this.repository.numberOfPublicWorkPlans();
+		numberOfPrivateWorkPlans = this.repository.numberOfPrivateWorkPlans();
+		numberOfFinishedWorkPlans = this.repository.numberOfFinishedWorkPlans(current);
+		numberOfNonFinishedWorkPlans = this.repository.numberOfNonFinishedWorkPlans(current);
+		minimumWorkloadWorkPlans = this.repository.getWorkPlans().stream().mapToDouble(WorkPlan::getWorkload).min().orElse(0);
+		maximumWorkloadWorkPlans = this.repository.getWorkPlans().stream().mapToDouble(WorkPlan::getWorkload).max().orElse(0);
+		averageWorkloadWorkPlans = this.repository.getWorkPlans().stream().mapToDouble(WorkPlan::getWorkload).average().orElse(0);
+		deviationWorkloadWorkPlans = Math.sqrt(Math.pow((this.repository.getWorkPlans().stream().
+			mapToDouble(WorkPlan::getWorkload).iterator().next()-this.repository.getWorkPlans().stream().
+			mapToDouble(WorkPlan::getWorkload).average().orElse(0)),2)/this.repository.getWorkPlans().size());
 
 		
 		result = new Dashboard();
@@ -124,6 +176,19 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setAveragePeriod(averagePeriod);
 		result.setDeviationPeriod(deviationPeriod);
 		result.setDeviationWorkload(deviationWorkload);
+		
+		result.setNumberOfPublicWorkPlans(numberOfPublicWorkPlans);
+		result.setNumberOfPrivateWorkPlans(numberOfPrivateWorkPlans);
+		result.setNumberOfFinishedWorkPlans(numberOfFinishedWorkPlans);
+		result.setNumberOfNonFinishedWorkPlans(numberOfNonFinishedWorkPlans);
+		result.setMinimumWorkloadWorkPlans(minimumWorkloadWorkPlans);
+		result.setMaximumWorkloadWorkPlans(maximumWorkloadWorkPlans);
+		result.setAverageWorkloadWorkPlans(averageWorkloadWorkPlans);
+		result.setMinimumPeriodWorkPlans(minimumPeriodWorkPlans);
+		result.setMaximumPeriodWorkPlans(maximumPeriodWorkPlans);
+		result.setAveragePeriodWorkPlans(averagePeriodWorkPlans);
+		result.setDeviationPeriodWorkPlans(deviationPeriodWorkPlans);
+		result.setDeviationWorkloadWorkPlans(deviationWorkloadWorkPlans);
 
 		return result;
 	}

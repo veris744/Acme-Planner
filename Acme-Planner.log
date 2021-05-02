@@ -1407,11 +1407,7 @@ ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Plan
 ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
 ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:706): Invalid property 'workload' of bean class [acme.entities.workPlans.WorkPlan]: Getter for property 'workload' threw exception; nested exception is java.lang.reflect.InvocationTargetException
 java.lang.reflect.InvocationTargetExceptionorg.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workPlans.WorkPlan.tasks, could not initialize proxy - no Session
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 13552 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 11420 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 6.168 seconds (JVM running for 6.788)
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -1467,10 +1463,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord09 = acme
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord10 = acme.entities.spamWords.SpamWord{id=15, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting parameter1 = acme.entities.parameters.Parameters{id=16, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 1960 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 6.216 seconds (JVM running for 6.835)
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -1526,10 +1519,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord09 = acme
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord10 = acme.entities.spamWords.SpamWord{id=15, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting parameter1 = acme.entities.parameters.Parameters{id=16, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 6984 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 6.396 seconds (JVM running for 7.07)
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -1585,309 +1575,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord09 = acme
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord10 = acme.entities.spamWords.SpamWord{id=15, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting parameter1 = acme.entities.parameters.Parameters{id=16, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
-INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
-INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating shout04 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating manager2UserAccount ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating manager2Manager ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating manager2Authenticated ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating workplan01 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating workplan02 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating workplan03 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for managerUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerManager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for manager2UserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for manager2Manager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for manager2Authenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for workplan01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for workplan02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for workplan03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task06.
-INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=47, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=48, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=49, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=50, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=51, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=52, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=53, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2UserAccount = acme.framework.entities.UserAccount{id=54, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Manager = acme.framework.entities.Manager{id=55, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Authenticated = acme.framework.entities.Authenticated{id=56, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan01 = acme.entities.workPlans.WorkPlan{id=57, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan02 = acme.entities.workPlans.WorkPlan{id=58, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan03 = acme.entities.workPlans.WorkPlan{id=59, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=60, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=61, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=62, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=63, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=64, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=65, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] ***************************
-APPLICATION FAILED TO START
-***************************
-Description:
-Web server failed to start. Port 8080 was already in use.
-Action:
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] ***************************
-APPLICATION FAILED TO START
-***************************
-Description:
-Web server failed to start. Port 8080 was already in use.
-Action:
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] ***************************
-APPLICATION FAILED TO START
-***************************
-Description:
-Web server failed to start. Port 8080 was already in use.
-Action:
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421): [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:121): Schema-validation: missing table [task_work_plan]
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 16828 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 6.789 seconds (JVM running for 7.482)
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -1968,51 +1656,82 @@ INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for managerUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerManager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for manager2UserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for manager2Manager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for manager2Authenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for workplan01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for workplan02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for workplan03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task06.
+
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord08 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord09 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating parameter1 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for spamWord01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for spamWord02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for spamWord03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for spamWord04.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for spamWord05.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for spamWord06.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for spamWord07.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for spamWord08.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for spamWord09.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for spamWord10.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for parameter1.
 INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=47, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=48, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=49, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=50, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=51, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=52, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=53, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2UserAccount = acme.framework.entities.UserAccount{id=54, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Manager = acme.framework.entities.Manager{id=55, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Authenticated = acme.framework.entities.Authenticated{id=56, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan01 = acme.entities.workPlans.WorkPlan{id=57, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan02 = acme.entities.workPlans.WorkPlan{id=58, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan03 = acme.entities.workPlans.WorkPlan{id=59, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=60, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=61, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=62, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=63, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=64, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=65, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 13652 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 7.435 seconds (JVM running for 8.115)
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord01 = acme.entities.spamWords.SpamWord{id=6, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord02 = acme.entities.spamWords.SpamWord{id=7, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord03 = acme.entities.spamWords.SpamWord{id=8, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord04 = acme.entities.spamWords.SpamWord{id=9, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord05 = acme.entities.spamWords.SpamWord{id=10, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord06 = acme.entities.spamWords.SpamWord{id=11, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord07 = acme.entities.spamWords.SpamWord{id=12, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord08 = acme.entities.spamWords.SpamWord{id=13, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord09 = acme.entities.spamWords.SpamWord{id=14, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord10 = acme.entities.spamWords.SpamWord{id=15, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting parameter1 = acme.entities.parameters.Parameters{id=16, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating manager2UserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating manager2Manager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating manager2Authenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workplan01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workplan02 ... PASS
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -2093,58 +1812,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for managerUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerManager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for manager2UserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for manager2Manager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for manager2Authenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for workplan01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for workplan02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for workplan03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task06.
-INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=47, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=48, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=49, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=50, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=51, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=52, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=53, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2UserAccount = acme.framework.entities.UserAccount{id=54, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Manager = acme.framework.entities.Manager{id=55, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Authenticated = acme.framework.entities.Authenticated{id=56, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan01 = acme.entities.workPlans.WorkPlan{id=57, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan02 = acme.entities.workPlans.WorkPlan{id=58, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan03 = acme.entities.workPlans.WorkPlan{id=59, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=60, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=61, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=62, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=63, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=64, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=65, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 1451, SQLState: 23000
-ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276): could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59): could not execute statement
-com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117): Cannot delete or update a parent row: a foreign key constraint fails (`acme-planner`.`work_plan_task`, CONSTRAINT `FK1bn09ja7ynyafv8syn5au40um` FOREIGN KEY (`tasks_id`) REFERENCES `task` (`id`))
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 8492 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 6.646 seconds (JVM running for 7.303)
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -2225,51 +1893,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for managerUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerManager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for manager2UserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for manager2Manager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for manager2Authenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for workplan01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for workplan02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for workplan03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task06.
-INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=47, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=48, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=49, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=50, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=51, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=52, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=53, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2UserAccount = acme.framework.entities.UserAccount{id=54, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Manager = acme.framework.entities.Manager{id=55, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Authenticated = acme.framework.entities.Authenticated{id=56, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan01 = acme.entities.workPlans.WorkPlan{id=57, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan02 = acme.entities.workPlans.WorkPlan{id=58, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan03 = acme.entities.workPlans.WorkPlan{id=59, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=60, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=61, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=62, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=63, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=64, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=65, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 8756 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 6.887 seconds (JVM running for 7.569)
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -2350,56 +1974,80 @@ INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for managerUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerManager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for manager2UserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for manager2Manager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for manager2Authenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for workplan01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for workplan02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for workplan03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task06.
+
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord08 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord09 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating parameter1 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for spamWord01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for spamWord02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for spamWord03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for spamWord04.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for spamWord05.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for spamWord06.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for spamWord07.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for spamWord08.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for spamWord09.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for spamWord10.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for parameter1.
 INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=47, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=48, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=49, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=50, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=51, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=52, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=53, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2UserAccount = acme.framework.entities.UserAccount{id=54, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Manager = acme.framework.entities.Manager{id=55, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Authenticated = acme.framework.entities.Authenticated{id=56, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan01 = acme.entities.workPlans.WorkPlan{id=57, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan02 = acme.entities.workPlans.WorkPlan{id=58, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan03 = acme.entities.workPlans.WorkPlan{id=59, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=60, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=61, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=62, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=63, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=64, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=65, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 17732 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 6.848 seconds (JVM running for 7.511)
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord01 = acme.entities.spamWords.SpamWord{id=6, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord02 = acme.entities.spamWords.SpamWord{id=7, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord03 = acme.entities.spamWords.SpamWord{id=8, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord04 = acme.entities.spamWords.SpamWord{id=9, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord05 = acme.entities.spamWords.SpamWord{id=10, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord06 = acme.entities.spamWords.SpamWord{id=11, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord07 = acme.entities.spamWords.SpamWord{id=12, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord08 = acme.entities.spamWords.SpamWord{id=13, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord09 = acme.entities.spamWords.SpamWord{id=14, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord10 = acme.entities.spamWords.SpamWord{id=15, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting parameter1 = acme.entities.parameters.Parameters{id=16, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating manager2UserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating manager2Manager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating manager2Authenticated ... PASS
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -2480,85 +2128,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for managerUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerManager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for manager2UserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for manager2Manager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for manager2Authenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for workplan01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for workplan02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for workplan03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task06.
-INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=47, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=48, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=49, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=50, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=51, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=52, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=53, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2UserAccount = acme.framework.entities.UserAccount{id=54, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Manager = acme.framework.entities.Manager{id=55, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Authenticated = acme.framework.entities.Authenticated{id=56, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan01 = acme.entities.workPlans.WorkPlan{id=57, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan02 = acme.entities.workPlans.WorkPlan{id=58, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan03 = acme.entities.workPlans.WorkPlan{id=59, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=60, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=61, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=62, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=63, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=64, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=65, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.workplan in acme.entities.tasks.Task.workplans
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.workplan in acme.entities.tasks.Task.workplans
-ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.workplan in acme.entities.tasks.Task.workplans
-at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844): mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.workplan in acme.entities.tasks.Task.workplans
-ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.workPlan in acme.entities.tasks.Task.workplans
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.workPlan in acme.entities.tasks.Task.workplans
-ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.workPlan in acme.entities.tasks.Task.workplans
-at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844): mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.workPlan in acme.entities.tasks.Task.workplans
-ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.workPlan.id in acme.entities.tasks.Task.workplans
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.workPlan.id in acme.entities.tasks.Task.workplans
-ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.workPlan.id in acme.entities.tasks.Task.workplans
-at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844): mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.workPlan.id in acme.entities.tasks.Task.workplans
-ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for collection: acme.entities.tasks.Task.workplans column: id
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for collection: acme.entities.tasks.Task.workplans column: id
-ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for collection: acme.entities.tasks.Task.workplans column: id
-at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421): [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for collection: acme.entities.tasks.Task.workplans column: id
-at org.hibernate.mapping.Collection.checkColumnDuplication(Collection.java:344): Repeated column in mapping for collection: acme.entities.tasks.Task.workplans column: id
-ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421): [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:121): Schema-validation: missing table [task_work_plan]
-ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.WorkPlan in acme.entities.tasks.Task.workplans
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.WorkPlan in acme.entities.tasks.Task.workplans
-ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.WorkPlan in acme.entities.tasks.Task.workplans
-at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844): mappedBy reference an unknown target entity property: acme.entities.workPlans.WorkPlan.WorkPlan in acme.entities.tasks.Task.workplans
-ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421): [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:121): Schema-validation: missing table [task_work_plan]
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:250): Request method 'POST' not supported
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 18952 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 6.784 seconds (JVM running for 7.428)
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -2639,68 +2209,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for managerUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerManager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for manager2UserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for manager2Manager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for manager2Authenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for workplan01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for workplan02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for workplan03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task06.
-INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=47, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=48, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=49, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=50, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=51, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=52, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=53, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2UserAccount = acme.framework.entities.UserAccount{id=54, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Manager = acme.framework.entities.Manager{id=55, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Authenticated = acme.framework.entities.Authenticated{id=56, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan01 = acme.entities.workPlans.WorkPlan{id=57, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan02 = acme.entities.workPlans.WorkPlan{id=58, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan03 = acme.entities.workPlans.WorkPlan{id=59, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=60, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=61, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=62, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=63, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=64, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=65, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:706): Invalid property 'workload' of bean class [acme.entities.workPlans.WorkPlan]: Getter for property 'workload' threw exception; nested exception is java.lang.reflect.InvocationTargetException
-java.lang.reflect.InvocationTargetExceptionorg.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workPlans.WorkPlan.tasks, could not initialize proxy - no Session
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:706): Invalid property 'workload' of bean class [acme.entities.workPlans.WorkPlan]: Getter for property 'workload' threw exception; nested exception is java.lang.reflect.InvocationTargetException
-java.lang.reflect.InvocationTargetExceptionorg.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workPlans.WorkPlan.tasks, could not initialize proxy - no Session
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:706): Invalid property 'workload' of bean class [acme.entities.workPlans.WorkPlan]: Getter for property 'workload' threw exception; nested exception is java.lang.reflect.InvocationTargetException
-java.lang.reflect.InvocationTargetExceptionorg.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workPlans.WorkPlan.tasks, could not initialize proxy - no Session
-ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421): [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_work_plan]
-at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:121): Schema-validation: missing table [task_work_plan]
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 14508 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 6.835 seconds (JVM running for 7.485)
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -2781,56 +2290,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for managerUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerManager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for manager2UserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for manager2Manager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for manager2Authenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for workplan01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for workplan02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for workplan03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task06.
-INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=47, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=48, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=49, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=50, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=51, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=52, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=53, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2UserAccount = acme.framework.entities.UserAccount{id=54, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Manager = acme.framework.entities.Manager{id=55, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Authenticated = acme.framework.entities.Authenticated{id=56, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan01 = acme.entities.workPlans.WorkPlan{id=57, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan02 = acme.entities.workPlans.WorkPlan{id=58, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan03 = acme.entities.workPlans.WorkPlan{id=59, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=60, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=61, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=62, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=63, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=64, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=65, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [administrator]
-WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [administrator]
-ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [administrator]
-at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421): [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [administrator]
-at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:121): Schema-validation: missing table [administrator]
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 13536 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 6.711 seconds (JVM running for 7.381)
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -2911,51 +2371,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for managerUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerManager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for manager2UserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for manager2Manager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for manager2Authenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for workplan01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for workplan02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for workplan03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task06.
-INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=47, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=48, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=49, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=50, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=51, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=52, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=53, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2UserAccount = acme.framework.entities.UserAccount{id=54, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Manager = acme.framework.entities.Manager{id=55, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Authenticated = acme.framework.entities.Authenticated{id=56, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan01 = acme.entities.workPlans.WorkPlan{id=57, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan02 = acme.entities.workPlans.WorkPlan{id=58, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan03 = acme.entities.workPlans.WorkPlan{id=59, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=60, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=61, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=62, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=63, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=64, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=65, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 13352 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 7.018 seconds (JVM running for 7.673)
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -3036,333 +2452,3 @@ INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for managerUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerManager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for manager2UserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for manager2Manager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for manager2Authenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for workplan01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for workplan02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for workplan03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task06.
-INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=47, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=48, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=49, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=50, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=51, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=52, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=53, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2UserAccount = acme.framework.entities.UserAccount{id=54, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Manager = acme.framework.entities.Manager{id=55, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Authenticated = acme.framework.entities.Authenticated{id=56, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan01 = acme.entities.workPlans.WorkPlan{id=57, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan02 = acme.entities.workPlans.WorkPlan{id=58, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan03 = acme.entities.workPlans.WorkPlan{id=59, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=60, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=61, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=62, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=63, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=64, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=65, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 18204 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 6.645 seconds (JVM running for 7.281)
-INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
-INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
-INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
-INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
-INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord01 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord02 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord03 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord04 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord05 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord06 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord07 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord08 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord09 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord10 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating parameter1 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for spamWord01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for spamWord02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for spamWord03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for spamWord04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for spamWord05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for spamWord06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for spamWord07.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for spamWord08.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for spamWord09.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for spamWord10.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for parameter1.
-INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord01 = acme.entities.spamWords.SpamWord{id=6, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord02 = acme.entities.spamWords.SpamWord{id=7, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord03 = acme.entities.spamWords.SpamWord{id=8, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord04 = acme.entities.spamWords.SpamWord{id=9, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord05 = acme.entities.spamWords.SpamWord{id=10, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord06 = acme.entities.spamWords.SpamWord{id=11, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord07 = acme.entities.spamWords.SpamWord{id=12, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord08 = acme.entities.spamWords.SpamWord{id=13, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord09 = acme.entities.spamWords.SpamWord{id=14, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord10 = acme.entities.spamWords.SpamWord{id=15, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting parameter1 = acme.entities.parameters.Parameters{id=16, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
-INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
-INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating shout04 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating manager2UserAccount ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating manager2Manager ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating manager2Authenticated ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating workplan01 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating workplan02 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating workplan03 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for managerUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerManager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for manager2UserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for manager2Manager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for manager2Authenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for workplan01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for workplan02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for workplan03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task06.
-INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=47, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=48, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=49, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=50, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=51, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=52, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=53, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2UserAccount = acme.framework.entities.UserAccount{id=54, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Manager = acme.framework.entities.Manager{id=55, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Authenticated = acme.framework.entities.Authenticated{id=56, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan01 = acme.entities.workPlans.WorkPlan{id=57, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan02 = acme.entities.workPlans.WorkPlan{id=58, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan03 = acme.entities.workPlans.WorkPlan{id=59, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=60, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=61, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=62, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=63, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=64, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=65, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/master/panic HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: ServletException including path '/WEB-INF/views/framework/page.jsp'.
-org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): ServletException including path '/WEB-INF/views/framework/page.jsp'.
-org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): ServletException including path '/WEB-INF/views/framework/page.jsp'.
-org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost]] at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: ServletException including path '/WEB-INF/views/framework/page.jsp'.
-at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): ServletException including path '/WEB-INF/views/framework/page.jsp'.
-at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): ServletException including path '/WEB-INF/views/framework/page.jsp'.
-at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/master/panic HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: ServletException including path '/WEB-INF/views/framework/page.jsp'.
-org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): ServletException including path '/WEB-INF/views/framework/page.jsp'.
-org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): ServletException including path '/WEB-INF/views/framework/page.jsp'.
-org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost]] at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: ServletException including path '/WEB-INF/views/framework/page.jsp'.
-at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): ServletException including path '/WEB-INF/views/framework/page.jsp'.
-at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): ServletException including path '/WEB-INF/views/framework/page.jsp'.
-at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
-INFO [acme.Launcher] Starting Launcher using Java 15.0.1 on DESKTOP-P912ME5 with PID 14928 (E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner\target\classes started by aleja in E:\Universidad\3º Curso\Segundo Cuatrimestre\DP2\Software\Workspace-21.1\Projects\Acme-Planner)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 6.984 seconds (JVM running for 7.654)
-INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
-INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
-INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
-INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
-INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord01 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord02 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord03 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord04 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord05 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord06 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord07 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord08 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord09 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating spamWord10 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating parameter1 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for spamWord01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for spamWord02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for spamWord03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for spamWord04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for spamWord05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for spamWord06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for spamWord07.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for spamWord08.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for spamWord09.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for spamWord10.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for parameter1.
-INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord01 = acme.entities.spamWords.SpamWord{id=6, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord02 = acme.entities.spamWords.SpamWord{id=7, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord03 = acme.entities.spamWords.SpamWord{id=8, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord04 = acme.entities.spamWords.SpamWord{id=9, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord05 = acme.entities.spamWords.SpamWord{id=10, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord06 = acme.entities.spamWords.SpamWord{id=11, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord07 = acme.entities.spamWords.SpamWord{id=12, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord08 = acme.entities.spamWords.SpamWord{id=13, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord09 = acme.entities.spamWords.SpamWord{id=14, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting spamWord10 = acme.entities.spamWords.SpamWord{id=15, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting parameter1 = acme.entities.parameters.Parameters{id=16, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
-INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
-INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating shout04 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating manager2UserAccount ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating manager2Manager ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating manager2Authenticated ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating workplan01 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating workplan02 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating workplan03 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Deferring task06.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for managerUserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerManager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerAuthenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for manager2UserAccount.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for manager2Manager.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for manager2Authenticated.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for workplan01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for workplan02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for workplan03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task01.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task02.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task04.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task05.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task06.
-INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=47, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=48, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=49, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=50, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=51, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=52, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=53, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2UserAccount = acme.framework.entities.UserAccount{id=54, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Manager = acme.framework.entities.Manager{id=55, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting manager2Authenticated = acme.framework.entities.Authenticated{id=56, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan01 = acme.entities.workPlans.WorkPlan{id=57, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan02 = acme.entities.workPlans.WorkPlan{id=58, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting workplan03 = acme.entities.workPlans.WorkPlan{id=59, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=60, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=61, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=62, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=63, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=64, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=65, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-Planner].[dispatcherServlet]] at acme.framework.utilities.RememberMeLogoutHandler.logout(RememberMeLogoutHandler.java:31): java.lang.AssertionError
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:200): Filter execution threw an exception
-java.lang.AssertionError

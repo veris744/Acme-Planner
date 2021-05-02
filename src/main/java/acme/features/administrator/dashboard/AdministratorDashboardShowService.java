@@ -150,14 +150,17 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		averageWorkload = this.repository.averageWorkload();
 		deviationWorkload = Math.sqrt(this.repository.deviationWorkload(averageWorkload)/this.repository.getTasks().size());
 		
+		
 		numberOfPublicWorkPlans = this.repository.numberOfPublicWorkPlans();
 		numberOfPrivateWorkPlans = this.repository.numberOfPrivateWorkPlans();
 		numberOfFinishedWorkPlans = this.repository.numberOfFinishedWorkPlans(current);
 		numberOfNonFinishedWorkPlans = this.repository.numberOfNonFinishedWorkPlans(current);
-		minimumWorkloadWorkPlans = this.repository.minimumWorkloadWorkPlans();
-		maximumWorkloadWorkPlans = this.repository.maximumWorkloadWorkPlans();
-		averageWorkloadWorkPlans = this.repository.averageWorkloadWorkPlans();
-		deviationWorkloadWorkPlans = Math.sqrt(this.repository.deviationWorkloadWorkPlans(averageWorkloadWorkPlans)/this.repository.getWorkPlans().size());
+		minimumWorkloadWorkPlans = this.repository.getWorkPlans().stream().mapToDouble(WorkPlan::getWorkload).min().orElse(0);
+		maximumWorkloadWorkPlans = this.repository.getWorkPlans().stream().mapToDouble(WorkPlan::getWorkload).max().orElse(0);
+		averageWorkloadWorkPlans = this.repository.getWorkPlans().stream().mapToDouble(WorkPlan::getWorkload).average().orElse(0);
+		deviationWorkloadWorkPlans = Math.sqrt(Math.pow((this.repository.getWorkPlans().stream().
+			mapToDouble(WorkPlan::getWorkload).iterator().next()-this.repository.getWorkPlans().stream().
+			mapToDouble(WorkPlan::getWorkload).average().orElse(0)),2)/this.repository.getWorkPlans().size());
 
 		
 		result = new Dashboard();

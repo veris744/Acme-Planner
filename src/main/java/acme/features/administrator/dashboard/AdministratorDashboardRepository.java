@@ -68,16 +68,16 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select count(w) from WorkPlan w where w.endPeriod > :current")
 	Integer numberOfNonFinishedWorkPlans(Date current);
 	
-	@Query("select min(w.workload) from WorkPlan w")
+	@Query("select w from WorkPlan w")
 	Double minimumWorkloadWorkPlans();
 
-	@Query("select max(w.workload) from WorkPlan w")
+	@Query("select w from WorkPlan w")
 	Double maximumWorkloadWorkPlans();
 	
-	@Query("select avg(w.workload) from WorkPlan w")
+	@Query("select w from WorkPlan w")
 	Double averageWorkloadWorkPlans();
 
-	@Query("select sum((w.workload - :average)*(w.workload - :average)) from WorkPlan w")
+	@Query("select w from WorkPlan w")
 	Double deviationWorkloadWorkPlans(Double average);
 
 	@Query("select w from WorkPlan w")

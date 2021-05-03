@@ -56,9 +56,9 @@
 		
 	<bean id="task01" class="acme.entities.tasks.Task">
 		<property name="title" value="Create a Causes functionality"/>
-		<property name="startPeriod" value="2021/04/16 17:00"/>
-		<property name="endPeriod" value="2021/04/16 18:00"/>
-		<property name="workload" value="1.0"/>
+		<property name="startPeriod" value="2021/05/01 18:00"/>
+		<property name="endPeriod" value="2021/05/05 18:30"/>
+		<property name="workload" value="96.30"/>
 		<property name="description" value="As a client, we can create a cause that contains a name and description (string), a budget target (numeric), and an acti-ve non profit organization (string) that will use the budget for the cause."/>
 		<property name="link" value="http://www.spring.com"/>
 		<property name="isPublic" value="true"/>
@@ -67,8 +67,8 @@
 	
 	<bean id="task02" class="acme.entities.tasks.Task">
 		<property name="title" value="Create a technical report"/>
-		<property name="startPeriod" value="2021/04/18 15:30"/>
-		<property name="endPeriod" value="2021/04/19 15:00"/>
+		<property name="startPeriod" value="2021/05/02 15:30"/>
+		<property name="endPeriod" value="2021/05/03 15:00"/>
 		<property name="workload" value="24.30"/>
 		<property name="description" value="create a technical report entitled “Métricas de Proceso Ágil y Recursos”."/>
 		<property name="link" value="http://www.scrum.com"/>
@@ -78,8 +78,8 @@
 	
 	<bean id="task03" class="acme.entities.tasks.Task">
 		<property name="title" value="Implement SonarCloud"/>
-		<property name="startPeriod" value="2021/04/27 19:25"/>
-		<property name="endPeriod" value="2021/04/27 21:00"/>
+		<property name="startPeriod" value="2021/05/03 19:25"/>
+		<property name="endPeriod" value="2021/05/03 21:00"/>
 		<property name="workload" value="2.35"/>
 		<property name="description" value="Implement SonarCloud in project"/>
 		<property name="link" value="http://www.sonarcloud.com"/>
@@ -89,8 +89,8 @@
 	
 	<bean id="task04" class="acme.entities.tasks.Task">
 		<property name="title" value="Create an appendix"/>
-		<property name="startPeriod" value="2021/04/28 17:00"/>
-		<property name="endPeriod" value="2021/04/29 17:00"/>
+		<property name="startPeriod" value="2021/05/04 17:00"/>
+		<property name="endPeriod" value="2021/05/04 17:00"/>
 		<property name="workload" value="24.0"/>
 		<property name="description" value="Create an appendix in the technical report created as a result of implement SonarCloud"/>
 		<property name="link" value="http://www.stackoverflow.com"/>
@@ -119,6 +119,95 @@
 		<property name="isPublic" value="true"/>
 		<property name="manager" ref="managerManager"/>
 	</bean>
+	
+	<bean id="task07" class="acme.entities.tasks.Task">
+		<property name="title" value="Initiate starter"/>
+		<property name="startPeriod" value="2021/04/01 14:00"/>
+		<property name="endPeriod" value="2021/04/18 14:00"/>
+		<property name="workload" value="5.5"/>
+		<property name="description" value="Initiate starter in github repository master branch"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="false"/>
+		<property name="manager" ref="managerManager"/>
+	</bean>
+	
+	<bean id="task08" class="acme.entities.tasks.Task">
+		<property name="title" value="Initiate starter"/>
+		<property name="startPeriod" value="2021/05/03 14:00"/>
+		<property name="endPeriod" value="2021/05/05 14:00"/>
+		<property name="workload" value="48."/>
+		<property name="description" value="Initiate starter in github repository master branch"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager2Manager"/>
+	</bean>
+	
+	<bean id="task09" class="acme.entities.tasks.Task">
+		<property name="title" value="Initiate starter"/>
+		<property name="startPeriod" value="2021/04/01 14:00"/>
+		<property name="endPeriod" value="2021/04/18 14:00"/>
+		<property name="workload" value="5.5"/>
+		<property name="description" value="Initiate starter in github repository master branch"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="false"/>
+		<property name="manager" ref="manager2Manager"/>
+	</bean>
+	
+	<bean id="task10" class="acme.entities.tasks.Task">
+		<property name="title" value="Customize"/>
+		<property name="startPeriod" value="2021/05/10 14:00"/>
+		<property name="endPeriod" value="2021/05/11 14:00"/>
+		<property name="workload" value="24.0"/>
+		<property name="description" value="Customize starter in github repository master branch"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+		<property name="manager" ref="managerManager"/>
+	</bean>
+	
+	<bean id="task11" class="acme.entities.tasks.Task">
+		<property name="title" value="CleverCloud"/>
+		<property name="startPeriod" value="2021/05/21 14:00"/>
+		<property name="endPeriod" value="2021/05/22 14:00"/>
+		<property name="workload" value="24.0"/>
+		<property name="description" value="CleverCloud in git"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="false"/>
+		<property name="manager" ref="manager2Manager"/>
+	</bean>
+	
+	<bean id="task12" class="acme.entities.tasks.Task">
+		<property name="title" value="Debug project"/>
+		<property name="startPeriod" value="2021/05/07 14:00"/>
+		<property name="endPeriod" value="2021/05/07 14:00"/>
+		<property name="workload" value="24.0"/>
+		<property name="description" value="Find bugs in project"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+		<property name="manager" ref="managerManager"/>
+	</bean>
+	
+	<bean id="task13" class="acme.entities.tasks.Task">
+		<property name="title" value="Test"/>
+		<property name="startPeriod" value="2021/05/05 14:00"/>
+		<property name="endPeriod" value="2021/05/05 14:00"/>
+		<property name="workload" value="24.0"/>
+		<property name="description" value="Testing code"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager2Manager"/>
+	</bean>
+	
+	<bean id="task14" class="acme.entities.tasks.Task">
+		<property name="title" value="Documentation"/>
+		<property name="startPeriod" value="2021/05/04 14:00"/>
+		<property name="endPeriod" value="2021/05/04 14:00"/>
+		<property name="workload" value="24.0"/>
+		<property name="description" value="Documentation workplan"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager2Manager"/>
+	</bean>
+	
 	
 	<!-- Managers -->
 	

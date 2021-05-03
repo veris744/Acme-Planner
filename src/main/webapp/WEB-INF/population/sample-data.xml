@@ -121,7 +121,7 @@
 	</bean>
 	
 	<bean id="task07" class="acme.entities.tasks.Task">
-		<property name="title" value="Initiate starter"/>
+		<property name="title" value="Initiate acme"/>
 		<property name="startPeriod" value="2021/04/01 14:00"/>
 		<property name="endPeriod" value="2021/04/18 14:00"/>
 		<property name="workload" value="5.5"/>
@@ -353,7 +353,7 @@
 	</bean>
 	
 	<bean id="workplan07" class="acme.entities.workPlans.WorkPlan">
-		<property name="title" value="Plan 1"/>
+		<property name="title" value="Plan 2"/>
 		<property name="startPeriod" value="2021/05/02 12:00"/>
 		<property name="endPeriod" value="2021/06/02 12:00"/>
 		<property name="isPublic" value="true"/>

@@ -270,7 +270,7 @@
 	<bean id="workplan01" class="acme.entities.workPlans.WorkPlan">
 		<property name="title" value="Work Plan for Acme Jobs application"/>
 		<property name="startPeriod" value="2021/03/30 12:00"/>
-		<property name="endPeriod" value="2021/05/04 12:00"/>
+		<property name="endPeriod" value="2021/06/04 12:00"/>
 		<property name="isPublic" value="true"/>
 
 
@@ -308,6 +308,58 @@
 		<property name="tasks">
 			<list>
 				<ref bean="task06"/>
+			</list>
+		</property>
+		<property name="manager" ref="managerManager"/>
+	</bean>
+	
+	<bean id="workplan04" class="acme.entities.workPlans.WorkPlan">
+		<property name="title" value="Customize Plan"/>
+		<property name="startPeriod" value="2021/05/02 12:00"/>
+		<property name="endPeriod" value="2021/06/02 12:00"/>
+		<property name="isPublic" value="true"/>
+		<property name="tasks">
+			<list>
+				<ref bean="task12"/>
+			</list>
+		</property>
+		<property name="manager" ref="manager2Manager"/>
+	</bean>
+	
+	<bean id="workplan05" class="acme.entities.workPlans.WorkPlan">
+		<property name="title" value="Uptade Plan"/>
+		<property name="startPeriod" value="2021/05/02 12:00"/>
+		<property name="endPeriod" value="2021/06/02 12:00"/>
+		<property name="isPublic" value="true"/>
+		<property name="tasks">
+			<list>
+				<ref bean="task03"/>
+			</list>
+		</property>
+		<property name="manager" ref="managerManager"/>
+	</bean>
+	
+	<bean id="workplan06" class="acme.entities.workPlans.WorkPlan">
+		<property name="title" value="Plan 1"/>
+		<property name="startPeriod" value="2021/05/02 12:00"/>
+		<property name="endPeriod" value="2021/06/02 12:00"/>
+		<property name="isPublic" value="true"/>
+		<property name="tasks">
+			<list>
+				<ref bean="task13"/>
+			</list>
+		</property>
+		<property name="manager" ref="manager2Manager"/>
+	</bean>
+	
+	<bean id="workplan07" class="acme.entities.workPlans.WorkPlan">
+		<property name="title" value="Plan 1"/>
+		<property name="startPeriod" value="2021/05/02 12:00"/>
+		<property name="endPeriod" value="2021/06/02 12:00"/>
+		<property name="isPublic" value="true"/>
+		<property name="tasks">
+			<list>
+				<ref bean="task10"/>
 			</list>
 		</property>
 		<property name="manager" ref="managerManager"/>

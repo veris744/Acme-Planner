@@ -67,4 +67,11 @@ public class WorkPlan extends DomainEntity{
 		@Valid
 		@ManyToOne(optional = false)
 		protected Manager			manager;
+		
+		//Prueba
+		protected double workload;
+		
+		public void setWorkload() {
+			this.workload = this.tasks.stream().mapToDouble(Task::getWorkload).sum();
+		}
 }

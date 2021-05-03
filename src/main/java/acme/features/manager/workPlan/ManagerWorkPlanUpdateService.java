@@ -87,5 +87,4 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 
 		this.repository.save(entity);
 	}
-
 }

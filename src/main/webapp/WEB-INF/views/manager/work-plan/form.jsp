@@ -12,9 +12,10 @@
 --%>
 
 <%@page language="java"%>
-
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <acme:form>
 	<acme:form-textbox code="manager.work-plan.form.label.title" path="title"/>
@@ -39,4 +40,20 @@
 	<acme:form-submit test="${command == 'update'}" code="manager.work-plan.form.button.update" action="/manager/work-plan/update"/>
 	<acme:form-submit test="${command == 'delete'}" code="manager.work-plan.form.button.delete" action="/manager/work-plan/delete"/>
 	<acme:form-return code="manager.work-plan.form.button.return"/>
-</acme:form>
+	</acme:form>
+	
+	<!-- LO DE IVAAAAAAAAAAAAN -->
+	<jstl:if test="${ItsMine && (command=='show'||command=='update')}">
+	<center>
+	<acme:form>
+	<acme:form-selected code="manager.workplan.form.select.addTask" path="Nuevatask">
+		<c:forEach items="${taskEnabled}" var="task">
+			<acme:form-opion code="{task.title} - ${task.description}" value="${task.id}"/>
+			</c:forEach>S
+		</acme:form-selected>
+	<acme:form-submit code="manager.workplan.form.button.addTask" action="/manager/work-plan/addtask"/>
+	</acme:form>
+	</center>
+	</jstl:if>
+	
+	

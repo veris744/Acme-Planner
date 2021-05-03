@@ -225,4 +225,54 @@
 		</td>
 	</tr>
 </table>
+<h2>
+	<acme:message code="administrator.dashboard.form.title.application-statuses"/>
+</h2>
+
+<div>
+	<canvas id="canvas"></canvas>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var data = {
+			labels : [
+					"PRIVATE", "PUBLIC"
+			],
+			datasets : [
+				{
+					data : [
+								<jstl:out value="${numberOfPrivateWorkPlans}"/>, 
+								<jstl:out value="${numberOfPublicWorkPlans}"/> 
+					],
+				backgroundColor : [
+					'rgba(223, 26, 26, 1)', 'rgba(26, 132, 239, 1)'
+					]
+				}
+			]
+		};
+		var total= <jstl:out value="${numberOfPublicWorkPlans} + ${numberOfPrivateWorkPlans}" />;
+		var options = {
+				legend : {
+					display : true
+				},
+				
+				title :{
+					display :true,
+					text :"Numero total de WorkPlans: " + total
+				}
+
+		};
+	
+		var canvas, context;
+	
+		canvas = document.getElementById("canvas");
+		context = canvas.getContext("2d");
+		new Chart(context, {
+			type : "pie",
+			data : data,
+			options : options
+		});
+	});
+</script>
 

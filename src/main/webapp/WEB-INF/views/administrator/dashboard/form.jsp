@@ -225,10 +225,6 @@
 		</td>
 	</tr>
 </table>
-<h2>
-	<acme:message code="administrator.dashboard.form.title.application-statuses"/>
-</h2>
-
 <div>
 	<canvas id="canvas"></canvas>
 </div>

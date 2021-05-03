@@ -1,6 +1,7 @@
 package acme.framework.entities;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.NotBlank;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -15,6 +16,11 @@ public class Manager extends UserRole {
 	protected static final long serialVersionUID = 1L;
 
 	// Attributes -------------------------------------------------------------
+	@NotBlank
+	protected String			company;
+
+	@NotBlank
+	protected String			sector;
 
 	// Derived attributes -----------------------------------------------------
 

@@ -86,7 +86,7 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		final Integer worklodMinutosMax = (int) (workloadMax/(60000));
 		final Integer workloadMinutos = (int) (horas*60+minutos*100);
 		
-		if(!errors.hasErrors("startPeriod")) {
+		if(!errors.hasErrors("startPeriod") && !errors.hasErrors("endPeriod")) {
 			errors.state(request, entity.getStartPeriod().before(entity.getEndPeriod()), "startPeriod", "manager.task.form.error.startPeriodBefore");
 		}
 		
@@ -96,7 +96,7 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 	
 		}
 		
-		if(!errors.hasErrors("startPeriod") && !errors.hasErrors("endPeriod")) {
+		if(!errors.hasErrors("startPeriod") && !errors.hasErrors("endPeriod") && !errors.hasErrors("workload")) {
 
 			errors.state(request, worklodMinutosMax>=workloadMinutos, "workload", "manager.task.form.error.workloadmax");
 		}

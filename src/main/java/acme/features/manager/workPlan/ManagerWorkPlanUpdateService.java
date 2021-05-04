@@ -23,7 +23,7 @@ import acme.framework.services.AbstractUpdateService;
 public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manager, WorkPlan> {
 
 	@Autowired
-	protected ManagerWorkPlanRepository	repository;
+	protected ManagerWorkPlanRepository repository;
 
 
 	@Override
@@ -48,13 +48,11 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		
+
 		final Collection<Task> tasks = entity.getTasks();
-		final Collection<Task> enabledTask = this.repository.findManyTask(request.getPrincipal().getActiveRoleId()).stream()
-															.filter(x->entity.taskFitsOnPeriod(x))
-															.filter(x->!tasks.contains(x))
-															.filter(x->!entity.getIsPublic() || x.getIsPublic()).collect(Collectors.toList());
-		
+		final Collection<Task> enabledTask = this.repository.findManyTask(request.getPrincipal().getActiveRoleId()).stream().filter(x -> entity.taskFitsOnPeriod(x)).filter(x -> !tasks.contains(x)).filter(x -> !entity.getIsPublic() || x.getIsPublic())
+			.collect(Collectors.toList());
+
 		request.getModel().setAttribute("taskList", tasks);
 		request.getModel().setAttribute("enabledTask", enabledTask);
 
@@ -68,11 +66,8 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert model != null;
 
 		final Collection<Task> tasks = entity.getTasks();
-		final Collection<Task> enabledTask = this.repository.findManyTask(request.getPrincipal().getActiveRoleId()).stream()
-			.filter(x->entity.taskFitsOnPeriod(x))
-			.filter(x->!tasks.contains(x))
-			.filter(x->!entity.getIsPublic() || x.getIsPublic()).collect(Collectors.toList());
-
+		final Collection<Task> enabledTask = this.repository.findManyTask(request.getPrincipal().getActiveRoleId()).stream().filter(x -> entity.taskFitsOnPeriod(x)).filter(x -> !tasks.contains(x)).filter(x -> !entity.getIsPublic() || x.getIsPublic())
+			.collect(Collectors.toList());
 
 		request.unbind(entity, model, "title", "startPeriod", "endPeriod", "isPublic");
 
@@ -98,82 +93,80 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-
 		//Fecha de inicio anterior a la de fin
-		if(!errors.hasErrors("startPeriod")) {
-			
+		if (!errors.hasErrors("startPeriod") && !errors.hasErrors("endPeriod")) {
+
 			errors.state(request, entity.getStartPeriod().before(entity.getEndPeriod()), "startPeriod", "manager.workplan.form.error.startPeriodBefore");
 		}
-	
 
 		// Recomendación del periodo de ejecución del workplan 
-		
-		final LocalDateTime inicio = entity.getTasks().stream().min(Comparator.comparing(Task::getStartPeriod)).map(Task::getStartPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
-		final LocalDateTime fin = entity.getTasks().stream().max(Comparator.comparing(Task::getEndPeriod)).map(Task::getEndPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
-		final LocalDateTime inicioEntity = entity.getStartPeriod().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
-		final LocalDateTime finEntity = entity.getEndPeriod().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+		if (!errors.hasErrors("startPeriod") && !errors.hasErrors("endPeriod")) {
+			final LocalDateTime inicio = entity.getTasks().stream().min(Comparator.comparing(Task::getStartPeriod)).map(Task::getStartPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+			final LocalDateTime fin = entity.getTasks().stream().max(Comparator.comparing(Task::getEndPeriod)).map(Task::getEndPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+			final LocalDateTime inicioEntity = entity.getStartPeriod().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+			final LocalDateTime finEntity = entity.getEndPeriod().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
 
-		if (!inicioEntity.isBefore(inicio)) {
-			LocalDateTime inicioRecomendado = inicio.minusDays(1);
-			inicioRecomendado = LocalDateTime.of(inicioRecomendado.getYear(), inicioRecomendado.getMonth(), inicioRecomendado.getDayOfMonth(), 8, 0);
+			if (!inicioEntity.isBefore(inicio)) {
+				LocalDateTime inicioRecomendado = inicio.minusDays(1);
+				inicioRecomendado = LocalDateTime.of(inicioRecomendado.getYear(), inicioRecomendado.getMonth(), inicioRecomendado.getDayOfMonth(), 8, 0);
 
-			final int dia = inicioRecomendado.getDayOfMonth();
-			final int mes = inicioRecomendado.getMonthValue();
-			final int anyo = inicioRecomendado.getYear();
-			final int hora = inicioRecomendado.getHour();
-			final int min = inicioRecomendado.getMinute();
+				final int dia = inicioRecomendado.getDayOfMonth();
+				final int mes = inicioRecomendado.getMonthValue();
+				final int anyo = inicioRecomendado.getYear();
+				final int hora = inicioRecomendado.getHour();
+				final int min = inicioRecomendado.getMinute();
 
-			errors.add("startPeriod", dia + "/" + mes + "/" + anyo + " " + hora + ":" + (min == 0 ? "00" : min));
+				errors.add("startPeriod", dia + "/" + mes + "/" + anyo + " " + hora + ":" + (min == 0 ? "00" : min));
+			}
+			if (!finEntity.isAfter(fin)) {
+				LocalDateTime finRecomendado = fin.plusDays(1);
+				finRecomendado = LocalDateTime.of(finRecomendado.getYear(), finRecomendado.getMonth(), finRecomendado.getDayOfMonth(), 17, 0);
+
+				final int dia = finRecomendado.getDayOfMonth();
+				final int mes = finRecomendado.getMonthValue();
+				final int anyo = finRecomendado.getYear();
+				final int hora = finRecomendado.getHour();
+				final int min = finRecomendado.getMinute();
+
+				errors.add("endPeriod", dia + "/" + mes + "/" + anyo + " " + hora + ":" + (min == 0 ? "00" : min));
+			}
 		}
-		if (!finEntity.isAfter(fin)) {
-			LocalDateTime finRecomendado = fin.plusDays(1);
-			finRecomendado = LocalDateTime.of(finRecomendado.getYear(), finRecomendado.getMonth(), finRecomendado.getDayOfMonth(), 17, 0);
-
-			final int dia = finRecomendado.getDayOfMonth();
-			final int mes = finRecomendado.getMonthValue();
-			final int anyo = finRecomendado.getYear();
-			final int hora = finRecomendado.getHour();
-			final int min = finRecomendado.getMinute();
-
-			errors.add("endPeriod", dia + "/" + mes + "/" + anyo + " " + hora + ":" + (min == 0 ? "00" : min));
-		}
-
 
 		// Validacion de nueva tarea a añadir
-		
+
 		final Integer taskId = request.getModel().getInteger("taskSelected");
-		
-		if (taskId != null && !taskId.equals(-1)) {
+
+		if (taskId != null && !taskId.equals(-1) && !errors.hasErrors("startPeriod") && !errors.hasErrors("endPeriod")) {
 			final Task task = this.repository.findOneTaskById(taskId);
-			if(Boolean.FALSE.equals(task.getIsPublic()) && Boolean.TRUE.equals(entity.getIsPublic())) {
+			if (Boolean.FALSE.equals(task.getIsPublic()) && Boolean.TRUE.equals(entity.getIsPublic())) {
 				errors.state(request, false, "taskSelected", "acme.validation.task-is-private");
 			}
-			if(!entity.taskFitsOnPeriod(task)) {
+			if (!entity.taskFitsOnPeriod(task)) {
 				errors.state(request, false, "taskSelected", "acme.validation.task-not-in-period");
 			}
-			if(entity.getTasks().contains(task)) {
+			if (entity.getTasks().contains(task)) {
 				errors.state(request, false, "taskSelected", "acme.validation.task-is-present");
 			}
 		}
-		
+
 	}
 
 	@Override
 	public void update(final Request<WorkPlan> request, final WorkPlan entity) {
 		assert request != null;
 		assert entity != null;
-		
+
 		final Integer taskId = request.getModel().getInteger("taskSelected");
 		if (taskId != null && !taskId.equals(-1)) {
 			final Task task = this.repository.findOneTaskById(taskId);
-			
+
 			assert task.getManager().getId() == request.getPrincipal().getActiveRoleId();
-			
+
 			final Collection<Task> ct = entity.getTasks();
 			ct.add(task);
 			entity.setTasks(ct);
 		}
-		
+
 		this.repository.save(entity);
 	}
 }

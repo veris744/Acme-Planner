@@ -75,6 +75,36 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		assert entity != null;
 		assert errors != null;
 		
+		final Double workload = entity.getWorkload();
+		final Integer horas = workload.intValue();
+		final Double minutos = workload - horas;
+		final Date startPeriod = entity.getStartPeriod();
+		final Date endPeriod = entity.getEndPeriod();
+		final Long workloadMax = endPeriod.getTime()-startPeriod.getTime();
+		final Integer worklodMinutosMax = (int) (workloadMax/(60000));
+		final Integer workloadMinutos = (int) (horas*60+minutos*100);
+		
+		if(!errors.hasErrors("startPeriod")) {
+			errors.state(request, entity.getStartPeriod().before(entity.getEndPeriod()), "startPeriod", "manager.task.form.error.startPeriodBefore");
+		}
+		
+		if(!errors.hasErrors("workload")) {
+			
+			errors.state(request, minutos<0.6, "workload", "manager.task.form.error.workloadminutes");
+	
+		}
+		
+		if(!errors.hasErrors("startPeriod") && !errors.hasErrors("endPeriod")) {
+
+			errors.state(request, worklodMinutosMax>=workloadMinutos, "workload", "manager.task.form.error.workloadmax");
+		}
+		
+		
+		if(!errors.hasErrors("startPeriod")) {
+			
+			errors.state(request, entity.getStartPeriod().after(java.util.Calendar.getInstance().getTime()), "startPeriod", "manager.task.form.error.startPeriodCurrent");
+		}
+		
 	}
 	
 	@Override

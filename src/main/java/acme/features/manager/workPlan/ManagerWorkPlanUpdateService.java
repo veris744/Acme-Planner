@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Collection;
 import java.util.Comparator;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -47,6 +48,15 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		
+		final Collection<Task> tasks = entity.getTasks();
+		final Collection<Task> enabledTask = this.repository.findManyTask(request.getPrincipal().getActiveRoleId()).stream()
+															.filter(x->entity.taskFitsOnPeriod(x))
+															.filter(x->!tasks.contains(x))
+															.filter(x->!entity.getIsPublic() || x.getIsPublic()).collect(Collectors.toList());
+		
+		request.getModel().setAttribute("taskList", tasks);
+		request.getModel().setAttribute("enabledTask", enabledTask);
 
 		request.bind(entity, errors);
 	}
@@ -58,9 +68,10 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert model != null;
 
 		final Collection<Task> tasks = entity.getTasks();
-    
-		final Collection<Task> enabledTask = this.repository.findAvailableTasks();
-		//Nueva Query con Tareas disponibles
+		final Collection<Task> enabledTask = this.repository.findManyTask(request.getPrincipal().getActiveRoleId()).stream()
+			.filter(x->entity.taskFitsOnPeriod(x))
+			.filter(x->!tasks.contains(x))
+			.filter(x->!entity.getIsPublic() || x.getIsPublic()).collect(Collectors.toList());
 
 
 		request.unbind(entity, model, "title", "startPeriod", "endPeriod", "isPublic");
@@ -88,21 +99,15 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert entity != null;
 		assert errors != null;
 
-		
+		//Fecha de inicio anterior a la de fin
 		if(!errors.hasErrors("startPeriod")) {
 			
 			errors.state(request, entity.getStartPeriod().before(entity.getEndPeriod()), "startPeriod", "manager.workplan.form.error.startPeriodBefore");
 		}
-		
-		
-		if(!errors.hasErrors("startPeriod")) {
-			
-			errors.state(request, entity.getStartPeriod().after(java.util.Calendar.getInstance().getTime()), "startPeriod", "manager.workplan.form.error.startPeriodCurrent");
-		}
-
+	
 
 		// Recomendación del periodo de ejecución del workplan 
-
+		
 		final LocalDateTime inicio = entity.getTasks().stream().min(Comparator.comparing(Task::getStartPeriod)).map(Task::getStartPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
 		final LocalDateTime fin = entity.getTasks().stream().max(Comparator.comparing(Task::getEndPeriod)).map(Task::getEndPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
 		final LocalDateTime inicioEntity = entity.getStartPeriod().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
@@ -134,20 +139,41 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		}
 
 
+		// Validacion de nueva tarea a añadir
+		
+		final Integer taskId = request.getModel().getInteger("taskSelected");
+		
+		if (taskId != null && !taskId.equals(-1)) {
+			final Task task = this.repository.findOneTaskById(taskId);
+			if(Boolean.FALSE.equals(task.getIsPublic()) && Boolean.TRUE.equals(entity.getIsPublic())) {
+				errors.state(request, false, "taskSelected", "acme.validation.task-is-private");
+			}
+			if(!entity.taskFitsOnPeriod(task)) {
+				errors.state(request, false, "taskSelected", "acme.validation.task-not-in-period");
+			}
+			if(entity.getTasks().contains(task)) {
+				errors.state(request, false, "taskSelected", "acme.validation.task-is-present");
+			}
+		}
+		
 	}
 
 	@Override
 	public void update(final Request<WorkPlan> request, final WorkPlan entity) {
 		assert request != null;
 		assert entity != null;
-		//Conseguir selectedTask ponersela a la entidad en la lista de tareas
+		
 		final Integer taskId = request.getModel().getInteger("taskSelected");
-		if (taskId != null) {
+		if (taskId != null && !taskId.equals(-1)) {
 			final Task task = this.repository.findOneTaskById(taskId);
+			
+			assert task.getManager().getId() == request.getPrincipal().getActiveRoleId();
+			
 			final Collection<Task> ct = entity.getTasks();
 			ct.add(task);
 			entity.setTasks(ct);
 		}
+		
 		this.repository.save(entity);
 	}
 }

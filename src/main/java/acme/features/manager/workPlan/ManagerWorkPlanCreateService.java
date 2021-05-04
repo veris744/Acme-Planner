@@ -1,14 +1,9 @@
 
 package acme.features.manager.workPlan;
 
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.Comparator;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.tasks.Task;
 import acme.entities.workPlans.WorkPlan;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
@@ -69,50 +64,16 @@ public class ManagerWorkPlanCreateService implements AbstractCreateService<Manag
 		assert entity != null;
 		assert errors != null;
 
-		
+		//Fecha de inicio anterior a la de fin
 		if(!errors.hasErrors("startPeriod")) {
 			
 			errors.state(request, entity.getStartPeriod().before(entity.getEndPeriod()), "startPeriod", "manager.workplan.form.error.startPeriodBefore");
 		}
 		
-		
+		//Fecha de inicio anterior a la actual
 		if(!errors.hasErrors("startPeriod")) {
 			
 			errors.state(request, entity.getStartPeriod().after(java.util.Calendar.getInstance().getTime()), "startPeriod", "manager.workplan.form.error.startPeriodCurrent");
-		}
-		
-
-
-		// Recomendación del periodo de ejecución del workplan 
-
-		final LocalDateTime inicio = entity.getTasks().stream().min(Comparator.comparing(Task::getStartPeriod)).map(Task::getStartPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
-		final LocalDateTime fin = entity.getTasks().stream().max(Comparator.comparing(Task::getEndPeriod)).map(Task::getEndPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
-		final LocalDateTime inicioEntity = entity.getStartPeriod().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
-		final LocalDateTime finEntity = entity.getEndPeriod().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
-
-		if (!inicioEntity.isBefore(inicio)) {
-			LocalDateTime inicioRecomendado = inicio.minusDays(1);
-			inicioRecomendado = LocalDateTime.of(inicioRecomendado.getYear(), inicioRecomendado.getMonth(), inicioRecomendado.getDayOfMonth(), 8, 0);
-
-			final int dia = inicioRecomendado.getDayOfMonth();
-			final int mes = inicioRecomendado.getMonthValue();
-			final int anyo = inicioRecomendado.getYear();
-			final int hora = inicioRecomendado.getHour();
-			final int min = inicioRecomendado.getMinute();
-
-			errors.add("startPeriod", dia + "/" + mes + "/" + anyo + " " + hora + ":" + (min == 0 ? "00" : min));
-		}
-		if (!finEntity.isAfter(fin)) {
-			LocalDateTime finRecomendado = fin.plusDays(1);
-			finRecomendado = LocalDateTime.of(finRecomendado.getYear(), finRecomendado.getMonth(), finRecomendado.getDayOfMonth(), 17, 0);
-
-			final int dia = finRecomendado.getDayOfMonth();
-			final int mes = finRecomendado.getMonthValue();
-			final int anyo = finRecomendado.getYear();
-			final int hora = finRecomendado.getHour();
-			final int min = finRecomendado.getMinute();
-
-			errors.add("endPeriod", dia + "/" + mes + "/" + anyo + " " + hora + ":" + (min == 0 ? "00" : min));
 		}
 
 

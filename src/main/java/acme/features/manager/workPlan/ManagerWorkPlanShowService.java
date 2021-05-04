@@ -1,6 +1,7 @@
 package acme.features.manager.workPlan;
 
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -45,7 +46,11 @@ public class ManagerWorkPlanShowService implements AbstractShowService<Manager, 
 		
 		
 		final Collection<Task> tasks = entity.getTasks();
-		final Collection<Task> enabledTask = this.repository.findAvailableTasks();
+		final Collection<Task> enabledTask = this.repository.findManyTask(request.getPrincipal().getActiveRoleId()).stream()
+			.filter(x->entity.taskFitsOnPeriod(x))
+			.filter(x->!tasks.contains(x))
+			.filter(x->!entity.getIsPublic() || x.getIsPublic())
+			.collect(Collectors.toList());
 		
 		request.unbind(entity, model, "title", "startPeriod", "endPeriod", "isPublic"); 
 		

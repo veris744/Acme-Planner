@@ -10,6 +10,8 @@ manager.work-plan.form.label.workload = Carga de trabajo:
 manager.work-plan.form.label.isPublic = Público
 manager.work-plan.form.label.taskList = Tareas:
 manager.work-plan.form.label.empty = No hay tareas
+manager.work-plan.form.label.addTask = Añadir una tarea
+manager.work-plan.form.label.none = Ninguna
 
 manager.work-plan.form.button.create = Crear
 manager.work-plan.form.button.update = Actualizar

@@ -73,5 +73,12 @@ public class WorkPlan extends DomainEntity{
 		@ManyToOne(optional = false)
 		protected Manager			manager;
 		
+		// Other methods ----------------------------------------------------------
+		
+		public boolean taskFitsOnPeriod(final Task task) {
+
+			return (this.startPeriod.before(task.getStartPeriod()) || this.startPeriod.equals(task.getStartPeriod()))
+				&& (this.endPeriod.after(task.getEndPeriod()) || this.endPeriod.equals(task.getEndPeriod()));
+		}
 	
 }

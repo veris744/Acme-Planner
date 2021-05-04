@@ -62,6 +62,17 @@ public class ManagerWorkPlanCreateService implements AbstractCreateService<Manag
 		assert entity != null;
 		assert errors != null;
 		
+		if(!errors.hasErrors("startPeriod")) {
+			
+			errors.state(request, entity.getStartPeriod().before(entity.getEndPeriod()), "startPeriod", "manager.workplan.form.error.startPeriodBefore");
+		}
+		
+		
+		if(!errors.hasErrors("startPeriod")) {
+			
+			errors.state(request, entity.getStartPeriod().after(java.util.Calendar.getInstance().getTime()), "startPeriod", "manager.workplan.form.error.startPeriodCurrent");
+		}
+		
 	}
 	
 	@Override

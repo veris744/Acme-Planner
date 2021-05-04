@@ -15,3 +15,6 @@ manager.work-plan.form.button.create = Create
 manager.work-plan.form.button.update = Update
 manager.work-plan.form.button.delete = Delete
 manager.work-plan.form.button.return = Return
+
+manager.workplan.form.error.startPeriodBefore = Start execution period is before than End execution period
+manager.workplan.form.error.startPeriodCurrent = The date of the start execution period must be after the current date

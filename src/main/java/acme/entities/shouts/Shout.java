@@ -30,6 +30,7 @@ public class Shout extends DomainEntity {
 	@Past
 	protected Date				moment;
 
+	@SpamWordsConstraint
 	@NotBlank
 	@Size(min = 5, max = 25)
 	protected String			author;

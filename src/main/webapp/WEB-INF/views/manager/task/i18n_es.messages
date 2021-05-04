@@ -17,3 +17,7 @@ manager.task.list.label.startPeriod = Comienzo periodo de ejecución
 manager.task.list.label.endPeriod = Finalización periodo de ejecución
 manager.task.list.label.workload = Carga de trabajo
 
+manager.task.form.error.startPeriodBefore = El periodo de ejecución inicial debe ser antes que el final
+manager.task.form.error.workloadminutes = La carga de trabajo no puede tener más de 59 minutos
+manager.task.form.error.workloadmax = La carga de trabajo debe encajar dentro del período de ejecución
+manager.task.form.error.startPeriodCurrent = La fecha del periodo de ejecución inicial debe ser posterior a la fecha actual

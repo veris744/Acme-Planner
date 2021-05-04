@@ -16,3 +16,8 @@ manager.task.list.label.title = Title
 manager.task.list.label.startPeriod = Start execution period
 manager.task.list.label.endPeriod = End execution period
 manager.task.list.label.workload = Workload
+
+manager.task.form.error.startPeriodBefore = Start execution period is before than End execution period
+manager.task.form.error.workloadminutes = Workload cannot be more than 59 minutes
+manager.task.form.error.workloadmax = Workload must fit within the execution period
+manager.task.form.error.startPeriodCurrent = The date of the start execution period must be after the current date

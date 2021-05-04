@@ -31,12 +31,14 @@
 				<li><jstl:out value="${task.title}"/></li>
 			</jstl:forEach>
 		</ul>
-	</jstl:if>
-	<acme:form-select code="manager.workplan.form.select.addTask" path="taskSelected">
-		<jstl:forEach var="etask" items="${enabledTask}">
+		
+		<acme:form-select code="manager.work-plan.form.label.addTask" path="taskSelected">
+			<acme:form-option code="manager.work-plan.form.label.none" value="-1"/> 
+			<jstl:forEach var="etask" items="${enabledTask}">
 				<acme:form-option code="${etask.title}" value="${etask.id}"/> 
 			</jstl:forEach>
-	</acme:form-select>
+		</acme:form-select>
+	</jstl:if>
 	
 	<acme:form-submit test="${command == 'create'}" code="manager.work-plan.form.button.create" action="/manager/work-plan/create"/>
 	<acme:form-submit test="${command == 'show'}" code="manager.work-plan.form.button.update" action="/manager/work-plan/update"/>
@@ -45,58 +47,4 @@
 	<acme:form-submit test="${command == 'delete'}" code="manager.work-plan.form.button.delete" action="/manager/work-plan/delete"/>
 	<acme:form-return code="manager.work-plan.form.button.return"/>
 	</acme:form>
-	
-	<!-- LO DE IVAAAAAAAAAAAAN -->
-	
-	
-	<%-- 	<jstl:if test="${command=='show'|| command =='update' || Adderrors}">    
-		   <div class="table-responsive">
-		   <table class="table table-striped table-condensed table-hover nowrap w-100">
-		   	  <caption><acme:message code="manager.workplan.form.label.tasks"/></caption>
-			  <thead>
-				    <tr>
-				      <th scope="col"><acme:message code="manager.workplan.form.label.tasks.id"/></th>
-				      <th scope="col"><acme:message code="manager.workplan.form.label.tasks.title"/></th>
-				      <th scope="col"><acme:message code="manager.workplan.form.label.tasks.public"/></th>
-				      <th scope="col"></th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				  	<c:forEach items="${tasks}" var="task">
-					  	<tr class="table-light">
-					      <td>${task.id}</td>
-					      <td>${task.title}</td>
-					      <td><acme:message code="manager.workplan.form.label.tasks.public.${task.isPublic}"/></td>
-					      <td>
-					      <jstl:if test="${Mywp}">
-					      	<acme:form>
-					      		<input type="hidden" name="taskId" value="${task.id}">
-					      		<input type="hidden" name="workplanId" value="${id}">
-					      		<acme:form-submit code="manager.workplan.form.button.removeTask" action="/manager/work-plan/remove_task"/>   
-					      	</acme:form>
-					      </jstl:if>
-					      </td>
-					    </tr>
-					</c:forEach>
-				    </tbody>
-			   </table>
-		    </div>
-    </jstl:if> --%>
-    
-	
-	
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-
-	
 	

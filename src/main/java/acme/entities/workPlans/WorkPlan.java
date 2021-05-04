@@ -17,6 +17,7 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
+import acme.entities.spamWords.SpamWordsConstraint;
 import acme.entities.tasks.Task;
 import acme.framework.entities.DomainEntity;
 import acme.framework.entities.Manager;
@@ -36,6 +37,7 @@ public class WorkPlan extends DomainEntity{
 
 		@NotEmpty
 		@Length(min = 1, max = 80)
+		@SpamWordsConstraint
 		protected String			title;
 
 		@Temporal(TemporalType.TIMESTAMP)

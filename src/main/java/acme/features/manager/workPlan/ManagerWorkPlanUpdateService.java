@@ -83,6 +83,19 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert entity != null;
 		assert errors != null;
 
+		
+		if(!errors.hasErrors("startPeriod")) {
+			
+			errors.state(request, entity.getStartPeriod().before(entity.getEndPeriod()), "startPeriod", "manager.workplan.form.error.startPeriodBefore");
+		}
+		
+		
+		if(!errors.hasErrors("startPeriod")) {
+			
+			errors.state(request, entity.getStartPeriod().after(java.util.Calendar.getInstance().getTime()), "startPeriod", "manager.workplan.form.error.startPeriodCurrent");
+		}
+
+
 		// Recomendación del periodo de ejecución del workplan 
 
 		final LocalDateTime inicio = entity.getTasks().stream().min(Comparator.comparing(Task::getStartPeriod)).map(Task::getStartPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
@@ -114,6 +127,7 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 
 			errors.add("endPeriod", dia + "/" + mes + "/" + anyo + " " + hora + ":" + (min == 0 ? "00" : min));
 		}
+
 
 	}
 

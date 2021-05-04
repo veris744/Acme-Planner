@@ -19,3 +19,5 @@ Github release: https://github.com/veris744/Acme-Planner/releases/tag/1.0.1
 Clever Cloud credentials:
 - username: veris744
 - password: us82AL5U
+
+Hay que escribir /Acme-Planner en la url para que funcione. Se ha modificado la dirección base para que no haya problemas con manager.

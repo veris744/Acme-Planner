@@ -68,10 +68,22 @@ public class WorkPlan extends DomainEntity{
 		@ManyToOne(optional = false)
 		protected Manager			manager;
 		
-		//Prueba
+		//Prueba Iván
 		protected double workload;
+		protected double executionPeriod;
+		
+		@Temporal(TemporalType.TIMESTAMP)
+		@NotNull
+		protected Date begin;
+		
+		@Temporal(TemporalType.TIMESTAMP)
+		@NotNull
+		protected Date end;
 		
 		public void setWorkload() {
 			this.workload = this.tasks.stream().mapToDouble(Task::getWorkload).sum();
+		}
+		public void setExecutionPeriod() {
+			this.executionPeriod = (double) (this.end.getTime() - this.begin.getTime()) / (1000 * 3600);
 		}
 }

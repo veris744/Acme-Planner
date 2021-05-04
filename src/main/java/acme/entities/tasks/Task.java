@@ -86,4 +86,19 @@ public class Task extends DomainEntity{
 	protected Collection<@Valid WorkPlan> 		workplans;
 	
 	
+	//PRUEBA IVAN
+	protected Double executionPeriod;
+	
+	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date begin;
+
+	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date end;
+	
+	public void setExecutionPeriod() {
+		this.executionPeriod = (double) (this.end.getTime() - this.begin.getTime()) / (1000 * 3600);
+	}
+	
 }

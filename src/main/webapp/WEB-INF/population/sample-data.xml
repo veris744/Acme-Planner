@@ -466,6 +466,8 @@
 	
 	<bean name="managerManager" class="acme.framework.entities.Manager">
 		<property name="userAccount" ref="managerUserAccount" />
+		<property name="company" value="Prueba1"/>
+		<property name="sector" value="Prueba2"/>
 	</bean>
 
 	<bean name="managerAuthenticated" class="acme.framework.entities.Authenticated">
@@ -493,10 +495,13 @@
 	
 	<bean name="manager2Manager" class="acme.framework.entities.Manager">
 		<property name="userAccount" ref="manager2UserAccount" />
+			<property name="company" value="Prueba3"/>
+			<property name="sector" value="Prueba4"/>
 	</bean>
 
 	<bean name="manager2Authenticated" class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="manager2UserAccount" />
+
 	</bean>
 	
 	

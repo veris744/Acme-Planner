@@ -40,7 +40,7 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		assert model != null;
 
 		request.unbind(entity, model, "title", "startPeriod", 
-			"endPeriod", "workload", "description", "link");
+			"endPeriod", "workload", "description", "link","isPublic");
 	}
 	
 	@Override
@@ -50,11 +50,15 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		Task result;
 		Date startdate;
 		Date enddate;
+		Manager manager;
+		
+		manager = this.repository.getManagerById(request.getPrincipal().getActiveRoleId());
 		
 		startdate = new Date(System.currentTimeMillis()-2);
 		enddate = new Date(System.currentTimeMillis()-1);
 		
 		result = new Task();
+		result.setManager(manager);
 		result.setTitle("Create a Causes functionality");
 		result.setStartPeriod(startdate);
 		result.setEndPeriod(enddate);
@@ -77,6 +81,12 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 	public void create(final Request<Task> request, final Task entity) {
 		assert request != null;
 		assert entity != null;
+		
+		Manager manager;
+		
+		manager = this.repository.getManagerById(request.getPrincipal().getActiveRoleId());
+		
+		entity.setManager(manager);
 		
 		this.repository.save(entity);
 	}

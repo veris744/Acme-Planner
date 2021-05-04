@@ -1,3 +1,4 @@
+
 package acme.features.manager.workPlan;
 
 import java.util.Collection;
@@ -18,23 +19,23 @@ import acme.framework.services.AbstractUpdateService;
 public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manager, WorkPlan> {
 
 	@Autowired
-	protected ManagerWorkPlanRepository repository;
+	protected ManagerWorkPlanRepository	repository;
 
 
 	@Override
 	public boolean authorise(final Request<WorkPlan> request) {
 		assert request != null;
-		
+
 		int workPlanId;
 		WorkPlan workPlan;
 		Manager manager;
 		Principal principal;
-		
+
 		workPlanId = request.getModel().getInteger("id");
 		workPlan = this.repository.findOneWorkPlanById(workPlanId);
 		manager = workPlan.getManager();
 		principal = request.getPrincipal();
-		
+
 		return manager.getId() == principal.getActiveRoleId();
 	}
 
@@ -54,10 +55,13 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert model != null;
 
 		final Collection<Task> tasks = entity.getTasks();
-		
+		final Collection<Task> enabledTask = this.repository.findAvailableTasks();
+		//Nueva Query con Tareas disponibles
+
 		request.unbind(entity, model, "title", "startPeriod", "endPeriod", "isPublic");
-		
+
 		model.setAttribute("taskList", tasks);
+		model.setAttribute("enabledTask", enabledTask);
 	}
 
 	@Override
@@ -84,7 +88,14 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 	public void update(final Request<WorkPlan> request, final WorkPlan entity) {
 		assert request != null;
 		assert entity != null;
-
+		//Conseguir selectedTask ponersela a la entidad en la lista de tareas
+		final Integer taskId = request.getModel().getInteger("taskSelected");
+		if (taskId != null) {
+			final Task task = this.repository.findOneTaskById(taskId);
+			final Collection<Task> ct = entity.getTasks();
+			ct.add(task);
+			entity.setTasks(ct);
+		}
 		this.repository.save(entity);
 	}
 }

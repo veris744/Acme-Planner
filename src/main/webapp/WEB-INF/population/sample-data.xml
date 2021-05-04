@@ -51,6 +51,69 @@
 		<property name="info" value="http://www.web.org"/>
 	</bean>
 	
+		<bean id="shout05" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/15 19:00"/>
+		<property name="author" value="Ivan Garcia"/>
+		<property name="text" value="I'm angry!"/>
+		<property name="info" value="https://twitter.com"/>
+	</bean>
+	
+		<bean id="shout06" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/21 10:00"/>
+		<property name="author" value="Alejandro Ruiz"/>
+		<property name="text" value="I'm sad"/>
+		<property name="info" value="https://mail.google.com/"/>
+	</bean>
+	
+		<bean id="shout07" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/11 10:00"/>
+		<property name="author" value="Beatriz Ruiz"/>
+		<property name="text" value="I'm bored"/>
+		<property name="info"><null/></property>
+	</bean>
+	
+		<bean id="shout08" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/21 10:00"/>
+		<property name="author" value="Alejandro Ruiz"/>
+		<property name="text" value="I'm a pro"/>
+		<property name="info" value="https://www.youtube.com/"/>
+	</bean>
+	
+			<bean id="shout09" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/05/03 12:00"/>
+		<property name="author" value="Isabel Garcia"/>
+		<property name="text" value="I'm strong"/>
+		<property name="info"><null/></property>
+	</bean>
+	
+		<bean id="shout10" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/05/04 12:30"/>
+		<property name="author" value="Jorge Vergara"/>
+		<property name="text" value="I'm weak"/>
+		<property name="info" value="https://youtu.be/nCb_YtUslsw"/>
+	</bean>
+	
+	<bean id="shout11" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/05/02 10:00"/>
+		<property name="author" value="Alejandro Ruiz"/>
+		<property name="text" value="I'm a pro"/>
+		<property name="info" value="https://www.youtube.com/"/>
+	</bean>
+	
+			<bean id="shout12" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/05/03 12:00"/>
+		<property name="author" value="Isabel Garcia"/>
+		<property name="text" value="I'm strong"/>
+		<property name="info"><null/></property>
+	</bean>
+	
+		<bean id="shout13" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/05/4 12:30"/>
+		<property name="author" value="Jorge Vergara"/>
+		<property name="text" value="I'm weak"/>
+		<property name="info" value="https://youtu.be/nCb_YtUslsw"/>
+	</bean>
+	
 	
 	<!-- tasks -->
 		
@@ -181,7 +244,7 @@
 	<bean id="workplan01" class="acme.entities.workPlans.WorkPlan">
 		<property name="title" value="Work Plan for Acme Jobs application"/>
 		<property name="startPeriod" value="2021/03/30 12:00"/>
-		<property name="endPeriod" value="2021/05/04 12:00"/>
+		<property name="endPeriod" value="2021/05/07 12:00"/>
 		<property name="isPublic" value="true"/>
 		<property name="tasks">
 			<list>

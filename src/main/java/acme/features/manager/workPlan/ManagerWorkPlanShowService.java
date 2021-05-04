@@ -42,12 +42,15 @@ public class ManagerWorkPlanShowService implements AbstractShowService<Manager, 
 		assert entity != null;
 		assert model != null;
 		
+		
+		
 		final Collection<Task> tasks = entity.getTasks();
+		final Collection<Task> enabledTask = this.repository.findAvailableTasks();
 		
 		request.unbind(entity, model, "title", "startPeriod", "endPeriod", "isPublic"); 
 		
 		model.setAttribute("taskList", tasks);
-	
+		model.setAttribute("enabledTask", enabledTask);
 	}
 
 	@Override

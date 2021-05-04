@@ -13,7 +13,7 @@ for the Design and Testing subject of the Software Engineering curriculum of the
 of Seville.
 
 Github repository link: https://github.com/veris744/Acme-Planner.git
-Github release: 
+Github release: https://github.com/veris744/Acme-Planner/releases/tag/1.0.1
 
 
 Clever Cloud credentials:

@@ -85,5 +85,4 @@ public class Task extends DomainEntity{
         inverseJoinColumns = @JoinColumn(name = "work_plan_id"))
 	protected Collection<@Valid WorkPlan> 		workplans;
 	
-	
-}
+	}

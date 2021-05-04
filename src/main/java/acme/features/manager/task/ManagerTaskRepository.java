@@ -18,6 +18,9 @@ public interface ManagerTaskRepository extends AbstractRepository {
 	@Query("select t from Task t where t.id = ?1")
 	Task findOneTaskById(int id);
 	
+	@Query("select t from Task t where t.isPublic = true")
+	Collection<Task> findpublicTask();
+
 	@Query("select m from Manager m where m.id = ?1")
 	Manager getManagerById(int id);
 }

@@ -72,4 +72,6 @@ public class WorkPlan extends DomainEntity{
 		@Valid
 		@ManyToOne(optional = false)
 		protected Manager			manager;
+		
+	
 }

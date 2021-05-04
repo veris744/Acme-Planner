@@ -14,3 +14,8 @@ of Seville.
 
 Github repository link: https://github.com/veris744/Acme-Planner.git
 Github release: 
+
+
+Clever Cloud credentials:
+- username: veris744
+- password: us82AL5U

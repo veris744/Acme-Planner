@@ -22,6 +22,7 @@
 	<description>This is the Acme Planner Project for the students of Design &amp; Testing.</description>
 
 	<artifactId>Acme-Planner</artifactId>
+	<version>21.2</version>
 	<packaging>war</packaging>
 
 	<parent>
@@ -81,7 +82,7 @@
 					<deployables>
 						<deployable>
 							<properties>
-								<context>/Acme-Planner</context>
+								<context>/</context>
 							</properties>
 						</deployable>
 					</deployables>

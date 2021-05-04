@@ -1,6 +1,10 @@
+
 package acme.features.manager.workPlan;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Collection;
+import java.util.Comparator;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,17 +28,17 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 	@Override
 	public boolean authorise(final Request<WorkPlan> request) {
 		assert request != null;
-		
+
 		int workPlanId;
 		WorkPlan workPlan;
 		Manager manager;
 		Principal principal;
-		
+
 		workPlanId = request.getModel().getInteger("id");
 		workPlan = this.repository.findOneWorkPlanById(workPlanId);
 		manager = workPlan.getManager();
 		principal = request.getPrincipal();
-		
+
 		return manager.getId() == principal.getActiveRoleId();
 	}
 
@@ -54,9 +58,9 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert model != null;
 
 		final Collection<Task> tasks = entity.getTasks();
-		
+
 		request.unbind(entity, model, "title", "startPeriod", "endPeriod", "isPublic");
-		
+
 		model.setAttribute("taskList", tasks);
 	}
 
@@ -78,6 +82,7 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
 		
 		if(!errors.hasErrors("startPeriod")) {
 			
@@ -89,6 +94,41 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 			
 			errors.state(request, entity.getStartPeriod().after(java.util.Calendar.getInstance().getTime()), "startPeriod", "manager.workplan.form.error.startPeriodCurrent");
 		}
+
+
+		// Recomendación del periodo de ejecución del workplan 
+
+		final LocalDateTime inicio = entity.getTasks().stream().min(Comparator.comparing(Task::getStartPeriod)).map(Task::getStartPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+		final LocalDateTime fin = entity.getTasks().stream().max(Comparator.comparing(Task::getEndPeriod)).map(Task::getEndPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+		final LocalDateTime inicioEntity = entity.getStartPeriod().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+		final LocalDateTime finEntity = entity.getEndPeriod().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+
+		if (!inicioEntity.isBefore(inicio)) {
+			LocalDateTime inicioRecomendado = inicio.minusDays(1);
+			inicioRecomendado = LocalDateTime.of(inicioRecomendado.getYear(), inicioRecomendado.getMonth(), inicioRecomendado.getDayOfMonth(), 8, 0);
+
+			final int dia = inicioRecomendado.getDayOfMonth();
+			final int mes = inicioRecomendado.getMonthValue();
+			final int anyo = inicioRecomendado.getYear();
+			final int hora = inicioRecomendado.getHour();
+			final int min = inicioRecomendado.getMinute();
+
+			errors.add("startPeriod", dia + "/" + mes + "/" + anyo + " " + hora + ":" + (min == 0 ? "00" : min));
+		}
+		if (!finEntity.isAfter(fin)) {
+			LocalDateTime finRecomendado = fin.plusDays(1);
+			finRecomendado = LocalDateTime.of(finRecomendado.getYear(), finRecomendado.getMonth(), finRecomendado.getDayOfMonth(), 17, 0);
+
+			final int dia = finRecomendado.getDayOfMonth();
+			final int mes = finRecomendado.getMonthValue();
+			final int anyo = finRecomendado.getYear();
+			final int hora = finRecomendado.getHour();
+			final int min = finRecomendado.getMinute();
+
+			errors.add("endPeriod", dia + "/" + mes + "/" + anyo + " " + hora + ":" + (min == 0 ? "00" : min));
+		}
+
+
 	}
 
 	@Override

@@ -100,7 +100,7 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		}
 
 		// Recomendación del periodo de ejecución del workplan 
-		if (!errors.hasErrors("startPeriod") && !errors.hasErrors("endPeriod")) {
+		if (!errors.hasErrors("startPeriod") && !errors.hasErrors("endPeriod") && entity.getTasks()!= null && !entity.getTasks().isEmpty()) {
 			final LocalDateTime inicio = entity.getTasks().stream().min(Comparator.comparing(Task::getStartPeriod)).map(Task::getStartPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
 			final LocalDateTime fin = entity.getTasks().stream().max(Comparator.comparing(Task::getEndPeriod)).map(Task::getEndPeriod).orElse(null).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
 			final LocalDateTime inicioEntity = entity.getStartPeriod().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
@@ -144,7 +144,7 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 			if (!entity.taskFitsOnPeriod(task)) {
 				errors.state(request, false, "taskSelected", "acme.validation.task-not-in-period");
 			}
-			if (entity.getTasks().contains(task)) {
+			if (entity.getTasks() != null && entity.getTasks().contains(task)) {
 				errors.state(request, false, "taskSelected", "acme.validation.task-is-present");
 			}
 		}

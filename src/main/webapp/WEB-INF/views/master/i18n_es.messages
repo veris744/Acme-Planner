@@ -10,7 +10,7 @@
 
 # master.banner.welcome #######################################################
 
-master.banner.background = #FFE97F 
+master.banner.background = #000000 
 
 ﻿# master.welcome ##############################################################
 
@@ -32,7 +32,7 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.recent-shouts = Ver gritos recientes
 master.menu.anonymous.create-shout = ¡Grita!
-master.menu.anonymous.recent-tasks = Ver tareas públicas no acabadas
+master.menu.anonymous.recent-task = Ver tareas públicas no acabadas
 master.menu.anonymous.recent-workplan = Ver planes de trabajo públicos no acabados
 
 # master.menu.authenticated #######################################################

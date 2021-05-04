@@ -27,5 +27,19 @@ administrator.dashboard.form.label.maximum-period =  Maximum period (in hours)
 administrator.dashboard.form.label.average-period =  Average period (in hours)
 administrator.dashboard.form.label.deviation-period =  Deviation period (in hours)
 
+# WorkPlans
+administrator.dashboard.form.label.number-of-public-workPlans =  Number of public work plans
+administrator.dashboard.form.label.number-of-private-workPlans =  Number of private work plans
+administrator.dashboard.form.label.number-of-finished-workPlans =  Number of finished work plans
+administrator.dashboard.form.label.number-of-non-finished-workPlans =  Number of non finished work plans
+administrator.dashboard.form.label.minimum-workload-workPlans =  Minimum workload 
+administrator.dashboard.form.label.maximum-workload-workPlans =  Maximum workload 
+administrator.dashboard.form.label.average-workload-workPlans =  Average workload 
+administrator.dashboard.form.label.deviation-workload-workPlans =  Deviation workload 
+administrator.dashboard.form.label.minimum-period-workPlans =  Minimum period (in hours)
+administrator.dashboard.form.label.maximum-period-workPlans =  Maximum period (in hours) 
+administrator.dashboard.form.label.average-period-workPlans =  Average period (in hours) 
+administrator.dashboard.form.label.deviation-period-workPlans =  Deviation period (in hours) 
+
 administrator.dashboard.form.title.application-statuses = Application statuses
 

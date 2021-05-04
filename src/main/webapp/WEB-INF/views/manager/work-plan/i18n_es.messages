@@ -15,3 +15,6 @@ manager.work-plan.form.button.create = Crear
 manager.work-plan.form.button.update = Actualizar
 manager.work-plan.form.button.delete = Borrar
 manager.work-plan.form.button.return = Volver
+
+manager.workplan.form.error.startPeriodBefore = El periodo de ejecución inicial debe ser antes que el final
+manager.workplan.form.error.startPeriodCurrent = La fecha del periodo de ejecución inicial debe ser posterior a la fecha actual

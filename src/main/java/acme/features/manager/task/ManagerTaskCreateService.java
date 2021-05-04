@@ -40,7 +40,7 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		assert model != null;
 
 		request.unbind(entity, model, "title", "startPeriod", 
-			"endPeriod", "workload", "description", "link");
+			"endPeriod", "workload", "description", "link","isPublic");
 	}
 	
 	@Override
@@ -50,11 +50,15 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		Task result;
 		Date startdate;
 		Date enddate;
+		Manager manager;
+		
+		manager = this.repository.getManagerById(request.getPrincipal().getActiveRoleId());
 		
 		startdate = new Date(System.currentTimeMillis()-2);
 		enddate = new Date(System.currentTimeMillis()-1);
 		
 		result = new Task();
+		result.setManager(manager);
 		result.setTitle("Create a Causes functionality");
 		result.setStartPeriod(startdate);
 		result.setEndPeriod(enddate);
@@ -71,12 +75,48 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		assert entity != null;
 		assert errors != null;
 		
+		final Double workload = entity.getWorkload();
+		final Integer horas = workload.intValue();
+		final Double minutos = workload - horas;
+		final Date startPeriod = entity.getStartPeriod();
+		final Date endPeriod = entity.getEndPeriod();
+		final Long workloadMax = endPeriod.getTime()-startPeriod.getTime();
+		final Integer worklodMinutosMax = (int) (workloadMax/(60000));
+		final Integer workloadMinutos = (int) (horas*60+minutos*100);
+		
+		if(!errors.hasErrors("startPeriod")) {
+			errors.state(request, entity.getStartPeriod().before(entity.getEndPeriod()), "startPeriod", "manager.task.form.error.startPeriodBefore");
+		}
+		
+		if(!errors.hasErrors("workload")) {
+			
+			errors.state(request, minutos<0.6, "workload", "manager.task.form.error.workloadminutes");
+	
+		}
+		
+		if(!errors.hasErrors("startPeriod") && !errors.hasErrors("endPeriod")) {
+
+			errors.state(request, worklodMinutosMax>=workloadMinutos, "workload", "manager.task.form.error.workloadmax");
+		}
+		
+		
+		if(!errors.hasErrors("startPeriod")) {
+			
+			errors.state(request, entity.getStartPeriod().after(java.util.Calendar.getInstance().getTime()), "startPeriod", "manager.task.form.error.startPeriodCurrent");
+		}
+		
 	}
 	
 	@Override
 	public void create(final Request<Task> request, final Task entity) {
 		assert request != null;
 		assert entity != null;
+		
+		Manager manager;
+		
+		manager = this.repository.getManagerById(request.getPrincipal().getActiveRoleId());
+		
+		entity.setManager(manager);
 		
 		this.repository.save(entity);
 	}

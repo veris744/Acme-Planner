@@ -27,4 +27,18 @@ administrator.dashboard.form.label.maximum-period =  Periodo máximo (en horas)
 administrator.dashboard.form.label.average-period =  Periodo medio (en horas)
 administrator.dashboard.form.label.deviation-period =  Desviación típica del periodo (en horas)
 
+# WorkPlans
+administrator.dashboard.form.label.number-of-public-workPlans =  Número de planes de trabajo públicos
+administrator.dashboard.form.label.number-of-private-workPlans =  Número de planes de trabajo privados
+administrator.dashboard.form.label.number-of-finished-workPlans =  Número de planes de trabajo terminados
+administrator.dashboard.form.label.number-of-non-finished-workPlans =  Número de planes de trabajo no terminados
+administrator.dashboard.form.label.minimum-workload-workPlans =  Carga de trabajo mínima 
+administrator.dashboard.form.label.maximum-workload-workPlans =  Carga de trabajo máxima
+administrator.dashboard.form.label.average-workload-workPlans =  Carga de trabajo media 
+administrator.dashboard.form.label.deviation-workload-workPlans =  Desviación típica de la carga de trabajo 
+administrator.dashboard.form.label.minimum-period-workPlans =  Periodo mínimo (en horas)
+administrator.dashboard.form.label.maximum-period-workPlans =  Periodo máximo (en horas)
+administrator.dashboard.form.label.average-period-workPlans =  Periodo medio (en horas) 
+administrator.dashboard.form.label.deviation-period-workPlans =  Desviación típica del periodo (en horas)
+
 administrator.dashboard.form.title.application-statuses = Estado de las solicitudes

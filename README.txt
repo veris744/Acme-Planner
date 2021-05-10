@@ -15,4 +15,8 @@ of Seville.
 Github repository link: https://github.com/veris744/Acme-Planner.git
 Github release: https://github.com/veris744/Acme-Planner/releases/tag/1.0.1
 
+Credenciales Clever-cloud:
+- email: isadede@alum.us.es
+- password: contraseñaCC
+
 Hay que escribir /Acme-Planner en la url para que funcione. Se ha modificado la dirección base para que no haya problemas con manager.

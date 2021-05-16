@@ -10,7 +10,7 @@ public class ManagerTaskCreateTest extends AcmePlannerTest {
 
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/create-positive.csv", encoding="utf-8", numLinesToSkip = 1)
-	@Order(10)
+	@Order(20)
 	public void createPositive(final int recordIndex, final String title, final String startPeriod, final String endPeriod, 
 		final String workload, final String description, final String link, final String isPublic) {
 		
@@ -23,7 +23,9 @@ public class ManagerTaskCreateTest extends AcmePlannerTest {
 		super.fillInputBoxIn("workload", workload);
 		super.fillInputBoxIn("description", description);
 		super.fillInputBoxIn("link", link);
-		super.fillInputBoxIn("isPublic", isPublic);
+		if (!Boolean.parseBoolean(isPublic)) {
+			super.fillInputBoxIn("isPublic", null);
+		}
 		super.clickOnSubmitButton("Create");
 		
 		super.clickOnMenu("Manager", "List tasks");
@@ -61,6 +63,9 @@ public class ManagerTaskCreateTest extends AcmePlannerTest {
 		super.fillInputBoxIn("workload", workload);
 		super.fillInputBoxIn("description", description);
 		super.fillInputBoxIn("link", link);
+		if (!Boolean.parseBoolean(isPublic)) {
+			super.fillInputBoxIn("isPublic", null);
+		}
 		super.clickOnSubmitButton("Create");
 		
 		super.checkErrorsExist();

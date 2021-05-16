@@ -6,16 +6,18 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmePlannerTest;
 
-public class ManagerTaskCreateTest extends AcmePlannerTest {
+public class ManagerTaskUpdateTest extends AcmePlannerTest {
 
 	@ParameterizedTest
-	@CsvFileSource(resources = "/manager/task/create-positive.csv", encoding="utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/manager/task/update-positive.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void createPositive(final int recordIndex, final String title, final String startPeriod, final String endPeriod, 
+	public void updatePositive(final int recordIndex, final String title, final String startPeriod, final String endPeriod, 
 		final String workload, final String description, final String link, final String isPublic) {
 		
 		super.signIn("manager", "manager");
-		super.clickOnMenu("Manager", "Create task");
+		super.clickOnMenu("Manager", "List tasks");
+		
+		super.clickOnListingRecord(recordIndex);
 		
 		super.fillInputBoxIn("title", title);
 		super.fillInputBoxIn("startPeriod", startPeriod);
@@ -23,12 +25,10 @@ public class ManagerTaskCreateTest extends AcmePlannerTest {
 		super.fillInputBoxIn("workload", workload);
 		super.fillInputBoxIn("description", description);
 		super.fillInputBoxIn("link", link);
-		if (!Boolean.parseBoolean(isPublic)) {
-			super.fillInputBoxIn("isPublic", null);
-		}
-		super.clickOnSubmitButton("Create");
+		super.fillInputBoxIn("isPublic", null);
 		
-		super.clickOnMenu("Manager", "List tasks");
+		super.clickOnSubmitButton("Update");
+		
 		
 		super.checkColumnHasValue(recordIndex, 0, title);
 		super.checkColumnHasValue(recordIndex, 1, startPeriod);
@@ -49,13 +49,15 @@ public class ManagerTaskCreateTest extends AcmePlannerTest {
 	}
 	
 	@ParameterizedTest
-	@CsvFileSource(resources = "/manager/task/create-negative.csv", encoding="utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/manager/task/update-negative.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(20)
-	public void createNegative(final int recordIndex, final String title, final String startPeriod, final String endPeriod, 
+	public void updateNegative(final int recordIndex, final String title, final String startPeriod, final String endPeriod, 
 		final String workload, final String description, final String link, final String isPublic) {
 		
 		super.signIn("manager", "manager");
-		super.clickOnMenu("Manager", "Create task");
+		super.clickOnMenu("Manager", "List tasks");
+		
+		super.clickOnListingRecord(recordIndex);
 		
 		super.fillInputBoxIn("title", title);
 		super.fillInputBoxIn("startPeriod", startPeriod);
@@ -63,11 +65,10 @@ public class ManagerTaskCreateTest extends AcmePlannerTest {
 		super.fillInputBoxIn("workload", workload);
 		super.fillInputBoxIn("description", description);
 		super.fillInputBoxIn("link", link);
-		if (!Boolean.parseBoolean(isPublic)) {
-			super.fillInputBoxIn("isPublic", null);
-		}
-		super.clickOnSubmitButton("Create");
+		super.fillInputBoxIn("isPublic", null);
 		
+		super.clickOnSubmitButton("Update");
+
 		super.checkErrorsExist();
 		super.signOut();
 	}

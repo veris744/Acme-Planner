@@ -169,7 +169,7 @@
 	<bean id="task01" class="acme.entities.tasks.Task">
 		<property name="title" value="Create a Causes functionality"/>
 		<property name="startPeriod" value="2021/05/01 18:00"/>
-		<property name="endPeriod" value="2021/05/05 18:30"/>
+		<property name="endPeriod" value="2022/05/05 18:30"/>
 		<property name="workload" value="96.30"/>
 		<property name="description" value="As a client, we can create a cause that contains a name and description (string), a budget target (numeric), and an acti-ve non profit organization (string) that will use the budget for the cause."/>
 		<property name="link" value="http://www.spring.com"/>
@@ -180,7 +180,7 @@
 	<bean id="task02" class="acme.entities.tasks.Task">
 		<property name="title" value="Create a technical report"/>
 		<property name="startPeriod" value="2021/05/02 15:30"/>
-		<property name="endPeriod" value="2021/05/03 15:00"/>
+		<property name="endPeriod" value="2022/05/03 15:00"/>
 		<property name="workload" value="24.30"/>
 		<property name="description" value="create a technical report entitled “Métricas de Proceso Ágil y Recursos”."/>
 		<property name="link" value="http://www.scrum.com"/>
@@ -191,7 +191,7 @@
 	<bean id="task03" class="acme.entities.tasks.Task">
 		<property name="title" value="Implement SonarCloud"/>
 		<property name="startPeriod" value="2021/05/03 19:25"/>
-		<property name="endPeriod" value="2021/05/03 21:00"/>
+		<property name="endPeriod" value="2022/05/03 21:00"/>
 		<property name="workload" value="2.35"/>
 		<property name="description" value="Implement SonarCloud in project"/>
 		<property name="link" value="http://www.sonarcloud.com"/>
@@ -202,7 +202,7 @@
 	<bean id="task04" class="acme.entities.tasks.Task">
 		<property name="title" value="Create an appendix"/>
 		<property name="startPeriod" value="2021/05/04 17:00"/>
-		<property name="endPeriod" value="2021/05/04 17:00"/>
+		<property name="endPeriod" value="2022/05/04 17:00"/>
 		<property name="workload" value="24.0"/>
 		<property name="description" value="Create an appendix in the technical report created as a result of implement SonarCloud"/>
 		<property name="link" value="http://www.stackoverflow.com"/>
@@ -213,7 +213,7 @@
 	<bean id="task05" class="acme.entities.tasks.Task">
 		<property name="title" value="Do intesting task"/>
 		<property name="startPeriod" value="2021/04/04 8:00"/>
-		<property name="endPeriod" value="2021/04/15 19:00"/>
+		<property name="endPeriod" value="2022/04/15 19:00"/>
 		<property name="workload" value="10.0"/>
 		<property name="description" value="Do something interesting"/>
 		<property name="link"><null/></property>
@@ -224,7 +224,7 @@
 	<bean id="task06" class="acme.entities.tasks.Task">
 		<property name="title" value="Initiate starter"/>
 		<property name="startPeriod" value="2021/04/01 14:00"/>
-		<property name="endPeriod" value="2021/04/18 14:00"/>
+		<property name="endPeriod" value="2022/04/18 14:00"/>
 		<property name="workload" value="5.5"/>
 		<property name="description" value="Initiate starter in github repository master branch"/>
 		<property name="link"><null/></property>
@@ -235,7 +235,7 @@
 	<bean id="task07" class="acme.entities.tasks.Task">
 		<property name="title" value="Create Documents"/>
 		<property name="startPeriod" value="2021/05/04 8:00"/>
-		<property name="endPeriod" value="2021/05/15 19:00"/>
+		<property name="endPeriod" value="2022/05/15 19:00"/>
 		<property name="workload" value="12.0"/>
 		<property name="description" value="Redactate the documents"/>
 		<property name="link"><null/></property>
@@ -246,7 +246,7 @@
 	<bean id="task08" class="acme.entities.tasks.Task">
 		<property name="title" value="Release the app"/>
 		<property name="startPeriod" value="2021/04/01 14:00"/>
-		<property name="endPeriod" value="2021/06/30 14:00"/>
+		<property name="endPeriod" value="2022/06/30 14:00"/>
 		<property name="workload" value="20"/>
 		<property name="description" value="Prepare a release for the last aplication"/>
 		<property name="link"><null/></property>
@@ -257,7 +257,7 @@
 	<bean id="task09" class="acme.entities.tasks.Task">
 		<property name="title" value="Remove secrets"/>
 		<property name="startPeriod" value="2021/05/04 8:00"/>
-		<property name="endPeriod" value="2021/05/15 19:00"/>
+		<property name="endPeriod" value="2022/05/15 19:00"/>
 		<property name="workload" value="12.0"/>
 		<property name="description" value="Private task remove the secrets"/>
 		<property name="link"><null/></property>
@@ -268,7 +268,7 @@
 	<bean id="task10" class="acme.entities.tasks.Task">
 		<property name="title" value="Push the button"/>
 		<property name="startPeriod" value="2021/03/01 12:00"/>
-		<property name="endPeriod" value="2021/06/02 12:00"/>
+		<property name="endPeriod" value="2022/06/02 12:00"/>
 		<property name="workload" value="1"/>
 		<property name="description" value="Press the big red button"/>
 		<property name="link"><null/></property>
@@ -279,7 +279,7 @@
 	<bean id="task11" class="acme.entities.tasks.Task">
 		<property name="title" value="Bring coffe"/>
 		<property name="startPeriod" value="2021/03/01 12:00"/>
-		<property name="endPeriod" value="2021/12/24 12:00"/>
+		<property name="endPeriod" value="2022/12/24 12:00"/>
 		<property name="workload" value="3"/>
 		<property name="description" value="Buy and bring coffe to the office"/>
 		<property name="link"><null/></property>
@@ -291,7 +291,7 @@
 
 		<property name="title" value="Finish class"/>
 		<property name="startPeriod" value="2021/04/25 12:00"/>
-		<property name="endPeriod" value="2021/05/01 12:00"/>
+		<property name="endPeriod" value="2022/05/01 12:00"/>
 		<property name="workload" value="10"/>
 		<property name="description" value="Finish the class Adoptions"/>
 		<property name="link"><null/></property>
@@ -302,7 +302,7 @@
 	<bean id="task13" class="acme.entities.tasks.Task">
 		<property name="title" value="breath"/>
 		<property name="startPeriod" value="2021/05/04 8:00"/>
-		<property name="endPeriod" value="2021/05/04 19:00"/>
+		<property name="endPeriod" value="2022/05/04 19:00"/>
 		<property name="workload" value="03"/>
 		<property name="description" value="Take a day to breathe"/>
 		<property name="link"><null/></property>
@@ -313,7 +313,7 @@
 	<bean id="task14" class="acme.entities.tasks.Task">
 		<property name="title" value="Repair the web"/>
 		<property name="startPeriod" value="2021/04/25 14:00"/>
-		<property name="endPeriod" value="2021/05/01 19:00"/>
+		<property name="endPeriod" value="2022/05/01 19:00"/>
 		<property name="workload" value="15"/>
 		<property name="description" value="the website is down it need to be repair"/>
 		<property name="link"><null/></property>
@@ -324,7 +324,7 @@
 	<bean id="task15" class="acme.entities.tasks.Task">
 		<property name="title" value="Lookout for the server"/>
 		<property name="startPeriod" value="2021/05/10 8:00"/>
-		<property name="endPeriod" value="2021/05/20 20:00"/>
+		<property name="endPeriod" value="2022/05/01 20:00"/>
 		<property name="workload" value="12.5"/>
 		<property name="description" value="it's hot you need to be careful and mantain the server"/>
 		<property name="link"><null/></property>
@@ -335,7 +335,7 @@
 		<bean id="task16" class="acme.entities.tasks.Task">
 		<property name="title" value="Create task"/>
 		<property name="startPeriod" value="2021/06/01 12:00"/>
-		<property name="endPeriod" value="2021/07/10 09:00"/>
+		<property name="endPeriod" value="2022/07/10 09:00"/>
 		<property name="workload" value="8"/>
 		<property name="description" value="Create a bunch of new tasks"/>
 		<property name="link"><null/></property>
@@ -346,7 +346,7 @@
 	<bean id="task17" class="acme.entities.tasks.Task">
 		<property name="title" value="Bring a laptop"/>
 		<property name="startPeriod" value="2021/05/02 12:00"/>
-		<property name="endPeriod" value="2021/05/03 08:00"/>
+		<property name="endPeriod" value="2022/05/03 08:00"/>
 		<property name="workload" value="2.2"/>
 		<property name="description" value="Bring your personal laptop to the office"/>
 		<property name="link"><null/></property>
@@ -357,7 +357,7 @@
 	<bean id="task18" class="acme.entities.tasks.Task">
 		<property name="title" value="Do somenthing"/>
 		<property name="startPeriod" value="2021/05/04 8:00"/>
-		<property name="endPeriod" value="2021/07/15 12:00"/>
+		<property name="endPeriod" value="2022/07/15 12:00"/>
 		<property name="workload" value="15.5"/>
 		<property name="description" value="Get a new project to do"/>
 		<property name="link"><null/></property>
@@ -368,7 +368,7 @@
 	<bean id="task19" class="acme.entities.tasks.Task">
 		<property name="title" value="Repair the web"/>
 		<property name="startPeriod" value="2021/04/25 14:00"/>
-		<property name="endPeriod" value="2021/05/01 19:00"/>
+		<property name="endPeriod" value="2022/05/01 19:00"/>
 		<property name="workload" value="15"/>
 		<property name="description" value="the website is down it need to be repair"/>
 		<property name="link"><null/></property>
@@ -379,7 +379,7 @@
 	<bean id="task20" class="acme.entities.tasks.Task">
 		<property name="title" value="Lookout for the server"/>
 		<property name="startPeriod" value="2021/05/10 8:00"/>
-		<property name="endPeriod" value="2021/05/20 20:00"/>
+		<property name="endPeriod" value="2022/05/20 20:00"/>
 		<property name="workload" value="12.5"/>
 		<property name="description" value="it's hot you need to be careful and mantain the server"/>
 		<property name="link"><null/></property>
@@ -390,7 +390,7 @@
 			<bean id="task21" class="acme.entities.tasks.Task">
 		<property name="title" value="Create task"/>
 		<property name="startPeriod" value="2021/06/01 12:00"/>
-		<property name="endPeriod" value="2021/07/10 09:00"/>
+		<property name="endPeriod" value="2022/07/10 09:00"/>
 		<property name="workload" value="8"/>
 		<property name="description" value="Create a bunch of new tasks"/>
 		<property name="link"><null/></property>
@@ -401,7 +401,7 @@
 	<bean id="task22" class="acme.entities.tasks.Task">
 		<property name="title" value="Bring a laptop"/>
 		<property name="startPeriod" value="2021/05/02 12:00"/>
-		<property name="endPeriod" value="2021/05/03 08:00"/>
+		<property name="endPeriod" value="2022/05/03 08:00"/>
 		<property name="workload" value="2.2"/>
 		<property name="description" value="Bring your personal laptop to the office"/>
 		<property name="link"><null/></property>
@@ -412,7 +412,7 @@
 	<bean id="task23" class="acme.entities.tasks.Task">
 		<property name="title" value="Do somenthing"/>
 		<property name="startPeriod" value="2021/05/04 8:00"/>
-		<property name="endPeriod" value="2021/07/15 12:00"/>
+		<property name="endPeriod" value="2022/07/15 12:00"/>
 		<property name="workload" value="15.5"/>
 		<property name="description" value="Get a new project to do"/>
 		<property name="link"><null/></property>
@@ -423,7 +423,7 @@
 	<bean id="task24" class="acme.entities.tasks.Task">
 		<property name="title" value="Repair the web"/>
 		<property name="startPeriod" value="2021/04/25 14:00"/>
-		<property name="endPeriod" value="2021/05/01 19:00"/>
+		<property name="endPeriod" value="2022/05/01 19:00"/>
 		<property name="workload" value="15"/>
 		<property name="description" value="the website is down it need to be repair"/>
 		<property name="link"><null/></property>
@@ -434,7 +434,7 @@
 	<bean id="task25" class="acme.entities.tasks.Task">
 		<property name="title" value="Lookout for the server"/>
 		<property name="startPeriod" value="2021/05/10 8:00"/>
-		<property name="endPeriod" value="2021/05/20 20:00"/>
+		<property name="endPeriod" value="2022/05/20 20:00"/>
 		<property name="workload" value="12.5"/>
 		<property name="description" value="it's hot you need to be careful and mantain the server"/>
 		<property name="link"><null/></property>
@@ -595,7 +595,7 @@
 	</bean>
 
 	<bean id="workplan03" class="acme.entities.workPlans.WorkPlan">
-		<property name="title" value="Finished Plan"/>
+		<property name="title" value="Example Plan"/>
 		<property name="startPeriod" value="2021/03/28 12:00"/>
 		<property name="endPeriod" value="2022/04/20 12:00"/>
 		<property name="isPublic" value="true"/>
@@ -638,7 +638,7 @@
 	</bean>
 
 	<bean id="workplan06" class="acme.entities.workPlans.WorkPlan">
-		<property name="title" value="Finished Plan"/>
+		<property name="title" value="Example Plan"/>
 		<property name="startPeriod" value="2021/03/28 12:00"/>
 		<property name="endPeriod" value="2022/06/10 12:00"/>
 		<property name="isPublic" value="true"/>
@@ -651,7 +651,7 @@
 	</bean>
 	
 	<bean id="workplan07" class="acme.entities.workPlans.WorkPlan">
-		<property name="title" value="Finished Plan"/>
+		<property name="title" value="Example Plan"/>
 		<property name="startPeriod" value="2021/03/28 12:00"/>
 		<property name="endPeriod" value="2022/05/02 12:00"/>
 		<property name="isPublic" value="true"/>
@@ -731,7 +731,7 @@
 	</bean>
 	
 	<bean id="workplan13" class="acme.entities.workPlans.WorkPlan">
-		<property name="title" value="Finished Plan"/>
+		<property name="title" value="Example Plan"/>
 		<property name="startPeriod" value="2021/04/28 12:00"/>
 		<property name="endPeriod" value="2022/05/10 12:00"/>
 		<property name="isPublic" value="true"/>
@@ -886,6 +886,14 @@
 				<ref bean="task25"/>
 			</list>
 		</property>
+		<property name="manager" ref="manager4Manager"/>
+	</bean>
+	
+	<bean id="workplan25" class="acme.entities.workPlans.WorkPlan">
+		<property name="title" value="Finished Empty Work Plan"/>
+		<property name="startPeriod" value="2021/04/20 12:00"/>
+		<property name="endPeriod" value="2021/04/30 12:00"/>
+		<property name="isPublic" value="true"/>
 		<property name="manager" ref="manager4Manager"/>
 	</bean>
 

@@ -31,7 +31,7 @@ public class AnonymousTaskShowTest extends AcmePlannerTest {
 	@CsvFileSource(resources = "/anonymous/task/show-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
 	public void showNegative(final int id) {
-		super.navigate("/manager/work-plan/show", "id=" + id); // el id 5000 no existe y el 600 pertenece a una task privada
+		super.navigate("/anonymous/task/show", "id=" + id); // el id 5000 no existe y el 600 pertenece a una task privada
 		super.checkErrorsExist();
 	}
 

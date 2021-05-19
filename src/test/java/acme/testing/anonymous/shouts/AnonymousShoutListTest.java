@@ -1,5 +1,5 @@
 
-package acme.testing.shouts;
+package acme.testing.anonymous.shouts;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
@@ -7,7 +7,7 @@ import org.springframework.core.annotation.Order;
 
 import acme.testing.AcmePlannerTest;
 
-public class ShoutsList extends AcmePlannerTest {
+public class AnonymousShoutListTest extends AcmePlannerTest {
 
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/shouts/list.csv", encoding = "utf-8", numLinesToSkip = 1)
@@ -21,13 +21,6 @@ public class ShoutsList extends AcmePlannerTest {
 		super.checkColumnHasValue(recordIndex, 1, author);
 		super.checkColumnHasValue(recordIndex, 2, text);
 		super.checkColumnHasValue(recordIndex, 3, info);
-
-		super.clickOnListingRecord(recordIndex);
-
-		super.checkInputBoxHasValue("moment", moment);
-		super.checkInputBoxHasValue("author", author);
-		super.checkInputBoxHasValue("text", text);
-		super.checkInputBoxHasValue("info", info);
 
 	}
 

@@ -1,7 +1,7 @@
 /*
  * SqlCommentStatementInspector.java
  *
- * Copyright (c) 2012-2021 Rafael Corchuelo.
+ * Copyright (C) 2012-2021 Rafael Corchuelo.
  *
  * In keeping with the traditional purpose of furthering education and research, it is
  * the policy of the copyright owner to permit non-commercial use and redistribution of
@@ -27,12 +27,13 @@ public class SqlCommentStatementInspector implements StatementInspector {
 
 
 	@Override
-	public String inspect(String sql) {
+	public String inspect(final String sql) {
 		String result;
 
-		result = SQL_COMMENT_PATTERN.matcher(sql).replaceAll("");
+		result = SqlCommentStatementInspector.SQL_COMMENT_PATTERN.matcher(sql).replaceAll("");
 		SqlCommentStatementInspector.log.log(Level.INFO, result);
 
 		return result;
 	}
 }
+

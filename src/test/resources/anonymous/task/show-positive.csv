@@ -1,0 +1,2 @@
+recordIndex,title,startPeriod,endPeriod,workload,description,link
+0,Create a Causes functionality,2021/05/01 18:00,2022/05/05 18:30,96.30,"As a client, we can create a cause that contains a name and description (string), a budget target (numeric), and an acti-ve non profit organization (string) that will use the budget for the cause.",http://www.spring.com

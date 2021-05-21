@@ -8,7 +8,7 @@ import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import acme.features.administrator.parametes.AdministratorParametersRepository;
+import acme.features.administrator.parameters.AdministratorParametersRepository;
 import acme.features.administrator.spamWord.AdministratorSpamWordRepository;
 
 public class SpamWordsValidator implements ConstraintValidator<SpamWordsConstraint, String> {

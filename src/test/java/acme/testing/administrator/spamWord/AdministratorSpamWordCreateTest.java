@@ -1,0 +1,50 @@
+package acme.testing.administrator.spamWord;
+
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+
+import acme.testing.AcmePlannerTest;
+
+public class AdministratorSpamWordCreateTest extends AcmePlannerTest {
+
+	@ParameterizedTest
+	@CsvFileSource(resources = "/administrator/spamWord/create-positive.csv", encoding="utf-8", numLinesToSkip = 1)
+	@Order(10)
+	public void addPositive(final int recordIndex, final String word) {
+		
+		super.signIn("administrator", "administrator");
+		
+		super.clickOnMenu("Administrator", "See spam words");
+		super.clickOnReturnButton("Add word");
+		
+		super.fillInputBoxIn("word", word);
+		super.clickOnSubmitButton("Add");
+
+		super.clickOnMenu("Administrator", "See spam words");
+		super.checkColumnHasValue(recordIndex, 0, word);
+		
+		super.signOut();
+		
+	}
+	
+	@ParameterizedTest
+	@CsvFileSource(resources = "/administrator/spamWord/create-negative.csv", encoding="utf-8", numLinesToSkip = 1)
+	@Order(20)
+	public void addNegative(final int recordIndex, final String word) {
+		
+		super.signIn("administrator", "administrator");
+		
+		super.clickOnMenu("Administrator", "See spam words");
+		super.clickOnReturnButton("Add word");
+		
+		super.fillInputBoxIn("word", word);
+		super.clickOnSubmitButton("Add");
+
+		super.checkErrorsExist();
+		
+		super.signOut();
+		
+	}
+
+}

@@ -1,0 +1,2 @@
+recordIndex,numberOfPublicTasks,numberOfPrivateTasks,numberOfFinishedTasks,numberOfNonFinishedTasks,minimumWorkload,maximumWorkload,averageWorkload,deviationWorkload,minimumPeriod,maximumPeriod,averagePeriod,deviationPeriod
+0,21,4,0,25,1,96.3,14.29,17.93,	8556,15912,9526.78,1476.43

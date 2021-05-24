@@ -9,15 +9,25 @@ import acme.testing.AcmePlannerTest;
 public class ManagerTaskDeleteTest extends AcmePlannerTest {
 
 	@ParameterizedTest
-	@CsvFileSource(resources = "/manager/task/delete.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/manager/task/delete-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void delete(final int recordIndex, final int id) {
+	public void deletePositive(final int recordIndex, final int id) {
 		super.signIn("manager", "manager");
 		super.clickOnMenu("Manager", "List tasks");
 
 		super.clickOnListingRecord(recordIndex);
 		super.clickOnSubmitButton("Delete");
 		super.navigate("/manager/task/show", "id=" + id);
+		super.checkErrorsExist();
+	}
+	
+	
+	@ParameterizedTest
+	@CsvFileSource(resources = "/manager/task/delete-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@Order(20)
+	public void deleteNegative(final int id) {
+		super.signIn("manager", "manager");
+		super.navigate("/manager/task/delete", "id=" + id);
 		super.checkErrorsExist();
 	}
 }

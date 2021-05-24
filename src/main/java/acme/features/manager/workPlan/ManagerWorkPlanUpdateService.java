@@ -116,7 +116,7 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 				final int hora = inicioRecomendado.getHour();
 				final int min = inicioRecomendado.getMinute();
 
-				errors.add("startPeriod", dia + "/" + mes + "/" + anyo + " " + hora + ":" + (min == 0 ? "00" : min));
+				errors.add("startPeriod", anyo + "-" + mes + "-" + dia + " " + hora + ":" + (min == 0 ? "00" : min));
 			}
 			if (!finEntity.isAfter(fin)) {
 				LocalDateTime finRecomendado = fin.plusDays(1);
@@ -128,7 +128,7 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 				final int hora = finRecomendado.getHour();
 				final int min = finRecomendado.getMinute();
 
-				errors.add("endPeriod", dia + "/" + mes + "/" + anyo + " " + hora + ":" + (min == 0 ? "00" : min));
+				errors.add("endPeriod", anyo + "-" + mes + "-" + dia + " " + hora + ":" + (min == 0 ? "00" : min));
 			}
 		}
 

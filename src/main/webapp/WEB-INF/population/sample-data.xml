@@ -692,7 +692,6 @@
 		<property name="isPublic" value="true"/>
 		<property name="tasks">
 			<list>
-				<ref bean="task12"/>
 				<ref bean="task01"/>
 			</list>
 		</property>

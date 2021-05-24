@@ -6,9 +6,9 @@ import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
 import acme.entities.workPlans.WorkPlan;
-import acme.framework.entities.Manager;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository

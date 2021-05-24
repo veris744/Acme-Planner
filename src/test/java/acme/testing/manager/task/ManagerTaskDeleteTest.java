@@ -19,6 +19,8 @@ public class ManagerTaskDeleteTest extends AcmePlannerTest {
 		super.clickOnSubmitButton("Delete");
 		super.navigate("/manager/task/show", "id=" + id);
 		super.checkErrorsExist();
+		
+		super.signOut();
 	}
 	
 	
@@ -29,5 +31,7 @@ public class ManagerTaskDeleteTest extends AcmePlannerTest {
 		super.signIn("manager", "manager");
 		super.navigate("/manager/task/delete", "id=" + id);
 		super.checkErrorsExist();
+		
+		super.signOut();
 	}
 }

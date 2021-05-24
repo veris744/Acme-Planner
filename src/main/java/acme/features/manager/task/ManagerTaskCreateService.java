@@ -48,14 +48,10 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		assert request != null;
 		
 		Task result;
-		Date startdate;
-		Date enddate;
 		Manager manager;
 		
 		manager = this.repository.getManagerById(request.getPrincipal().getActiveRoleId());
 		
-		startdate = new Date(System.currentTimeMillis()-2);
-		enddate = new Date(System.currentTimeMillis()-1);
 		
 		result = new Task();
 		result.setManager(manager);

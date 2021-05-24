@@ -47,7 +47,7 @@ public class ManagerWorkPlanShowService implements AbstractShowService<Manager, 
 		
 		final Collection<Task> tasks = entity.getTasks();
 		final Collection<Task> enabledTask = this.repository.findManyTask(request.getPrincipal().getActiveRoleId()).stream()
-			.filter(x->entity.taskFitsOnPeriod(x))
+			.filter(entity::taskFitsOnPeriod)
 			.filter(x->!tasks.contains(x))
 			.filter(x->!entity.getIsPublic() || x.getIsPublic())
 			.collect(Collectors.toList());

@@ -25,7 +25,7 @@ public class SpamWordsValidator implements ConstraintValidator<SpamWordsConstrai
 	private Double threshold;
 	
 	@Override
-    public void initialize(final SpamWordsConstraint Spam) {
+    public void initialize(final SpamWordsConstraint spam) {
 		this.spamWords = this.spamWordRepository.findWords().stream().collect(Collectors.toList());
 		this.threshold = this.parameters.findThreshold();
     }

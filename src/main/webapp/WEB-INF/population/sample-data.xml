@@ -295,7 +295,7 @@
 		<property name="workload" value="10"/>
 		<property name="description" value="Finish the class Adoptions"/>
 		<property name="link"><null/></property>
-		<property name="isPublic" value="true"/>
+		<property name="isPublic" value="false"/>
 		<property name="manager" ref="managerManager"/>
 	</bean>
 	

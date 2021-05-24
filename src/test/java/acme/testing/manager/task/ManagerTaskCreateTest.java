@@ -23,9 +23,8 @@ public class ManagerTaskCreateTest extends AcmePlannerTest {
 		super.fillInputBoxIn("workload", workload);
 		super.fillInputBoxIn("description", description);
 		super.fillInputBoxIn("link", link);
-		if (!Boolean.parseBoolean(isPublic)) {
-			super.fillInputBoxIn("isPublic", null);
-		}
+		super.fillInputBoxIn("isPublic", isPublic);
+		
 		super.clickOnSubmitButton("Create");
 		
 		super.clickOnMenu("Manager", "List tasks");
@@ -63,9 +62,8 @@ public class ManagerTaskCreateTest extends AcmePlannerTest {
 		super.fillInputBoxIn("workload", workload);
 		super.fillInputBoxIn("description", description);
 		super.fillInputBoxIn("link", link);
-		if (!Boolean.parseBoolean(isPublic)) {
-			super.fillInputBoxIn("isPublic", null);
-		}
+		super.fillInputBoxIn("isPublic", isPublic);
+		
 		super.clickOnSubmitButton("Create");
 		
 		super.checkErrorsExist();

@@ -100,11 +100,6 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 
 			errors.state(request, worklodMinutosMax>=workloadMinutos, "workload", "manager.task.form.error.workloadmax");
 		}
-
-		if(!errors.hasErrors("startPeriod")) {
-			
-			errors.state(request, entity.getStartPeriod().after(java.util.Calendar.getInstance().getTime()), "startPeriod", "manager.task.form.error.startPeriodCurrent");
-		}
 		
 	}
 

@@ -1,4 +1,4 @@
-package acme.features.administrator.parametes;
+package acme.features.administrator.parameters;
 
 import javax.annotation.PostConstruct;
 

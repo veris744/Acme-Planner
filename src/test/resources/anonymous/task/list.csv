@@ -1,0 +1,22 @@
+recordIndex,title,startPeriod,endPeriod,workload,description,link
+0,Create a Causes functionality,2021/05/01 18:00,2022/05/05 18:30,96.30,"As a client, we can create a cause that contains a name and description (string), a budget target (numeric), and an acti-ve non profit organization (string) that will use the budget for the cause.",http://www.spring.com
+1,Release the app,2021/04/01 14:00,2022/06/30 14:00,20.00,"Prepare a release for the last aplication",
+2,	Do somenthing,	2021/05/04 08:00,	2022/07/15 12:00,	15.50,	Get a new project to do,
+3,	Do somenthing,	2021/05/04 08:00,	2022/07/15 12:00,	15.50,	Get a new project to do,
+4,	Repair the web,	2021/04/25 14:00,	2022/05/01 19:00,	15.00,	the website is down it need to be repair,
+5,	Repair the web,	2021/04/25 14:00,	2022/05/01 19:00,	15.00,	the website is down it need to be repair,
+6,	Repair the web,	2021/04/25 14:00,	2022/05/01 19:00,	15.00,	the website is down it need to be repair,	
+7,	Lookout for the server,	2021/05/10 08:00,	2022/05/20 20:00,	12.50,	"it's hot you need to be careful and mantain the server",
+8,	Lookout for the server,	2021/05/10 08:00,	2022/05/01 20:00,	12.50,	"it's hot you need to be careful and mantain the server",
+9,	Lookout for the server,	2021/05/10 08:00,	2022/05/20 20:00,	12.50,	"it's hot you need to be careful and mantain the server",
+10,	Create Documents,	2021/05/04 08:00,	2022/05/15 19:00,	12.00,	Redactate the documents,
+11,	Do intesting task,	2021/04/04 08:00,	2022/04/15 19:00,	10.00,	Do something interesting,
+12, Create task,	2021/06/01 12:00,	2022/07/10 09:00,	8.00,	Create a bunch of new tasks,
+13,	Create task,	2021/06/01 12:00,	2022/07/10 09:00,	8.00,	Create a bunch of new tasks,
+14,	Initiate starter,	2021/04/01 14:00,	2022/04/18 14:00,	5.50,	Initiate starter in github repository master branch,
+15,	Bring coffe,	2021/03/01 12:00,	2022/12/24 12:00,	3.00,	Buy and bring coffe to the office,
+16,	breath,	2021/05/04 08:00,	2022/05/04 19:00,	3.00,	Take a day to breathe,
+17,	Implement SonarCloud,	2021/05/03 19:25,	2022/05/03 21:00,	2.35,	Implement SonarCloud in project,	http://www.sonarcloud.com	
+18,	Bring a laptop,	2021/05/02 12:00,	2022/05/03 08:00,	2.20,	Bring your personal laptop to the office,
+19,	Bring a laptop,	2021/05/02 12:00,	2022/05/03 08:00,	2.20,	Bring your personal laptop to the office,
+20,	Push the button,	2021/03/01 12:00,	2022/06/02 12:00,	1.00,	Press the big red button,

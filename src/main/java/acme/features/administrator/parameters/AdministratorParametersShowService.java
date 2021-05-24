@@ -1,4 +1,4 @@
-package acme.features.administrator.parametes;
+package acme.features.administrator.parameters;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

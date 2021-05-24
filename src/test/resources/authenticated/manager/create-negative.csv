@@ -1,0 +1,4 @@
+recordIndex,username,pass,name,surname,email,company,sector
+0,Cuenta3,cuenta,Cuenta de prueba, Cuenta, cuenta3@test.com,Sector vacío,
+1,Cuenta4,cuenta,Cuenta de prueba, Cuenta, cuenta4@test.com,,Compañia vacía
+1,Cuenta5,cuenta,Cuenta de prueba, Cuenta, cuenta5@test.com,,

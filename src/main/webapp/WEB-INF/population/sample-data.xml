@@ -441,6 +441,83 @@
 		<property name="isPublic" value="true"/>
 		<property name="manager" ref="manager4Manager"/>
 	</bean>
+	
+	<bean id="task26" class="acme.entities.tasks.Task">
+		<property name="title" value="Study"/>
+		<property name="startPeriod" value="2021/05/10 8:00"/>
+		<property name="endPeriod" value="2021/05/12 20:00"/>
+		<property name="workload" value="12"/>
+		<property name="description" value="Study the lessons of the last week"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager4Manager"/>
+	</bean>
+	
+	<bean id="task27" class="acme.entities.tasks.Task">
+		<property name="title" value="Study on your tutorials"/>
+		<property name="startPeriod" value="2021/05/10 8:00"/>
+		<property name="endPeriod" value="2021/05/13 20:00"/>
+		<property name="workload" value="12.5"/>
+		<property name="description" value="Study on your tutorials to learn how to send an email correctly"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager4Manager"/>
+	</bean>
+	
+	<bean id="task28" class="acme.entities.tasks.Task">
+		<property name="title" value="Study on your tutorials"/>
+		<property name="startPeriod" value="2021/05/10 8:00"/>
+		<property name="endPeriod" value="2021/05/14 20:00"/>
+		<property name="workload" value="12.1"/>
+		<property name="description" value="Study on your tutorials to learn how to send an email correctly"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="false"/>
+		<property name="manager" ref="manager4Manager"/>
+	</bean>
+	
+	<bean id="task29" class="acme.entities.tasks.Task">
+		<property name="title" value="See lectures"/>
+		<property name="startPeriod" value="2021/05/10 8:00"/>
+		<property name="endPeriod" value="2021/05/15 20:00"/>
+		<property name="workload" value="12.2"/>
+		<property name="description" value="See the latest conferences"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager4Manager"/>
+	</bean>
+	
+	<bean id="task30" class="acme.entities.tasks.Task">
+		<property name="title" value="Run"/>
+		<property name="startPeriod" value="2021/05/10 8:00"/>
+		<property name="endPeriod" value="2021/05/16 20:00"/>
+		<property name="workload" value="10"/>
+		<property name="description" value="go out to exercise"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager4Manager"/>
+	</bean>
+	
+	<bean id="task31" class="acme.entities.tasks.Task">
+		<property name="title" value="Gym"/>
+		<property name="startPeriod" value="2021/05/10 8:00"/>
+		<property name="endPeriod" value="2021/05/10 20:00"/>
+		<property name="workload" value="1"/>
+		<property name="description" value="Pay gym"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager4Manager"/>
+	</bean>
+	
+	<bean id="task32" class="acme.entities.tasks.Task">
+		<property name="title" value="Play"/>
+		<property name="startPeriod" value="2021/05/10 8:00"/>
+		<property name="endPeriod" value="2021/05/16 20:00"/>
+		<property name="workload" value="15.2"/>
+		<property name="description" value="Pay lol with Malphite"/>
+		<property name="link"><null/></property>
+		<property name="isPublic" value="true"/>
+		<property name="manager" ref="manager4Manager"/>
+	</bean>
 
 	
 	<!-- Managers -->
@@ -615,7 +692,6 @@
 		<property name="isPublic" value="true"/>
 		<property name="tasks">
 			<list>
-				<ref bean="task12"/>
 				<ref bean="task01"/>
 			</list>
 		</property>

@@ -59,13 +59,6 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		
 		result = new Task();
 		result.setManager(manager);
-		result.setTitle("Create a Causes functionality");
-		result.setStartPeriod(startdate);
-		result.setEndPeriod(enddate);
-		result.setWorkload(1.0);
-		result.setDescription("As a client, we can create a cause that contains a name and description (string), a budget target (numeric), and an acti-ve non profit organization (string) that will use the budget for the cause.");
-		result.setLink("http://www.spring.com");
-		result.setIsPublic(true);
 		return result;
 	}
 	

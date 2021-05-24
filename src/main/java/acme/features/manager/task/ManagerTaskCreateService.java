@@ -55,6 +55,7 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		
 		result = new Task();
 		result.setManager(manager);
+		result.setIsPublic(true);
 		return result;
 	}
 	

@@ -121,16 +121,17 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 				if (!inicioEntity.isBefore(inicio)) {
 					LocalDateTime inicioRecomendado = inicio.minusDays(1);
 					inicioRecomendado = LocalDateTime.of(inicioRecomendado.getYear(), inicioRecomendado.getMonth(), inicioRecomendado.getDayOfMonth(), 8, 0);
-
+					final Date iniRec = Date.from(inicioRecomendado.atZone(ZoneId.systemDefault()).toInstant());
 					errors.state(request, false, "startPeriod", "acme.validation.start-period");
-					request.getModel().setAttribute("fechainirec", inicioRecomendado);
+					request.getModel().setAttribute("fechainirec", iniRec);
 				}
 				if (!finEntity.isAfter(fin)) {
 					LocalDateTime finRecomendado = fin.plusDays(1);
 					finRecomendado = LocalDateTime.of(finRecomendado.getYear(), finRecomendado.getMonth(), finRecomendado.getDayOfMonth(), 17, 0);
+					final Date finRec = Date.from(finRecomendado.atZone(ZoneId.systemDefault()).toInstant());
 					
 					errors.state(request, false, "endPeriod", "acme.validation.end-period");
-					request.getModel().setAttribute("fechafinrec", finRecomendado);
+					request.getModel().setAttribute("fechafinrec", finRec);
 				}
 			}
 		}

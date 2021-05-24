@@ -122,25 +122,15 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 					LocalDateTime inicioRecomendado = inicio.minusDays(1);
 					inicioRecomendado = LocalDateTime.of(inicioRecomendado.getYear(), inicioRecomendado.getMonth(), inicioRecomendado.getDayOfMonth(), 8, 0);
 
-					final int dia = inicioRecomendado.getDayOfMonth();
-					final int mes = inicioRecomendado.getMonthValue();
-					final int anyo = inicioRecomendado.getYear();
-					final int hora = inicioRecomendado.getHour();
-					final int min = inicioRecomendado.getMinute();
-
-					errors.add("startPeriod", anyo + "/" + mes + "/" + dia + " " + hora + ":" + (min == 0 ? "00" : min));
+					errors.state(request, false, "startPeriod", "acme.validation.start-period");
+					request.getModel().setAttribute("fechainirec", inicioRecomendado);
 				}
 				if (!finEntity.isAfter(fin)) {
 					LocalDateTime finRecomendado = fin.plusDays(1);
 					finRecomendado = LocalDateTime.of(finRecomendado.getYear(), finRecomendado.getMonth(), finRecomendado.getDayOfMonth(), 17, 0);
-
-					final int dia = finRecomendado.getDayOfMonth();
-					final int mes = finRecomendado.getMonthValue();
-					final int anyo = finRecomendado.getYear();
-					final int hora = finRecomendado.getHour();
-					final int min = finRecomendado.getMinute();
-
-					errors.add("endPeriod", anyo + "/" + mes + "/" + dia + " " + hora + ":" + (min == 0 ? "00" : min));
+					
+					errors.state(request, false, "endPeriod", "acme.validation.end-period");
+					request.getModel().setAttribute("fechafinrec", finRecomendado);
 				}
 			}
 		}

@@ -541,7 +541,7 @@
 		</property>
 	</bean>
 	
-	<bean name="managerManager" class="acme.framework.entities.Manager">
+	<bean name="managerManager" class="acme.entities.roles.Manager">
 		<property name="userAccount" ref="managerUserAccount" />
 		<property name="company" value="Autoescuela LLamas"/>
 		<property name="sector" value="Academico"/>
@@ -570,7 +570,7 @@
 		</property>
 	</bean>
 	
-	<bean name="manager2Manager" class="acme.framework.entities.Manager">
+	<bean name="manager2Manager" class="acme.entities.roles.Manager">
 		<property name="userAccount" ref="manager2UserAccount" />
 			<property name="company" value="Currogas"/>
 			<property name="sector" value="Hosteleria"/>
@@ -601,7 +601,7 @@
 		</property>
 	</bean>
 	
-	<bean name="manager3Manager" class="acme.framework.entities.Manager">
+	<bean name="manager3Manager" class="acme.entities.roles.Manager">
 		<property name="userAccount" ref="manager3UserAccount" />
 		<property name="company" value="Agricorch"/>
 			<property name="sector" value="Agricola"/>
@@ -630,7 +630,7 @@
 		</property>
 	</bean>
 	
-	<bean name="manager4Manager" class="acme.framework.entities.Manager">
+	<bean name="manager4Manager" class="acme.entities.roles.Manager">
 		<property name="userAccount" ref="manager4UserAccount" />
 		<property name="company" value="Testar"/>
 			<property name="sector" value="Informatico"/>

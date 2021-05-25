@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import acme.testing.AcmePlannerTest;
 
 public class ManagerWorkPlanCreateTest extends AcmePlannerTest {
-
+	// En este test probaremos que se crean correctamente los planes de trabajo
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/create-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -40,6 +40,17 @@ public class ManagerWorkPlanCreateTest extends AcmePlannerTest {
 		super.signOut();
 	}
 
+	/* En este test probaremos que al crear los workplans se cumple que:
+	*  El título no debe estar vacío
+	*  El periodo de inicio debe ser anterior al periodo de inicio de las tareas que contiene
+	*  El periodo de fin debe ser posterior al periodo de fin de las tareas que contiene
+	*  El título debe tener entre 1 y 80 caracteres.
+	*  Tanto el periodo de inicio como el de fin no deben estar vacíos
+	*  Tanto el periodo de inicio como el de fin deben ser válidos
+	*  El periodo de inicio debe ser posterior a la fecha actual
+	*  El periodo de fin debe ser posterior al periodo de inicio
+	*/
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)

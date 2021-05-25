@@ -1,4 +1,3 @@
-// En este test se crean shouts correctamente y se comprueba que estan en el listado
 
 package acme.testing.anonymous.shouts;
 
@@ -8,6 +7,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmePlannerTest;
 
+// En este test se crean shouts correctamente y se comprueba que estan en el listado
 public class ShoutCreateTest extends AcmePlannerTest {
 
 	@ParameterizedTest

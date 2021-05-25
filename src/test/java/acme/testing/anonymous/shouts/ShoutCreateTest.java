@@ -1,3 +1,4 @@
+// En este test se crean shouts correctamente y se comprueba que estan en el listado
 
 package acme.testing.anonymous.shouts;
 
@@ -26,7 +27,8 @@ public class ShoutCreateTest extends AcmePlannerTest {
 		super.checkColumnHasValue(recordIndex, 2, text);
 		super.checkColumnHasValue(recordIndex, 3, info);
 	}
-
+// En este test se intenta crear test rellenando mal el formulario, usando palabras de spam o fechas con formato incorrecto 
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/shouts/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)

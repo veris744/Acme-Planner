@@ -1,7 +1,7 @@
 recordIndex,title,startPeriod,endPeriod,workload,isPublic,taskSelected
-0,Work Plan for Acme Jobs application,2021/03/30 12:00,2022/05/07 12:00,98.65,true,764
-1,Private Plan,2021/03/30 13:00,2023/05/04 12:00,101.80,false,757
+0,Work Plan for Acme Jobs application,2021/03/30 12:00,2022/05/07 12:00,98.65,true,92
+1,Private Plan,2021/03/30 13:00,2023/05/04 12:00,101.80,false,85
 2,Example Plan,2021/03/28 12:30,2023/04/20 12:00,5.50,false,-1
-3,Work Plan for Aces,2021/03/29 12:00,2022/07/02 12:00,106.30,true,762
-4,A very private Plan,2021/03/30 12:00,2023/05/05 12:00,98.50,true,751
-5,Example Plan,2021/03/30 12:00,2023/06/10 12:00,15.00,true,748
+3,Work Plan for Aces,2021/03/29 12:00,2022/07/02 12:00,106.30,true,79
+4,A very private Plan,2021/03/30 12:00,2023/05/05 12:00,98.50,true,79
+5,Example Plan,2021/03/30 12:00,2023/06/10 12:00,15.00,true,76

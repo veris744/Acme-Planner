@@ -20,3 +20,6 @@ manager.work-plan.form.button.return = Volver
 
 manager.workplan.form.error.startPeriodBefore = El periodo de ejecución inicial debe ser antes que el final
 manager.workplan.form.error.startPeriodCurrent = La fecha del periodo de ejecución inicial debe ser posterior a la fecha actual
+
+acme.validation.start-period = El periodo de ejecución inicial debería ser: 
+acme.validation.end-period = El periodo de ejecución final debería ser: 

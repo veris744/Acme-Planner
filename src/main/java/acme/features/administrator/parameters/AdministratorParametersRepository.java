@@ -1,4 +1,4 @@
-package acme.features.administrator.parametes;
+package acme.features.administrator.parameters;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

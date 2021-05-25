@@ -19,7 +19,15 @@
 <acme:form>
 	<acme:form-textbox code="manager.work-plan.form.label.title" path="title"/>
 	<acme:form-moment code="manager.work-plan.form.label.startPeriod" path="startPeriod"/>
+	<p style="color:red" >
+	<acme:print value="${fechainirec}"/>
+	</p>
+	
 	<acme:form-moment code="manager.work-plan.form.label.endPeriod" path="endPeriod"/>
+	<p style="color:red"> 
+	<acme:print value="${fechafinrec}"/>
+	</p>
+	
 	<acme:form-checkbox code="manager.work-plan.form.label.isPublic" path="isPublic"/>
 	<jstl:if test="${command != 'create'}">
 		<acme:message	code="manager.work-plan.form.label.taskList"/>

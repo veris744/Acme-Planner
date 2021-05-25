@@ -17,10 +17,10 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
+import acme.entities.roles.Manager;
 import acme.entities.spamWords.SpamWordsConstraint;
 import acme.entities.tasks.Task;
 import acme.framework.entities.DomainEntity;
-import acme.framework.entities.Manager;
 import lombok.Getter;
 import lombok.Setter;
 

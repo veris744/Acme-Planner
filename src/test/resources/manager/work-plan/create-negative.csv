@@ -1,0 +1,8 @@
+recordIndex,title,startPeriod,endPeriod,isPublic
+6,,2022/05/05 12:00,2022/05/10 12:00,true
+7,sex,2022/05/05 12:00,2022/05/10 12:00,true
+8,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa2022/05/05 12:00,2022/05/10 12:00,0.00,true
+9,Fechas null,,,false
+10,Fechas no validas,123,123,false
+11,Fecha inicio anterior a la actual,2019/04/04 12:00,2022/05/10 12:00,true
+12,Fecha final anterior a fecha inicio,2022/05/05 12:00,2022/04/05 12:00,true

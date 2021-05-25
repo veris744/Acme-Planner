@@ -25,7 +25,7 @@ public class ManagerTaskUpdateTest extends AcmePlannerTest {
 		super.fillInputBoxIn("workload", workload);
 		super.fillInputBoxIn("description", description);
 		super.fillInputBoxIn("link", link);
-		super.fillInputBoxIn("isPublic", null);
+		super.fillInputBoxIn("isPublic", isPublic);
 		
 		super.clickOnSubmitButton("Update");
 		
@@ -65,7 +65,7 @@ public class ManagerTaskUpdateTest extends AcmePlannerTest {
 		super.fillInputBoxIn("workload", workload);
 		super.fillInputBoxIn("description", description);
 		super.fillInputBoxIn("link", link);
-		super.fillInputBoxIn("isPublic", null);
+		super.fillInputBoxIn("isPublic", isPublic);
 		
 		super.clickOnSubmitButton("Update");
 

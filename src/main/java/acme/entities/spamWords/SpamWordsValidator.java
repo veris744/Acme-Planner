@@ -8,7 +8,7 @@ import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import acme.features.administrator.parametes.AdministratorParametersRepository;
+import acme.features.administrator.parameters.AdministratorParametersRepository;
 import acme.features.administrator.spamWord.AdministratorSpamWordRepository;
 
 public class SpamWordsValidator implements ConstraintValidator<SpamWordsConstraint, String> {
@@ -25,7 +25,7 @@ public class SpamWordsValidator implements ConstraintValidator<SpamWordsConstrai
 	private Double threshold;
 	
 	@Override
-    public void initialize(final SpamWordsConstraint Spam) {
+    public void initialize(final SpamWordsConstraint spam) {
 		this.spamWords = this.spamWordRepository.findWords().stream().collect(Collectors.toList());
 		this.threshold = this.parameters.findThreshold();
     }

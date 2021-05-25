@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import acme.testing.AcmePlannerTest;
 
 public class ManagerWorkPlanDeleteTest extends AcmePlannerTest{
-	// En este test probaremos que se borran correctamente los planes de trabajo
+	// En este test probaremos que se borran correctamente los planes de trabajo.
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/delete-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -20,7 +20,7 @@ public class ManagerWorkPlanDeleteTest extends AcmePlannerTest{
 		super.navigate("/manager/work-plan/show", "id=" + id);
 		super.checkErrorsExist();
 	}
-	// En este test probaremos que el sistema no permite borrar planes de trabajo de otros usuarios
+	// En este test probaremos que el sistema no permite borrar planes de trabajo de otros usuarios.
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/delete-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)

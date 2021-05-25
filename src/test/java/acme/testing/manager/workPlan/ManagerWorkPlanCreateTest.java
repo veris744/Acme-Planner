@@ -20,9 +20,7 @@ public class ManagerWorkPlanCreateTest extends AcmePlannerTest {
 		super.fillInputBoxIn("title", title);
 		super.fillInputBoxIn("startPeriod", startPeriod);
 		super.fillInputBoxIn("endPeriod", endPeriod);
-		if (!Boolean.parseBoolean(isPublic)) {
-			super.fillInputBoxIn("isPublic", null);
-		}
+		super.fillInputBoxIn("isPublic", isPublic);
 		super.clickOnSubmitButton("Create");
 
 		super.clickOnMenu("Manager", "List my work plans");
@@ -53,9 +51,7 @@ public class ManagerWorkPlanCreateTest extends AcmePlannerTest {
 		super.fillInputBoxIn("title", title);
 		super.fillInputBoxIn("startPeriod", startPeriod);
 		super.fillInputBoxIn("endPeriod", endPeriod);
-		if (!Boolean.parseBoolean(isPublic)) {
-			super.fillInputBoxIn("isPublic", null);
-		}
+		super.fillInputBoxIn("isPublic", isPublic);
 		super.clickOnSubmitButton("Create");
 
 		super.checkErrorsExist();

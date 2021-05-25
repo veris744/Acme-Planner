@@ -5,11 +5,11 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Manager;
 import acme.framework.services.AbstractCreateService;
 
 @Service
@@ -48,23 +48,13 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		assert request != null;
 		
 		Task result;
-		Date startdate;
-		Date enddate;
 		Manager manager;
 		
 		manager = this.repository.getManagerById(request.getPrincipal().getActiveRoleId());
 		
-		startdate = new Date(System.currentTimeMillis()-2);
-		enddate = new Date(System.currentTimeMillis()-1);
 		
 		result = new Task();
 		result.setManager(manager);
-		result.setTitle("Create a Causes functionality");
-		result.setStartPeriod(startdate);
-		result.setEndPeriod(enddate);
-		result.setWorkload(1.0);
-		result.setDescription("As a client, we can create a cause that contains a name and description (string), a budget target (numeric), and an acti-ve non profit organization (string) that will use the budget for the cause.");
-		result.setLink("http://www.spring.com");
 		result.setIsPublic(true);
 		return result;
 	}

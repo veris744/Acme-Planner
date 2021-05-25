@@ -19,10 +19,10 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.roles.Manager;
 import acme.entities.spamWords.SpamWordsConstraint;
 import acme.entities.workPlans.WorkPlan;
 import acme.framework.entities.DomainEntity;
-import acme.framework.entities.Manager;
 import lombok.Getter;
 import lombok.Setter;
 

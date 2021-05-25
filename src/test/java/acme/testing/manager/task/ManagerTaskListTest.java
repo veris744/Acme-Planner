@@ -35,4 +35,17 @@ public class ManagerTaskListTest extends AcmePlannerTest {
 		
 		super.signOut();
 	}
+	
+	@ParameterizedTest
+	@CsvFileSource(resources = "/manager/task/list-negative.csv", encoding="utf-8", numLinesToSkip = 1)
+	@Order(20)
+	public void listNegative(final int id) {
+		
+		super.signIn("manager", "manager");
+
+		super.navigate("/manager/task/show", "id=" + id);
+		super.checkErrorsExist();
+		
+		super.signOut();
+	}
 }

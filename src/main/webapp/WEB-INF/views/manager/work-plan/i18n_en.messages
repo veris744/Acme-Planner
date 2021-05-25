@@ -20,3 +20,6 @@ manager.work-plan.form.button.return = Return
 
 manager.workplan.form.error.startPeriodBefore = Start execution period is after than End execution period
 manager.workplan.form.error.startPeriodCurrent = The date of the start execution period must be after the current date
+
+acme.validation.start-period = The start execution period should be: 
+acme.validation.end-period = The end execution period should be: 

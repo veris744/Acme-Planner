@@ -6,11 +6,11 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
 import acme.entities.workPlans.WorkPlan;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Manager;
 import acme.framework.entities.Principal;
 import acme.framework.services.AbstractShowService;
 
@@ -47,7 +47,7 @@ public class ManagerWorkPlanShowService implements AbstractShowService<Manager, 
 		
 		final Collection<Task> tasks = entity.getTasks();
 		final Collection<Task> enabledTask = this.repository.findManyTask(request.getPrincipal().getActiveRoleId()).stream()
-			.filter(x->entity.taskFitsOnPeriod(x))
+			.filter(entity::taskFitsOnPeriod)
 			.filter(x->!tasks.contains(x))
 			.filter(x->!entity.getIsPublic() || x.getIsPublic())
 			.collect(Collectors.toList());

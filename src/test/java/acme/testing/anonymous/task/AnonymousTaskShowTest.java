@@ -8,7 +8,7 @@ import acme.testing.AcmePlannerTest;
 
 public class AnonymousTaskShowTest extends AcmePlannerTest {
 	
-	//En este test probaremos a mostrar estas tareas publicas y no terminadas (show) desde un usuario anónimo
+	//En este test probaremos a mostrar estas tareas publicas y no terminadas (show) desde un usuario anonimo
 	//En el caso positivo no debería haber ningun problema para mostrar las tareas
 	
 	@ParameterizedTest
@@ -30,7 +30,7 @@ public class AnonymousTaskShowTest extends AcmePlannerTest {
 		
 	}
 	
-	//En este test probaremos a mostrar estas tareas publicas y no terminadas (show) desde un usuario anónimo
+	//En este test probaremos a mostrar estas tareas publicas y no terminadas (show) desde un usuario anonimo
 	//En el caso negativo se prueba que no se puede mostrar una tarea que no existe y una tarea privada
 	
 	@ParameterizedTest

@@ -7,6 +7,9 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedTaskListTest  extends AcmePlannerTest {
+	
+	//En este test probaremos listar las tareas publicas finalizadas para un usuario identificado (List) y mostrar estas tareas (show)
+	//En el caso positivo no debería haber ningun problema al listar o mostrar las tareas
 
 	@ParameterizedTest
 	@CsvFileSource(resources = "/authenticated/task/list.csv", encoding="utf-8", numLinesToSkip = 1)

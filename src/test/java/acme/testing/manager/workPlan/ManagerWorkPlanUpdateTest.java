@@ -50,6 +50,7 @@ public class ManagerWorkPlanUpdateTest extends AcmePlannerTest {
 		super.clickOnSubmitButton("Update");
 		
 		super.checkErrorsExist();
+		
 	}
 	
 }

@@ -1,3 +1,4 @@
+//En este test se comprueba el listado de las palabras de spam
 package acme.testing.administrator.spamWord;
 
 import org.junit.jupiter.api.Order;

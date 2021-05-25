@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import acme.testing.AcmePlannerTest;
 
 public class ManagerWorkPlanListTest extends AcmePlannerTest {
-
+	// En este test probaremos que se muestra correctamente la lista de los planes de trabajo.
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/list.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)

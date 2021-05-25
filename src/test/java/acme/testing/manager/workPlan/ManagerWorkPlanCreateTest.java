@@ -42,6 +42,7 @@ public class ManagerWorkPlanCreateTest extends AcmePlannerTest {
 
 	/* En este test probaremos que al crear los planes de trabajo se cumple que:
 	*  El título no debe estar vacío.
+	*  El título no puede contener spam.
 	*  El periodo de inicio debe ser anterior al periodo de inicio de las tareas que contiene.
 	*  El periodo de fin debe ser posterior al periodo de fin de las tareas que contiene.
 	*  El título debe tener entre 1 y 80 caracteres.

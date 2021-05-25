@@ -24,3 +24,6 @@ Hay que escribir /Acme-Planner en la url para que funcione. Se ha modificado la 
 Para aplicar la recomendación de fechas, hay que poner una fecha de inicio en el workplan posterior a la fecha de inicio de la tarea más
 temprana o poner una fecha de fin en el workplan anterior a la fecha de fin más tardía. Esta recomendación se ha implementado como un
 mensaje de error en la validación cuando hay alguna tarea que no este dentro del rango de fechas del workplan.
+
+
+En el archivo cobertura.png hay una captura de la cobertura.

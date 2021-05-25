@@ -1,4 +1,3 @@
-//En este test comprobamos el listado de los shouts 
 
 package acme.testing.anonymous.shouts;
 
@@ -8,6 +7,7 @@ import org.springframework.core.annotation.Order;
 
 import acme.testing.AcmePlannerTest;
 
+//En este test comprobamos el listado de los shouts 
 public class AnonymousShoutListTest extends AcmePlannerTest {
 
 	@ParameterizedTest

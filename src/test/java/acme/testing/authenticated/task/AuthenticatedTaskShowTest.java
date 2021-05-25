@@ -8,6 +8,9 @@ import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedTaskShowTest extends AcmePlannerTest {
 	
+	//En este test probaremos mostrar tareas publicas finalizadas (show) para un usuario identificado
+	//En el caso positivo no debería haber ningun problema mostrar las tareas
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/authenticated/task/show-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -27,6 +30,9 @@ public class AuthenticatedTaskShowTest extends AcmePlannerTest {
 		super.checkInputBoxHasValue("link", link);
 		
 	}
+	
+	//En este test probaremos mostrar tareas publicas finalizadas (show) para un usuario identificado
+	//En el caso negativo se prueba que hay errores al mostrar tareas no finalizadas y tareas que no existen
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/authenticated/task/show-negative.csv", encoding = "utf-8", numLinesToSkip = 1)

@@ -1,2 +1,2 @@
-recordIndex,numberOfPublicTasks,numberOfPrivateTasks,numberOfFinishedTasks,numberOfNonFinishedTasks,minimumWorkload,maximumWorkload,averageWorkload,deviationWorkload,minimumPeriod,maximumPeriod,averagePeriod,deviationPeriod
-0,21,4,0,25,1,96.3,14.29,17.93,	8556,15912,9526.78,1476.43
+publicTasks,privateTasks,finishedTasks,nonFinishedTasks,minWorkloadTasks,maxWorkloadTasks,avWorkloadTasks,devWorkloadTasks,minPeriodTasks,maxPeriodTasks,avPeriodTasks,devPeriodTasks,publicWP,privateWP,finishedWP,nonFinishedWP,minWorkloadWP,maxWorkloadWP,avWorkloadWP,devWorkloadWP,minPeriodWP,maxPeriodWP,avPeriodWP,devPeriodWP
+27,5,7,25,1,96.3,13.51,16.04,12,15912,7464.92,4109.33,21,4,1,24,0,101.8,26.7,14.39,240,16056,7464.92,2424.22

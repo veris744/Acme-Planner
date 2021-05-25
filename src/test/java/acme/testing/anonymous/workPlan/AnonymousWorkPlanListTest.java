@@ -8,6 +8,7 @@ import acme.testing.AcmePlannerTest;
 
 public class AnonymousWorkPlanListTest extends AcmePlannerTest {
 	
+	//En este test comprobamos el listado de los work plans para un usuario anonimo.
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/work-plan/list.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)

@@ -22,10 +22,7 @@ public class AdministratorDashboardTest extends AcmePlannerTest{
 		final String maxPeriodWP, final String avPeriodWP, final String devPeriodWP) {
 	
 		super.signIn("administrator", "administrator");
-		this.navigateHome();
 		super.clickOnMenu("Administrator", "Dashboard");
-		assert super.getCurrentUrl().equals("administrator/dashboard/show");
-		
 		
 		
 		final String xpath1 = "//table[@id='dashboard']//tr[1]/td";

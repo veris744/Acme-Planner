@@ -1,3 +1,4 @@
+//En este test se hace una actualizacion de una tarea y se comprueba que la actualizacion se ha realizado correctamente
 package acme.testing.manager.task;
 
 import org.junit.jupiter.api.Order;
@@ -47,7 +48,8 @@ public class ManagerTaskUpdateTest extends AcmePlannerTest {
 		
 		super.signOut();
 	}
-	
+
+//En este test se actualiza la informacion de una tarea con patrones de fecha erroneos, fechas no validas, palabras de spam ... y se comprueba que existen errores	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/update-negative.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(20)

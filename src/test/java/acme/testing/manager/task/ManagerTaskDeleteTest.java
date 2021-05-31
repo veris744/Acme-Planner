@@ -6,6 +6,12 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmePlannerTest;
 
+
+//En este test probaremos eliminar las tareas de un manager (Delete)
+//En el caso positivo no debería haber ningun problema al eliminar las tareas del manager
+//En el caso negativo se prueba que un manager no pueda eliminar tareas de otros manager
+
+
 public class ManagerTaskDeleteTest extends AcmePlannerTest {
 
 	@ParameterizedTest

@@ -6,6 +6,10 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmePlannerTest;
 
+//En este test probaremos listar las tareas de un manager (List) y mostrar estas tareas (show)
+//En el caso positivo no debería haber ningun problema al listar o mostrar las tareas
+//En el caso negativo se prueba que un manager no pueda ver tareas de otros manager
+
 public class ManagerTaskListTest extends AcmePlannerTest {
 
 	@ParameterizedTest

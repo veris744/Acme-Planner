@@ -6,6 +6,10 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmePlannerTest;
 
+
+//En este test probaremos mostrar el parámetro theshold (show)
+
+
 public class AdministratorParametersShowTest extends AcmePlannerTest {
 	
 	@ParameterizedTest

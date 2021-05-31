@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 
 import acme.testing.AcmePlannerTest;
 
+// Test que comprueba los elementos del dashboard
 public class AdministratorDashboardTest extends AcmePlannerTest{
 	
 	@ParameterizedTest

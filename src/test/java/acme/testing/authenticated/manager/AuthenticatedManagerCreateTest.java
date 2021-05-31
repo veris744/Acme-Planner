@@ -8,6 +8,7 @@ import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedManagerCreateTest extends AcmePlannerTest{
 
+	// En este test probamos a registrar una nueva cuenta y registrarla como manager.
 	@ParameterizedTest
 	@CsvFileSource(resources = "/authenticated/manager/create-positive.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -32,6 +33,8 @@ public class AuthenticatedManagerCreateTest extends AcmePlannerTest{
 		super.signOut();
 	}
 	
+	// En este test comprobamos que se produce un error al intentar registrar un manager en los siguientes casos:
+	// El campo "company" esta vacio, el campo "sector" esta vacio, o ambos campos estan vacios.
 	@ParameterizedTest
 	@CsvFileSource(resources = "/authenticated/manager/create-negative.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(20)

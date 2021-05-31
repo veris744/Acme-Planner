@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import acme.testing.AcmePlannerTest;
 
 public class ManagerWorkPlanShowTest extends AcmePlannerTest {
-
+	// En este test probaremos que al pulsar sobre un plan de trabajo, todos los datos son correctos.
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/show-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -25,7 +25,8 @@ public class ManagerWorkPlanShowTest extends AcmePlannerTest {
 
 		super.signOut();
 	}
-
+	
+	// En este test probamos que el sistema no permite mostrar un plan de trabajo que no exsiste, o que pertenece a otro usuario.
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/show-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)

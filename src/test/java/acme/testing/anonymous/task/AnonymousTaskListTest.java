@@ -7,7 +7,10 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import acme.testing.AcmePlannerTest;
 
 public class AnonymousTaskListTest extends AcmePlannerTest {
-
+	
+	//En este test se incia sesion como usuario anonimo, pulsa en el boton del menu Anonymous/List non-finished public tasks
+	//donde comprueba que todas las tareas se listan correctamente
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/task/list.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)

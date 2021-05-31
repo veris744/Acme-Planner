@@ -8,6 +8,9 @@ import acme.testing.AcmePlannerTest;
 
 public class AnonymousTaskShowTest extends AcmePlannerTest {
 	
+	//En este test probaremos a mostrar estas tareas publicas y no terminadas (show) desde un usuario anonimo
+	//En el caso positivo no debería haber ningun problema para mostrar las tareas
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/task/show-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -27,11 +30,14 @@ public class AnonymousTaskShowTest extends AcmePlannerTest {
 		
 	}
 	
+	//En este test probaremos a mostrar estas tareas publicas y no terminadas (show) desde un usuario anonimo
+	//En el caso negativo se prueba que no se puede mostrar una tarea que no existe y una tarea privada
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/task/show-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
 	public void showNegative(final int id) {
-		super.navigate("/anonymous/task/show", "id=" + id); // el id 5000 no existe y el 600 pertenece a una task privada
+		super.navigate("/anonymous/task/show", "id=" + id); 
 		super.checkErrorsExist();
 	}
 

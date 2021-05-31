@@ -6,25 +6,17 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmePlannerTest;
 
-
-public class ManagerTaskListTest extends AcmePlannerTest {
-
-
-	//En este test comprobamos que se listan correctamente las tareas de un manager.
+public class ManagerTaskShowTest extends AcmePlannerTest {
+	
+	//En este test probamos que se muestra una tarea correctamente al hacer click en ella.
 	@ParameterizedTest
-	@CsvFileSource(resources = "/manager/task/list.csv", encoding="utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/manager/task/show-positive.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void list(final int recordIndex, final String title, final String startPeriod, final String endPeriod, 
 		final String workload, final String description, final String link, final String isPublic) {
 		
 		super.signIn("manager", "manager");
 		super.clickOnMenu("Manager", "List tasks");
-		
-		
-		super.checkColumnHasValue(recordIndex, 0, title);
-		super.checkColumnHasValue(recordIndex, 1, startPeriod);
-		super.checkColumnHasValue(recordIndex, 2, endPeriod);
-		super.checkColumnHasValue(recordIndex, 3, workload);
 		
 		super.clickOnListingRecord(recordIndex);
 		
@@ -39,5 +31,18 @@ public class ManagerTaskListTest extends AcmePlannerTest {
 		super.signOut();
 	}
 	
-	
+	//En este test comprobamos que se produce un error al intentar mostrar las tareas con las siguientes ids:
+	//5000: No existe, 747 y 749: Tareas de otro manager.
+	@ParameterizedTest
+	@CsvFileSource(resources = "/manager/task/show-negative.csv", encoding="utf-8", numLinesToSkip = 1)
+	@Order(20)
+	public void showNegative(final int id) {
+		
+		super.signIn("manager", "manager");
+
+		super.navigate("/manager/task/show", "id=" + id);
+		super.checkErrorsExist();
+		
+		super.signOut();
+	}
 }

@@ -7,13 +7,10 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import acme.testing.AcmePlannerTest;
 
 
-//En este test probaremos eliminar las tareas de un manager (Delete)
-//En el caso positivo no debería haber ningun problema al eliminar las tareas del manager
-//En el caso negativo se prueba que un manager no pueda eliminar tareas de otros manager
-
 
 public class ManagerTaskDeleteTest extends AcmePlannerTest {
 
+	//En este test probaremos eliminar las tareas de un manager (Delete)
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/delete-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -29,7 +26,8 @@ public class ManagerTaskDeleteTest extends AcmePlannerTest {
 		super.signOut();
 	}
 	
-	
+	//En este test comprobamos que se produce un error al intentar eliminar las tareas con las siguientes ids:
+	//5000: No existe, 747 y 749: Tareas de otro manager.
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/delete-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)

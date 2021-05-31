@@ -8,7 +8,8 @@ import acme.testing.AcmePlannerTest;
 
 public class AnonymousWorkPlanListTest extends AcmePlannerTest {
 	
-	//En este test comprobamos el listado de los work plans para un usuario anonimo.
+	// En este test comprobamos el listado de los work plans para un usuario anonimo.
+	// En esta feature no hemos añadido un listado negativo porque no es posible hacer un test negativo de un listado
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/work-plan/list.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)

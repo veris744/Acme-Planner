@@ -7,7 +7,8 @@ import org.springframework.core.annotation.Order;
 
 import acme.testing.AcmePlannerTest;
 
-//En este test comprobamos el listado de los shouts 
+// En este test comprobamos el listado de los shouts 
+// En esta feature no hemos añadido un listado negativo porque no es posible hacer un test negativo de un listado
 public class AnonymousShoutListTest extends AcmePlannerTest {
 
 	@ParameterizedTest

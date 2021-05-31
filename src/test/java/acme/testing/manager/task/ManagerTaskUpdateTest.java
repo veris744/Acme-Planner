@@ -49,7 +49,22 @@ public class ManagerTaskUpdateTest extends AcmePlannerTest {
 		super.signOut();
 	}
 
-//En este test se actualiza la informacion de una tarea con patrones de fecha erroneos, fechas no validas, palabras de spam ... y se comprueba que existen errores	
+	/* En este test probaremos que al actualizar las tareas se cumple que:
+	*  El título no contiene spam.
+	*  El título no puede contener más de 50 caracteres.
+	*  La fecha de inicio es anterior a la actual.
+	*  La fecha de inicio es posterior a la final.
+	*  El workload es un número negativo.
+	*  La descripción contiene spam.
+	*  Tanto el periodo de inicio como el de fin deben ser válidos.
+	*  El link no tiene el formato correcto.
+	*  El workload no es un número.
+	*  El titulo no está vacio.
+	*  La fecha de inicio no está vacía.
+	*  La fecha de fin no está vacía.
+	*  El workload no está vacío.
+	*  El workload no se ajusta al periodo.
+	*/
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/update-negative.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(20)

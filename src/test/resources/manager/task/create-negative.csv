@@ -1,9 +1,15 @@
-recordIndex,title,startPeriod,endPeriod,workload,description,link,isPublic
-6,sex,2021/07/01 12:00,2021/07/02 10:00,2.00,descripcion,,false
-7,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,2021/07/01 12:00,2021/07/02 10:00,2.00,descripcion,,true
-8,title,2021/05/01 12:00,2021/05/02 10:00,2.00,descripcion,http://www.test.com,false
-9,title,2021/08/01 12:00,2021/07/02 10:00,2.00,descripcion,,true
-10,title,2021/07/01 12:00,2021/07/02 10:00,-2.00,descripcion,,false
-11,title,2021/07/01 12:00,2021/07/02 10:00,2.00,sexo,,true
-13,title,2021/07/01 12:00,2021/07/02 10:00,2.00,descripcion,test,true
-14,title,2021/07/01 12:00,2021/07/02 10:00,test,descripcion,,true
+title,startPeriod,endPeriod,workload,description,link,isPublic
+sex,2022/07/01 12:00,2022/07/02 10:00,2.00,descripcion,,false
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,2022/07/01 12:00,2022/07/02 10:00,2.00,descripcion,,true
+title,2021/05/01 12:00,2021/05/02 10:00,2.00,descripcion,http://www.test.com,false
+title,2022/08/01 12:00,2022/07/02 10:00,2.00,descripcion,,true
+title,2022/07/01 12:00,2022/07/02 10:00,-2.00,descripcion,,false
+title,2022/07/01 12:00,2022/07/02 10:00,2.00,sexo,,true
+title,2022/07/01 12:00,2022/07/02 10:00,2.00,descripcion,test,true
+title,2022/07/01 12:00,2022/07/02 10:00,test,descripcion,,true
+,2022/07/01 12:00,2022/07/02 10:00,2.00,descripcion,,false
+title,,2022/07/02 10:00,2.00,descripcion,,false
+title,2022/07/01 12:00,,2.00,descripcion,,false
+title,2022/07/01 12:00,2022/07/02 10:00,,descripcion,,false
+title,2022/07/01 12:00,2022/07/02 10:00,2.00,,,false
+title,2022/07/01 12:00,2022/07/02 10:00,25.00,descripcion,,false

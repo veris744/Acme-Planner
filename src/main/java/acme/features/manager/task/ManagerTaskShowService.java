@@ -48,15 +48,9 @@ public class ManagerTaskShowService implements AbstractShowService<Manager, Task
 		
 		final Task result;
 		int id;
-		Principal principal;
 		
 		id = request.getModel().getInteger("id");
 		result = this.repository.findOneTaskById(id);
-		
-		principal = request.getPrincipal();
-		
-		assert result.getManager().getUserAccount().getUsername().equals(principal.getUsername());
-
 		
 		return result;
 	}

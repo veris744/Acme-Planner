@@ -6,10 +6,6 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmePlannerTest;
 
-//En el caso positivo no debería haber ningun problema al crear o mostrar las tareas
-//En el caso negativo se prueba que las fechas sean correctas (inicio antes que fin y en el pasado), que el workload sea un número positivo,
-//que no se considere spam, que ni el título ni la descripción superen el limite de caracteres, que el link sea una URL)
-
 public class ManagerTaskCreateTest extends AcmePlannerTest {
 
 	//En este test probamos a crear una tarea para un manager y luego mostrarla.

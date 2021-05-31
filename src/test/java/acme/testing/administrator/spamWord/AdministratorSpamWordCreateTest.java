@@ -1,4 +1,4 @@
-//En este test se crea una nueva palabra de spam y comprueba que este en la lista
+
 package acme.testing.administrator.spamWord;
 
 import org.junit.jupiter.api.Order;
@@ -9,6 +9,7 @@ import acme.testing.AcmePlannerTest;
 
 public class AdministratorSpamWordCreateTest extends AcmePlannerTest {
 
+	//En este test se crea una nueva palabra de spam y comprueba que este en la lista
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/spamWord/create-positive.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -29,7 +30,7 @@ public class AdministratorSpamWordCreateTest extends AcmePlannerTest {
 		
 	}
 
-// En este test se crea una nueva palabra de spam sin rellenar el campo y comprueba que haya un error	
+	//En este test se crea una nueva palabra de spam sin rellenar el campo y comprueba que haya un error	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/spamWord/create-negative.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(20)

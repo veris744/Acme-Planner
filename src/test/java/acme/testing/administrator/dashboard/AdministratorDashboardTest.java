@@ -7,9 +7,9 @@ import org.openqa.selenium.By;
 
 import acme.testing.AcmePlannerTest;
 
-// Test que comprueba los elementos del dashboard
 public class AdministratorDashboardTest extends AcmePlannerTest{
 	
+	//En este test se comprueba que los valores del dashboard se muestran correctamente.
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/dashboard/list.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)

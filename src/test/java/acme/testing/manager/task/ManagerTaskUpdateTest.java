@@ -1,4 +1,3 @@
-//En este test se hace una actualizacion de una tarea y se comprueba que la actualizacion se ha realizado correctamente
 package acme.testing.manager.task;
 
 import org.junit.jupiter.api.Order;
@@ -9,6 +8,7 @@ import acme.testing.AcmePlannerTest;
 
 public class ManagerTaskUpdateTest extends AcmePlannerTest {
 
+	//En este test se hace una actualizacion de una tarea y se comprueba que la actualizacion se ha realizado correctamente
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/update-positive.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)

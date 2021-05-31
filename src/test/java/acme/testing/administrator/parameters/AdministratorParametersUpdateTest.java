@@ -6,12 +6,10 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmePlannerTest;
 
-//En este test probaremos actualizar el threshold (Update)
-//En el caso positivo no debería haber ningun problema al actualizarlo
-//En el caso negativo se prueba que no se acepten valores invalidos (el threshold debe ser un número positivo inferior a 100)
 
 public class AdministratorParametersUpdateTest extends AcmePlannerTest {
 	
+	//En este test probaremos actualizar el threshold correctamente.
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/parameters/update-positive.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -30,7 +28,7 @@ public class AdministratorParametersUpdateTest extends AcmePlannerTest {
 		super.signOut();
 	}
 	
-	
+	//En este test se prueba que no se acepten valores invalidos (el threshold debe ser un número positivo inferior a 100)
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/parameters/update-negative.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(20)

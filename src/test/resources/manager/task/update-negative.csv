@@ -1,7 +1,6 @@
 recordIndex,title,startPeriod,endPeriod,workload,description,link,isPublic
 0,sex,2022/07/01 12:00,2022/07/02 10:00,2.00,descripcion,,false
 1,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,2022/07/01 12:00,2022/07/02 10:00,2.00,descripcion,,true
-2,title,2021/05/01 12:00,2021/05/02 10:00,2.00,descripcion,http://www.test.com,false
 3,title,2022/08/01 12:00,2022/07/02 10:00,2.00,descripcion,,true
 4,title,2022/07/01 12:00,2022/07/02 10:00,-2.00,descripcion,,false
 5,title,2022/07/01 12:00,2022/07/02 10:00,2.00,sexo,,true

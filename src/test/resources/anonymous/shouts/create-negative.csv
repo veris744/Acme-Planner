@@ -1,3 +1,3 @@
-recordIndex,author,text,info
-0,Shout Test,sex,https://www.test.com/
-0,Prueba prueba,Esto es una prueba2,.test2.com/
+author,text,info
+Shout Test,sex,https://www.test.com/
+Prueba prueba,Esto es una prueba2,.test2.com/

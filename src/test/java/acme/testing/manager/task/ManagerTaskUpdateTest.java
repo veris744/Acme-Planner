@@ -53,7 +53,6 @@ public class ManagerTaskUpdateTest extends AcmePlannerTest {
 	*  El título no contiene spam.
 	*  El título no puede contener más de 50 caracteres.
 	*  La fecha de inicio es anterior a la actual.
-	*  La fecha de inicio es posterior a la final.
 	*  El workload es un número negativo.
 	*  La descripción contiene spam.
 	*  Tanto el periodo de inicio como el de fin deben ser válidos.

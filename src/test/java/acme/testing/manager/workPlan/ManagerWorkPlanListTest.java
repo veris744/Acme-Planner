@@ -6,7 +6,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmePlannerTest;
-
+// En esta feature no hemos añadido un listado negativo porque no es posible hacer un test negativo de un listado
 public class ManagerWorkPlanListTest extends AcmePlannerTest {
 	// En este test probaremos que se muestra correctamente la lista de los planes de trabajo.
 	@ParameterizedTest

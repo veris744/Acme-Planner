@@ -1,4 +1,3 @@
-//En este test se comprueba el listado de las palabras de spam
 package acme.testing.administrator.spamWord;
 
 import org.junit.jupiter.api.Order;
@@ -9,6 +8,8 @@ import acme.testing.AcmePlannerTest;
 
 public class AdministratorSpamWordListTest extends AcmePlannerTest {
 
+	// En este test se comprueba el listado de las palabras de spam
+	// En esta feature no hemos añadido un listado negativo porque no es posible hacer un test negativo de un listado
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/spamWord/list.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)

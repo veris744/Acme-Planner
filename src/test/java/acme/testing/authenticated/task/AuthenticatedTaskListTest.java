@@ -8,9 +8,9 @@ import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedTaskListTest  extends AcmePlannerTest {
 	
-	//En este test probaremos listar las tareas publicas finalizadas para un usuario identificado (List) y mostrar estas tareas (show)
-	//En el caso positivo no debería haber ningun problema al listar o mostrar las tareas
-
+	// En este test probaremos listar las tareas publicas finalizadas para un usuario identificado (List) y mostrar estas tareas (show)
+	// En el caso positivo no debería haber ningun problema al listar o mostrar las tareas
+	// En esta feature no hemos añadido un listado negativo porque no es posible hacer un test negativo de un listado
 	@ParameterizedTest
 	@CsvFileSource(resources = "/authenticated/task/list.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)

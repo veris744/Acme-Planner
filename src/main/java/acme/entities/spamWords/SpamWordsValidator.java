@@ -32,18 +32,19 @@ public class SpamWordsValidator implements ConstraintValidator<SpamWordsConstrai
 
     @Override
     public boolean isValid(final String field, final ConstraintValidatorContext cxt) {
-    	
-    	int n;
-    	n = 0;
-    	
-    	for (int i = 0; i< this.spamWords.size(); i++) {
-			if(field.toLowerCase().contains(this.spamWords.get(i)) || 
-				field.toLowerCase().contains(this.spamWords.get(i).replace(" ", ""))) {
-				n += 1;
-			}
-		}
-    	if (n*100/field.split(" ").length > this.threshold) 
-    		return false;
-    	return true;
+        
+        int n;
+        n = 0;
+        
+        for (int i = 0; i< this.spamWords.size(); i++) {
+            if(field.toLowerCase().contains(this.spamWords.get(i))
+                || field.toLowerCase().contains(this.spamWords.get(i).replace(" ", ""))){
+                final int espacios = this.spamWords.get(i).split(" ").length;
+                n+=espacios;
+            }
+        }
+        if (n*100/field.split(" ").length >= this.threshold) 
+            return false;
+        return true;
     }
 }

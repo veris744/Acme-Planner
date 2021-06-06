@@ -8,12 +8,7 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.manager.manager.form.title.create = Become an provider
-authenticated.manager.manager.form.title.update = Update provider data
-
-authenticated.manager.form.label.company = Company: 
-authenticated.manager.form.label.sector = Sector:
+authenticated.manager.manager.form.title.create = Become a manager
 
 authenticated.manager.form.button.create = Register
-authenticated.manager.form.button.update = Update
 authenticated.manager.form.button.return = Return

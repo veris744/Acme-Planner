@@ -17,6 +17,9 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <acme:form>
+	<jstl:if test="${!empty inirec or !empty finrec}">
+		<acme:message code="manager.work-plan.form.suggestedPeriod"/> : <acme:print value="${inirec}"/> - <acme:print value="${finrec}"/>
+	</jstl:if>
 	<acme:form-textbox code="manager.work-plan.form.label.title" path="title"/>
 	<acme:form-moment code="manager.work-plan.form.label.startPeriod" path="startPeriod"/>
 	<p style="color:red" >

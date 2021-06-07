@@ -23,3 +23,5 @@ manager.workplan.form.error.startPeriodCurrent = La fecha del periodo de ejecuci
 
 acme.validation.start-period = El periodo de ejecución inicial debería ser: 
 acme.validation.end-period = El periodo de ejecución final debería ser: 
+
+manager.work-plan.form.suggestedPeriod = Periodo sugerido para el plan de trabajo

@@ -1,7 +1,10 @@
 package acme.features.anonymous.workPlan;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.Date;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -45,7 +48,7 @@ public class AnonymousWorkPlanListService implements AbstractListService<Anonymo
 		
 		current = java.util.Calendar.getInstance().getTime();
 		
-		result = this.repository.findMany(current);
+		result = this.repository.findMany(current).stream().sorted(Comparator.comparing(WorkPlan::getWorkload)).collect(Collectors.toCollection(ArrayList::new));
 		
 		return result;
 	}

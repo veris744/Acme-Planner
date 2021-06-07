@@ -207,6 +207,7 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert entity != null;
 
 		final Integer taskId = request.getModel().getInteger("taskSelected");
+		final Integer taskDeleteId = request.getModel().getInteger("taskDeleteSelected");
 		
 		if (taskId != null && !taskId.equals(-1)) {
 			final Task task = this.repository.findOneTaskById(taskId);
@@ -215,6 +216,17 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 
 			final Collection<Task> ct = entity.getTasks();
 			ct.add(task);
+			entity.setTasks(ct);
+		}
+		
+		if (taskDeleteId != null && !taskDeleteId.equals(-1)) {
+			final Task task = this.repository.findOneTaskById(taskDeleteId);
+			
+			final Collection<Task> ct = entity.getTasks();
+			
+			assert ct.contains(task);
+			
+			ct.remove(task);
 			entity.setTasks(ct);
 		}
 

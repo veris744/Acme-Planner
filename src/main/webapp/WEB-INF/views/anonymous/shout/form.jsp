@@ -19,6 +19,9 @@
 	<acme:form-textbox code="anonymous.shout.form.label.author" path="author"/>
 	<acme:form-textbox code="anonymous.shout.form.label.text" path="text"/>
 	<acme:form-url code="anonymous.shout.form.label.info" path="info"/>
+	<acme:form-moment code="anonymous.shout.form.label.shoutInfo.date" path="shoutInfo.date"/>
+	<acme:form-money code="anonymous.shout.form.label.shoutInfo.money" path="shoutInfo.money"/>
+	<acme:form-checkbox code="anonymous.shout.form.label.shoutInfo.bool" path="shoutInfo.bool"/>
 	
 	<acme:form-submit code="anonymous.shout.form.button.create" action="/anonymous/shout/create"/>
 	<acme:form-return code="anonymous.shout.form.button.return"/>	

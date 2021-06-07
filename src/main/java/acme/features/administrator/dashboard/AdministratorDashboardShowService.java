@@ -52,6 +52,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert model != null;
 
 		request.unbind(entity, model, //
+			"numberPositiveBool", "numberNegativeBool", 
 			"numberOfPublicTasks", "numberOfPrivateTasks", "numberOfFinishedTasks", "numberOfNonFinishedTasks", 
 			"minimumWorkload", "maximumWorkload", "averageWorkload", "deviationWorkload", 
 			"minimumPeriod", "maximumPeriod", "averagePeriod", "deviationPeriod",

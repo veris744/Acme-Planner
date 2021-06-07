@@ -11,6 +11,7 @@ manager.work-plan.form.label.isPublic = Public
 manager.work-plan.form.label.taskList = Tasks:
 manager.work-plan.form.label.empty = No tasks
 manager.work-plan.form.label.addTask = Add a task
+manager.work-plan.form.label.deleteTask = Delete a task
 manager.work-plan.form.label.none = None
 
 manager.work-plan.form.button.create = Create

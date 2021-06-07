@@ -49,6 +49,13 @@
 				<acme:form-option code="${etask.title}" value="${etask.id}"/> 
 			</jstl:forEach>
 		</acme:form-select>
+		
+		<acme:form-select code="manager.work-plan.form.label.deleteTask" path="taskDeleteSelected">
+			<acme:form-option code="manager.work-plan.form.label.none" value="-1"/> 
+			<jstl:forEach var="dtask" items="${taskList}">
+				<acme:form-option code="${dtask.title}" value="${dtask.id}"/> 
+			</jstl:forEach>
+		</acme:form-select>
 	</jstl:if>
 	
 	<acme:form-submit test="${command == 'create'}" code="manager.work-plan.form.button.create" action="/manager/work-plan/create"/>

@@ -5,8 +5,8 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.datatypes.ShoutInfo;
 import acme.entities.shouts.Shout;
+import acme.entities.shouts.ShoutInfo;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -100,10 +100,14 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		
 		moment = new Date(System.currentTimeMillis()-1);
 		entity.setMoment(moment);
-		final ShoutInfo info = entity.getShoutInfo();
+		
+		ShoutInfo info;
+		info = entity.getShoutInfo();
 		info.setMoment2(moment);
+
 		entity.setShoutInfo(info);
 
+		this.repository.save(info);
 		this.repository.save(entity);
 	}
 }

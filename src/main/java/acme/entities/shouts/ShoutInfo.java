@@ -1,8 +1,8 @@
-package acme.datatypes;
+package acme.entities.shouts;
 
 import java.util.Date;
 
-import javax.persistence.Embeddable;
+import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
@@ -13,12 +13,10 @@ import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
-@Embeddable
-@Getter
+@Entity
 @Setter
-@ToString
+@Getter
 public class ShoutInfo extends DomainEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)

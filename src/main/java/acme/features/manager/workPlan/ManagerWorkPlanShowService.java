@@ -66,15 +66,10 @@ public class ManagerWorkPlanShowService implements AbstractShowService<Manager, 
 		if(!tasks.isEmpty()) {
 			final Optional<Date> ini = tasks.stream().min(Comparator.comparing(Task::getStartPeriod)).map(Task::getStartPeriod);
 			final Optional<Date> end = tasks.stream().max(Comparator.comparing(Task::getEndPeriod)).map(Task::getEndPeriod);
-						
-			System.out.println("AAA");
 					
 			if(ini.isPresent() && end.isPresent()) {
 				final LocalDateTime inicio = ini.get().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
 				final LocalDateTime fin = end.get().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
-									
-				System.out.println(inicio);
-				System.out.println(fin);
 							
 				LocalDateTime inicioRecomendado = inicio.minusDays(1);
 				inicioRecomendado = LocalDateTime.of(inicioRecomendado.getYear(), inicioRecomendado.getMonth(), inicioRecomendado.getDayOfMonth(), 8, 0);

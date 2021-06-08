@@ -49,7 +49,6 @@ public class AdministratorSpamWordCreateService implements AbstractCreateService
 		SpamWord result;
 		
 		result = new SpamWord();
-		result.setWord("sex");
 		return result;
 	}
 	

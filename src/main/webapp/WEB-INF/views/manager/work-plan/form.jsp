@@ -20,7 +20,7 @@
 	<jstl:if test="${!empty inirec or !empty finrec}">
 		<acme:message code="manager.work-plan.form.suggestedPeriod"/> : <acme:print value="${inirec}"/> - <acme:print value="${finrec}"/>
 	</jstl:if>
-	<acme:form-textbox code="manager.work-plan.form.label.title" path="title"/>
+	<acme:form-textbox code="manager.work-plan.form.label.title" path="title" placeholder="WorkPlan-001"/>
 	<acme:form-moment code="manager.work-plan.form.label.startPeriod" path="startPeriod"/>
 	<p style="color:red" >
 	<acme:print value="${fechainirec}"/>

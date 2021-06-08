@@ -16,13 +16,13 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="authenticated.user-account.form.label.username" path="username" readonly="true"/>
+	<acme:form-textbox code="authenticated.user-account.form.label.username" path="username" readonly="true" placeholder="username"/>
 	<acme:form-password code="authenticated.user-account.form.label.password" path="password"/>
 	<acme:form-password code="authenticated.user-account.form.label.confirmation" path="confirmation"/>
 	
-	<acme:form-textbox code="authenticated.user-account.form.label.name" path="identity.name"/>
-	<acme:form-textbox code="authenticated.user-account.form.label.surname" path="identity.surname"/>
-	<acme:form-textbox code="authenticated.user-account.form.label.email" path="identity.email"/>
+	<acme:form-textbox code="authenticated.user-account.form.label.name" path="identity.name" placeholder="John"/>
+	<acme:form-textbox code="authenticated.user-account.form.label.surname" path="identity.surname" placeholder="Doe"/>
+	<acme:form-textbox code="authenticated.user-account.form.label.email" path="identity.email" placeholder="johndoe@gmail.com"/>
 	 
 	<acme:form-submit code="authenticated.user-account.form.button.update" action="/authenticated/user-account/update"/>
   	<acme:form-return code="authenticated.user-account.form.button.return"/>

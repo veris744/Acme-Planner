@@ -16,8 +16,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="authenticated.consumer.consumer.form.label.company" path="company"/>
-	<acme:form-textbox code="authenticated.consumer.consumer.form.label.sector" path="sector"/>
+	<acme:form-textbox code="authenticated.consumer.consumer.form.label.company" path="company" placeholder="Google Inc."/>
+	<acme:form-textbox code="authenticated.consumer.consumer.form.label.sector" path="sector" placeholder="Distribución de Sistemas"/>
 	
 	<acme:form-submit test="${command == 'create'}" code="authenticated.consumer.consumer.form.button.create" action="/authenticated/consumer/create"/>
 	<acme:form-submit test="${command == 'update'}" code="authenticated.consumer.consumer.form.button.update" action="/authenticated/consumer/update"/>

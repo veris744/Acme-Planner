@@ -16,7 +16,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-double code="administrator.spam-word.form.label.word" path="word"/>
+	<acme:form-double code="administrator.spam-word.form.label.word" path="word" placeholder="sex"/>
 	
 	<acme:form-submit test="${command == 'create'}" code="administrator.spam-word.form.button.create" action="/administrator/spam-word/create"/>
 	<acme:form-return code="administrator.spam-word.form.button.return"/>	

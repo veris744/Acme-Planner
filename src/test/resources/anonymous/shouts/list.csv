@@ -1,4 +1,4 @@
-recordIndex,moment,author,text,info
+recordIndex,moment,author,text,info, moment2, date, money, bool
 0,2021/05/24 17:20,Ivan LLamas,I'm smart,https://www.spotify.com/es/
 1,2021/05/24 12:30,Beatriz Vergara,I'm a moon,https://www.netflix.com/
 2,2021/05/24 12:30,Jorge Vergara,I'm a sun,https://www.netflix.com/

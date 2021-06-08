@@ -26,6 +26,14 @@
 		<property name="info">
 			<null />
 		</property>
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout02" class="acme.entities.shouts.Shout">
@@ -33,6 +41,14 @@
 		<property name="author" value="Jane Doe" />
 		<property name="text" value="I'm the master of my room!" />
 		<property name="info" value="http://www.example.org" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout03" class="acme.entities.shouts.Shout">
@@ -40,6 +56,14 @@
 		<property name="author" value="Foo Difai" />
 		<property name="text" value="I'm not happy!" />
 		<property name="info"><null /></property>
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout04" class="acme.entities.shouts.Shout">
@@ -47,6 +71,14 @@
 		<property name="author" value="Alipiti doo" />
 		<property name="text" value="I'm shouting!" />
 		<property name="info" value="http://www.web.org" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout05" class="acme.entities.shouts.Shout">
@@ -54,6 +86,14 @@
 		<property name="author" value="Ivan Garcia" />
 		<property name="text" value="I'm angry!" />
 		<property name="info" value="https://twitter.com" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout06" class="acme.entities.shouts.Shout">
@@ -61,6 +101,14 @@
 		<property name="author" value="Alejandro Ruiz" />
 		<property name="text" value="I'm sad" />
 		<property name="info" value="https://mail.google.com/" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout07" class="acme.entities.shouts.Shout">
@@ -70,6 +118,14 @@
 		<property name="info">
 			<null />
 		</property>
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout08" class="acme.entities.shouts.Shout">
@@ -77,6 +133,14 @@
 		<property name="author" value="Alejandro Ruiz" />
 		<property name="text" value="I'm a pro" />
 		<property name="info" value="https://www.youtube.com/" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout09" class="acme.entities.shouts.Shout">
@@ -86,6 +150,14 @@
 		<property name="info">
 			<null />
 		</property>
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout10" class="acme.entities.shouts.Shout">
@@ -93,6 +165,14 @@
 		<property name="author" value="Jorge Vergara" />
 		<property name="text" value="I'm weak" />
 		<property name="info" value="https://youtu.be/nCb_YtUslsw" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout11" class="acme.entities.shouts.Shout">
@@ -100,6 +180,14 @@
 		<property name="author" value="Alejandro Ruiz" />
 		<property name="text" value="I'm a pro" />
 		<property name="info" value="https://www.youtube.com/" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout12" class="acme.entities.shouts.Shout">
@@ -109,6 +197,14 @@
 		<property name="info">
 			<null />
 		</property>
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout13" class="acme.entities.shouts.Shout">
@@ -116,6 +212,14 @@
 		<property name="author" value="Jorge Vergara" />
 		<property name="text" value="I'm weak" />
 		<property name="info" value="https://youtu.be/nCb_YtUslsw" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout14" class="acme.entities.shouts.Shout">
@@ -123,6 +227,14 @@
 		<property name="author" value="Ivan LLamas" />
 		<property name="text" value="I'm smart" />
 		<property name="info" value="https://www.spotify.com/es/" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout15" class="acme.entities.shouts.Shout">
@@ -132,6 +244,14 @@
 		<property name="info">
 			<null />
 		</property>
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout16" class="acme.entities.shouts.Shout">
@@ -139,6 +259,14 @@
 		<property name="author" value="Jorge Vergara" />
 		<property name="text" value="I'm a sun" />
 		<property name="info" value="https://www.netflix.com/" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout17" class="acme.entities.shouts.Shout">
@@ -146,6 +274,14 @@
 		<property name="author" value="Ivan LLamas" />
 		<property name="text" value="I'm a mad man" />
 		<property name="info" value="https://twitter.com" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout18" class="acme.entities.shouts.Shout">
@@ -155,6 +291,14 @@
 		<property name="info">
 			<null />
 		</property>
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout19" class="acme.entities.shouts.Shout">
@@ -162,6 +306,14 @@
 		<property name="author" value="Beatriz Vergara" />
 		<property name="text" value="I'm a moon" />
 		<property name="info" value="https://www.netflix.com/" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id="shout20" class="acme.entities.shouts.Shout">
@@ -169,7 +321,16 @@
 		<property name="author" value="Beatriz Vergara" />
 		<property name="text" value="I'm a fly" />
 		<property name="info" value="https://www.spotify.com/es/" />
+		<property name="shoutInfo">
+			<bean class="acme.datatypes.ShoutInfo">
+				<property name="moment2" value="2021/04/16 17:00" />
+				<property name="date" value="2021/04/16 17:00" />
+				<property name="money" value="$ 20,000.00"/>
+				<property name="bool" value="true"/>
+			</bean>
+		</property>
 	</bean>
+
 
 
 	<!-- Managers -->

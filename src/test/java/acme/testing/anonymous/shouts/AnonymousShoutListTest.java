@@ -14,7 +14,8 @@ public class AnonymousShoutListTest extends AcmePlannerTest {
 	@CsvFileSource(resources = "/anonymous/shouts/list.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void list(final int recordIndex, final String moment,
-	final String author, final String text, final String info) {
+	final String author, final String text, final String info,
+	final String moment2, final String date, final String money, final String bool) {
 
 		super.clickOnMenu("Anonymous", "List recent shouts");
 
@@ -22,6 +23,10 @@ public class AnonymousShoutListTest extends AcmePlannerTest {
 		super.checkColumnHasValue(recordIndex, 1, author);
 		super.checkColumnHasValue(recordIndex, 2, text);
 		super.checkColumnHasValue(recordIndex, 3, info);
+		super.checkColumnHasValue(recordIndex, 4, moment2);
+		super.checkColumnHasValue(recordIndex, 5, date);
+		super.checkColumnHasValue(recordIndex, 6, money);
+		super.checkColumnHasValue(recordIndex, 7, bool);
 
 	}
 

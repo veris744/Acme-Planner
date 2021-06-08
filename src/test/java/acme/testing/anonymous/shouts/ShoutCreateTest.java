@@ -13,7 +13,8 @@ public class ShoutCreateTest extends AcmePlannerTest {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/shouts/create-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void createPositive(final int recordIndex, final String author, final String text, final String info) {
+	public void createPositive(final int recordIndex, final String author, final String text, final String info,
+		final String date, final String money, final String bool) {
 
 		super.clickOnMenu("Anonymous", "Shout!");
 		super.fillInputBoxIn("author", author);
@@ -32,7 +33,8 @@ public class ShoutCreateTest extends AcmePlannerTest {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/shouts/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void createNegative(final String author, final String text, final String info) {
+	public void createNegative(final String author, final String text, final String info,
+		final String date, final String money, final String bool) {
 
 		super.clickOnMenu("Anonymous", "Shout!");
 		super.fillInputBoxIn("author", author);

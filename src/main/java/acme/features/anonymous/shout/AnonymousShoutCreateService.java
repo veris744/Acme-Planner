@@ -10,7 +10,6 @@ import acme.entities.shouts.Shout;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.datatypes.Money;
 import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractCreateService;
 
@@ -67,13 +66,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		result.setText("");
 		result.setMoment(moment);
 		
-		Money money;
-		money = new Money();
-		money.setAmount(0.0);
-		money.setCurrency("EUR");
-		
-		info.setDate(moment);
-		info.setMoney(money);
 		info.setMoment2(moment);
 		info.setBool(false);
 		

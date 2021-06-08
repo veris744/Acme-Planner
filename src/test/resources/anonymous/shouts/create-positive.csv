@@ -1,3 +1,3 @@
-recordIndex,author,text,info
+recordIndex,author,text,info, moment2, date, money, bool
 0,Shout Test,Esto es una prueba,https://www.test.com/
 0,Prueba prueba,Esto es una prueba2,https://www.test2.com/

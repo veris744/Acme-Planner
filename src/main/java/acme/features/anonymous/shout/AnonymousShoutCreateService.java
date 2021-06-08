@@ -61,6 +61,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		Date moment;
 		moment = new Date(System.currentTimeMillis()-1);
 		
+
 		result.setAuthor("");
 		result.setInfo("");
 		result.setText("");
@@ -70,6 +71,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		info.setBool(false);
 		
 		result.setShoutInfo(info);
+
 		return result;
 	}
 	

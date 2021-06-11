@@ -19,6 +19,8 @@ Credenciales Clever-cloud:
 - email: isadede@alum.us.es
 - password: contraseñaCC
 
+URL Clever-cloud: http://app-d2e3d3f5-adae-4ae1-afde-a76d76081b3d.cleverapps.io/Acme-Planner/
+
 Hay que escribir /Acme-Planner en la url para que funcione. Se ha modificado la dirección base para que no haya problemas con manager.
 
 La recomendación de fechas aparece al principio del formulario de actualización de un plan de trabajo. Para que aparezca es necesario

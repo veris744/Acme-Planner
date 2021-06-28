@@ -32,7 +32,7 @@ public class AnonymousShoutListService implements AbstractListService<Anonymous,
 		assert model != null;
 
 		request.unbind(entity, model, "author", "text", "moment", "info", 
-			"shoutInfo.moment2", "shoutInfo.date", "shoutInfo.money", "shoutInfo.bool");
+			"dera.ticket", "dera.deadline", "dera.budget", "dera.important");
 	}
 	
 	@Override

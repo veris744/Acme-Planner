@@ -224,9 +224,52 @@
 			<acme:print value="${deviationPeriodWorkPlans}"/>
 		</td>
 	</tr>
+	
+	
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.average-budget-EUR"/>
+		</th>
+		<td>
+			<acme:print value="${averageBudgetEUR}"/>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.deviation-budget-EUR"/>
+		</th>
+		<td>
+			<acme:print value="${deviationBudgetEUR}"/>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.average-budget-USD"/>
+		</th>
+		<td>
+			<acme:print value="${averageBudgetUSD}"/>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.deviation-budget-USD"/>
+		</th>
+		<td>
+			<acme:print value="${deviationBudgetUSD}"/>
+		</td>
+	</tr>
+	
+	
+	
 </table>
 <div>
-	<canvas id="canvas"></canvas>
+	<canvas id="canvas1"></canvas>
 </div>
 
 <script type="text/javascript">
@@ -254,16 +297,63 @@
 				},
 				
 				title :{
-					display :true,
+					display :false,
 					text :"Numero total de WorkPlans: " + total
 				}
 
 		};
 	
-		var canvas, context;
+		var canvas1, context;
 	
-		canvas = document.getElementById("canvas");
-		context = canvas.getContext("2d");
+		canvas1 = document.getElementById("canvas1");
+		context = canvas1.getContext("2d");
+		new Chart(context, {
+			type : "pie",
+			data : data,
+			options : options
+		});
+	});
+</script>
+<br/>
+<div>
+	<canvas id="canvas2"></canvas>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var data = {
+			labels : [
+					"IMPORTANT", "NON IMPORTANT"
+			],
+			datasets : [
+				{
+					data : [
+								<jstl:out value="${numberImportantDeras}"/>, 
+								<jstl:out value="${numberNonImportantDeras}"/> 
+					],
+				backgroundColor : [
+					'rgba(223, 26, 26, 1)', 'rgba(26, 132, 239, 1)'
+					]
+				}
+			]
+		};
+		var total= <jstl:out value="${numberImportantDeras} + ${numberNonImportantDeras}" />;
+		var options = {
+				legend : {
+					display : true
+				},
+				
+				title :{
+					display :false,
+					text :"Numero total de Deras: " + total
+				}
+
+		};
+	
+		var canvas2, context;
+	
+		canvas2 = document.getElementById("canvas2");
+		context = canvas2.getContext("2d");
 		new Chart(context, {
 			type : "pie",
 			data : data,
@@ -272,3 +362,50 @@
 	});
 </script>
 
+<br/>
+<div>
+	<canvas id="canvas3"></canvas>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var data = {
+			labels : [
+					"SHOUT WITH BUDGET 0", "OTHER SHOUTS"
+			],
+			datasets : [
+				{
+					data : [
+								<jstl:out value="${numberShouts0Budget}"/>, 
+								<jstl:out value="${numberShouts} - ${numberShouts0Budget}"/> 
+					],
+				backgroundColor : [
+					'rgba(223, 26, 26, 1)', 'rgba(26, 132, 239, 1)'
+					]
+				}
+			]
+		};
+		var total= <jstl:out value="${numberShouts}" />;
+		var options = {
+				legend : {
+					display : true
+				},
+				
+				title :{
+					display :false,
+					text :"Number of Shouts: " + total
+				}
+
+		};
+	
+		var canvas3, context;
+	
+		canvas3 = document.getElementById("canvas3");
+		context = canvas3.getContext("2d");
+		new Chart(context, {
+			type : "pie",
+			data : data,
+			options : options
+		});
+	});
+</script>

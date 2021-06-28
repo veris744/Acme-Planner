@@ -15,6 +15,7 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.deras.Dera;
 import acme.entities.spamWords.SpamWordsConstraint;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -49,5 +50,5 @@ public class Shout extends DomainEntity {
 	@NotNull
 	@Valid
 	@OneToOne(optional=true)
-	protected ShoutInfo			shoutInfo;
+	protected Dera			dera;
 }

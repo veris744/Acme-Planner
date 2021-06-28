@@ -41,5 +41,10 @@ administrator.dashboard.form.label.maximum-period-workPlans =  Maximum period (i
 administrator.dashboard.form.label.average-period-workPlans =  Average period (in hours) 
 administrator.dashboard.form.label.deviation-period-workPlans =  Deviation period (in hours) 
 
+administrator.dashboard.form.label.average-budget-EUR = Average EUR budget
+administrator.dashboard.form.label.deviation-budget-EUR = Deviation EUR budget
+administrator.dashboard.form.label.average-budget-USD = Average USD budget
+administrator.dashboard.form.label.deviation-budget-USD = Deviation USD budget
+
 administrator.dashboard.form.title.application-statuses = Application statuses
 

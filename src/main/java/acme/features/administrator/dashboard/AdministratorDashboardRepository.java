@@ -18,6 +18,7 @@ import java.util.Date;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.shouts.Shout;
 import acme.entities.tasks.Task;
 import acme.entities.workPlans.WorkPlan;
 import acme.framework.repositories.AbstractRepository;
@@ -83,5 +84,28 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select w from WorkPlan w")
 	Collection<WorkPlan> getWorkPlans();
 	
+	@Query("select s from Shout s where s.dera.important = true")
+	Collection<Shout> getImportantDeras();
 
+	@Query("select s from Shout s where s.dera.important = false")
+	Collection<Shout> getNonImportantDeras();
+
+	@Query("select s from Shout s where s.dera.budget.amount = 0.00")
+	Collection<Shout> getNumberShouts0Budget();
+
+	@Query("select s from Shout s")
+	Collection<Shout> getNumberShouts();
+	
+	@Query("select avg(s.dera.budget.amount) from Shout s where s.dera.budget.currency = 'EUR'")
+	Double averageBudgetEUR();
+
+	@Query("select sum((s.dera.budget.amount - :average)*(s.dera.budget.amount - :average)) from Shout s where s.dera.budget.currency = 'EUR'")
+	Double deviationBudgetEUR(Double average);
+	
+
+	@Query("select avg(s.dera.budget.amount) from Shout s where s.dera.budget.currency = 'USD'")
+	Double averageBudgetUSD();
+
+	@Query("select sum((s.dera.budget.amount - :average)*(s.dera.budget.amount - :average)) from Shout s where s.dera.budget.currency = 'USD'")
+	Double deviationBudgetUSD(Double average);
 }

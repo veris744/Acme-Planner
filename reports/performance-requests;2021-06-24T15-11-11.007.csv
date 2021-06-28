@@ -1,0 +1,31 @@
+timestamp;simple-path;time;;time;
+2021-06-24 15:11:18.759;/master/welcome;3638;;;
+2021-06-24 15:11:19.103;/master/welcome;297;;Media;667,43
+2021-06-24 15:11:20.924;/master/sign-in;1682;;Error típico;120,07
+2021-06-24 15:11:22.221;/master/welcome;599;;Mediana;591,00
+2021-06-24 15:11:24.426;/master/welcome;219;;Moda;599,00
+2021-06-24 15:11:25.136;/master/welcome;599;;Desviación estándar;657,65
+2021-06-24 15:11:25.514;/master/welcome;189;;Varianza de la muestra;432.499,22
+2021-06-24 15:11:26.833;/anonymous/shout/list;1127;;Curtosis;14,69
+2021-06-24 15:11:29.956;/master/welcome;204;;Coeficiente de asimetría;3,47
+2021-06-24 15:11:30.722;/anonymous/shout/list;598;;Rango;3.465,00
+2021-06-24 15:11:37.646;/master/welcome;257;;Mínimo;173,00
+2021-06-24 15:11:37.892;/master/welcome;217;;Máximo;3.638,00
+2021-06-24 15:11:38.588;/master/sign-in;589;;Suma;20.023,00
+2021-06-24 15:11:39.855;/master/welcome;596;;Cuenta;30,00
+2021-06-24 15:11:41.469;/master/welcome;207;;Nivel de confianza(95,0%);245,57
+2021-06-24 15:11:42.178;/master/welcome;589;;;
+2021-06-24 15:11:42.429;/master/welcome;173;;;
+2021-06-24 15:11:43.755;/anonymous/shout/create;1149;;;
+2021-06-24 15:11:45.44;/master/welcome;613;;;
+2021-06-24 15:11:46.214;/anonymous/shout/list;599;;;
+2021-06-24 15:11:47.158;/master/welcome;185;;;
+2021-06-24 15:11:47.924;/anonymous/shout/create;595;;;
+2021-06-24 15:11:49.956;/master/welcome;1177;;;
+2021-06-24 15:11:50.709;/anonymous/shout/list;582;;;
+2021-06-24 15:11:52.949;/master/welcome;485;;;
+2021-06-24 15:11:53.73;/anonymous/shout/create;597;;;
+2021-06-24 15:11:55.51;/anonymous/shout/create;607;;;
+2021-06-24 15:11:56.057;/master/welcome;472;;;
+2021-06-24 15:11:56.823;/anonymous/shout/create;593;;;
+2021-06-24 15:11:58.241;/anonymous/shout/create;589;;;

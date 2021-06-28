@@ -1,0 +1,3 @@
+timestamp,test-class,test-method,time,description,result
+2021-06-24 15:06:46.073,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,3730,"[1] recordIndex=0, moment=2021/06/24 12:30, author=Beatriz Vergara, text=I'm a fly, info=https://www.spotify.com/es/, ticket=aaa-210624-dp, deadline=2021/10/02 17:00, budget=EUR 20.00, important=true",OK
+2021-06-24 15:06:48.233,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1937,"[2] recordIndex=1, moment=2021/06/24 12:30, author=Beatriz Vergara, text=I'm a moon, info=https://www.netflix.com/, ticket=aaa-210624-dd, deadline=2021/10/02 17:00, budget=EUR 20.00, important=true",Expected value 'aaa-210624-dd' in attribute 4 of record 1, but found 'aad-210624-dd'

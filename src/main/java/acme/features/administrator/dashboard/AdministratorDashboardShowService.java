@@ -58,7 +58,9 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 			"numberOfPublicWorkPlans","numberOfPrivateWorkPlans","numberOfFinishedWorkPlans",
 			"numberOfNonFinishedWorkPlans","minimumWorkloadWorkPlans","maximumWorkloadWorkPlans",
 			"averageWorkloadWorkPlans","deviationWorkloadWorkPlans","minimumPeriodWorkPlans",
-			"maximumPeriodWorkPlans","averagePeriodWorkPlans","deviationPeriodWorkPlans");
+			"maximumPeriodWorkPlans","averagePeriodWorkPlans","deviationPeriodWorkPlans",
+			"numberImportantDeras", "numberNonImportantDeras", "numberShouts0Budget", "numberShouts"
+			,"averageBudgetEUR", "deviationBudgetEUR", "averageBudgetUSD", "deviationBudgetUSD");
 	}
 
 	@Override
@@ -95,6 +97,14 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		Double maximumPeriodWorkPlans;
 		Double averagePeriodWorkPlans;
 		Double deviationPeriodWorkPlans;
+		Integer numberImportantDeras;
+		Integer numberNonImportantDeras;
+		Integer numberShouts0Budget;
+		Integer numberShouts;
+		Double averageBudgetEUR;
+		Double deviationBudgetEUR;
+		Double averageBudgetUSD;
+		Double deviationBudgetUSD;
 
 
 
@@ -161,7 +171,14 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		deviationWorkloadWorkPlans = Math.sqrt(Math.pow((this.repository.getWorkPlans().stream().
 			mapToDouble(WorkPlan::getWorkload).iterator().next()-this.repository.getWorkPlans().stream().
 			mapToDouble(WorkPlan::getWorkload).average().orElse(0)),2)/this.repository.getWorkPlans().size());
-
+		numberImportantDeras = this.repository.getImportantDeras().size();
+		numberNonImportantDeras = this.repository.getNonImportantDeras().size();
+		numberShouts0Budget = this.repository.getNumberShouts0Budget().size();
+		numberShouts = this.repository.getNumberShouts().size();
+		averageBudgetEUR = this.repository.averageBudgetEUR();
+		averageBudgetUSD = this.repository.averageBudgetUSD();
+		deviationBudgetEUR = this.repository.deviationBudgetEUR(averageBudgetEUR);
+		deviationBudgetUSD = this.repository.deviationBudgetUSD(averageBudgetUSD);
 		
 		result = new Dashboard();
 		result.setNumberOfPublicTasks(numberOfPublicTasks);
@@ -189,9 +206,15 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setAveragePeriodWorkPlans(averagePeriodWorkPlans);
 		result.setDeviationPeriodWorkPlans(deviationPeriodWorkPlans);
 		result.setDeviationWorkloadWorkPlans(deviationWorkloadWorkPlans);
+		result.setNumberImportantDeras(numberImportantDeras);
+		result.setNumberNonImportantDeras(numberNonImportantDeras);
+		result.setNumberShouts0Budget(numberShouts0Budget);
+		result.setNumberShouts(numberShouts);
+		result.setAverageBudgetEUR(averageBudgetEUR);
+		result.setAverageBudgetUSD(averageBudgetUSD);
+		result.setDeviationBudgetEUR(deviationBudgetEUR);
+		result.setDeviationBudgetUSD(deviationBudgetUSD);
 
 		return result;
 	}
-
-	
 }

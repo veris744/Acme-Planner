@@ -54,6 +54,14 @@ public class Dashboard implements Serializable {
 	Double						averagePeriodWorkPlans;
 	Double 						deviationPeriodWorkPlans;
 
+	Integer						numberImportantDeras;
+	Integer						numberNonImportantDeras;
+	Integer						numberShouts0Budget;
+	Integer						numberShouts;
+	Double						averageBudgetEUR;
+	Double						deviationBudgetEUR;
+	Double						averageBudgetUSD;
+	Double						deviationBudgetUSD;
 	// Derived attributes -----------------------------------------------------
 
 	// Relationships ----------------------------------------------------------

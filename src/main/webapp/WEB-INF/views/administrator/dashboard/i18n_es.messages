@@ -40,5 +40,10 @@ administrator.dashboard.form.label.minimum-period-workPlans =  Periodo mínimo (
 administrator.dashboard.form.label.maximum-period-workPlans =  Periodo máximo (en horas)
 administrator.dashboard.form.label.average-period-workPlans =  Periodo medio (en horas) 
 administrator.dashboard.form.label.deviation-period-workPlans =  Desviación típica del periodo (en horas)
+administrator.dashboard.form.label.average-budget-EUR = Budget de EUR medio
+administrator.dashboard.form.label.deviation-budget-EUR = Desviación del budget de EUR
+administrator.dashboard.form.label.average-budget-USD = Budget de USD medio
+administrator.dashboard.form.label.deviation-budget-USD = Desviación del budget de USD
+
 
 administrator.dashboard.form.title.application-statuses = Estado de las solicitudes

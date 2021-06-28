@@ -16,12 +16,12 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="anonymous.shout.form.label.author" path="author"/>
-	<acme:form-textbox code="anonymous.shout.form.label.text" path="text"/>
+	<acme:form-textbox code="anonymous.shout.form.label.author" path="author" placeholder="John Doe"/>
+	<acme:form-textbox code="anonymous.shout.form.label.text" path="text" placeholder = "Lorem ipsu!"/>
 	<acme:form-url code="anonymous.shout.form.label.info" path="info"/>
-	<acme:form-moment code="anonymous.shout.form.label.shoutInfo.date" path="shoutInfo.date"/>
-	<acme:form-money code="anonymous.shout.form.label.shoutInfo.money" path="shoutInfo.money"/>
-	<acme:form-checkbox code="anonymous.shout.form.label.shoutInfo.bool" path="shoutInfo.bool"/>
+	<acme:form-moment code="anonymous.shout.form.label.dera.deadline" path="dera.deadline"/>
+	<acme:form-money code="anonymous.shout.form.label.dera.budget" path="dera.budget"/>
+	<acme:form-checkbox code="anonymous.shout.form.label.dera.important" path="dera.important"/>
 	
 	<acme:form-submit code="anonymous.shout.form.button.create" action="/anonymous/shout/create"/>
 	<acme:form-return code="anonymous.shout.form.button.return"/>	

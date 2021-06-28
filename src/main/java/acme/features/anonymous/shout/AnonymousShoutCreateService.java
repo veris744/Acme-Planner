@@ -1,12 +1,14 @@
 package acme.features.anonymous.shout;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.deras.Dera;
 import acme.entities.shouts.Shout;
-import acme.entities.shouts.ShoutInfo;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -45,7 +47,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		assert model != null;
 
 		request.unbind(entity, model, "author", "text", "info", 
-			"shoutInfo.date", "shoutInfo.money", "shoutInfo.bool");
+			"dera.deadline", "dera.budget", "dera.important");
 	}
 	
 	@Override
@@ -55,11 +57,11 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		Shout result;
 		result = new Shout();
 		
-		ShoutInfo info;
-		info = new ShoutInfo();
+		Dera dera;
+		dera = new Dera();
 		
 		Date moment;
-		moment = new Date(System.currentTimeMillis()-1);
+		moment = new Date(System.currentTimeMillis());
 		
 
 		result.setAuthor("");
@@ -67,10 +69,27 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		result.setText("");
 		result.setMoment(moment);
 		
-		info.setMoment2(moment);
-		info.setBool(false);
+		LocalDate localDate;
+		localDate = moment.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 		
-		result.setShoutInfo(info);
+		String year;
+		year = String.valueOf(localDate.getYear()).substring(2);
+		
+		String month;
+		month = String.valueOf(localDate.getMonthValue());
+		if (month.length() == 1)
+			month = "0"+month;
+		
+
+		String day;
+		day = String.valueOf(localDate.getDayOfMonth());
+		if (day.length() == 1)
+			day = "0"+day;
+		
+		dera.setTicket("aaa-"+ year + month + day+ "-aa");
+		dera.setImportant(false);
+		
+		result.setDera(dera);
 
 		return result;
 	}
@@ -82,13 +101,18 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		assert entity != null;
 		assert errors != null;
 
-		boolean isAcceptedCurrency;
+		boolean isAcceptedCurrency, isOneWeekAhead;
 		
 		
-		isAcceptedCurrency = entity.getShoutInfo().getMoney().getCurrency().equals("EUR") ||
-			entity.getShoutInfo().getMoney().getCurrency().equals("DOL");
-		errors.state(request, isAcceptedCurrency, "shoutInfo.money", "Must be EUR or DOL");
+		isAcceptedCurrency = entity.getDera().getBudget().getCurrency().equals("EUR") ||
+			entity.getDera().getBudget().getCurrency().equals("USD");
+		errors.state(request, isAcceptedCurrency, "dera.budget", "Must be EUR or USD");
 		
+
+		LocalDate localDate;
+		localDate = entity.getDera().getDeadline().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+		isOneWeekAhead = localDate.isAfter(LocalDate.now().plusDays(7)) || localDate.equals(LocalDate.now().plusDays(7));
+		errors.state(request, isOneWeekAhead, "dera.deadline", "Must be at least 7 deays ahead");
 	}
 	
 	@Override
@@ -101,13 +125,20 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		moment = new Date(System.currentTimeMillis()-1);
 		entity.setMoment(moment);
 		
-		ShoutInfo info;
-		info = entity.getShoutInfo();
-		info.setMoment2(moment);
+		Dera dera;
+		dera = entity.getDera();
+		
+		LocalDate localDate;
+		localDate = moment.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 
-		entity.setShoutInfo(info);
+		String year;
+		year = String.valueOf(localDate.getYear()).substring(2);
 
-		this.repository.save(info);
+		dera.setTicket("aaa-"+ year + localDate.getMonthValue() + localDate.getDayOfMonth() + "-aa");
+		
+		entity.setDera(dera);;
+
+		this.repository.save(dera);
 		this.repository.save(entity);
 	}
 }

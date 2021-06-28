@@ -20,8 +20,8 @@
 	<acme:list-column code="anonymous.shout.list.label.author" path="author" />
 	<acme:list-column code="anonymous.shout.list.label.text" path="text" />
 	<acme:list-column code="anonymous.shout.list.label.info" path="info" />
-	<acme:list-column code="anonymous.shout.list.label.shoutInfo.moment2" path="shoutInfo.moment2"/>
-	<acme:list-column code="anonymous.shout.list.label.shoutInfo.date" path="shoutInfo.date"/>
-	<acme:list-column code="anonymous.shout.list.label.shoutInfo.money" path="shoutInfo.money"/>
-	<acme:list-column code="anonymous.shout.list.label.shoutInfo.bool" path="shoutInfo.bool"/>
+	<acme:list-column code="anonymous.shout.list.label.dera.ticket" path="dera.ticket"/>
+	<acme:list-column code="anonymous.shout.list.label.dera.deadline" path="dera.deadline"/>
+	<acme:list-column code="anonymous.shout.list.label.dera.budget" path="dera.budget"/>
+	<acme:list-column code="anonymous.shout.list.label.dera.important" path="dera.important"/>
 </acme:list>

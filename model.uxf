@@ -658,14 +658,13 @@ bg=blue</panel_attributes>
       <w>259</w>
       <h>98</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;&gt;
-ShoutInfo
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;&gt;Dera
 
 --
-+ moment2: Date {NotNull, temporal(TIMESTAMP),Past}
-+ date: String {NotBlank}
-+ money: Money {NotBlank}
-+ bool: Boolean {notNull}</panel_attributes>
++ ticket: String {NotNull}
++ deadline: Date {NotBlank, temporal(TIMESTAMP)}
++ budget: Money {NotBlank}
++ important: Boolean {notNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

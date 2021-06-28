@@ -1,0 +1,5 @@
+timestamp,test-class,test-method,time,description,result
+2021-06-24 14:58:49.373,acme.testing.anonymous.shouts.ShoutCreateTest,createPositive,3968,"[1] recordIndex=0, author=Shout Test, text=Esto es una prueba, info=https://www.test.com/, deadline=2022/09/16 17:00, budget=USD 80.00, important=true",Expected value 'Shout Test' in attribute 1 of record 0, but found 'Beatriz Vergara'
+2021-06-24 14:58:52.821,acme.testing.anonymous.shouts.ShoutCreateTest,createPositive,3214,"[2] recordIndex=0, author=Prueba prueba, text=Esto es una prueba2, info=https://www.test2.com/, deadline=2020/09/16 17:00, budget=EUR 80.00, important=false",Expected value 'Prueba prueba' in attribute 1 of record 0, but found 'Shout Test'
+2021-06-24 14:58:55.533,acme.testing.anonymous.shouts.ShoutCreateTest,createNegative,2437,"[1] author=Shout Test, text=sex, info=https://www.test.com/, deadline=2020/09/16 17:00, budget=USD 80.00, important=true",OK
+2021-06-24 14:58:58.103,acme.testing.anonymous.shouts.ShoutCreateTest,createNegative,2314,"[2] author=Prueba prueba, text=Esto es una prueba2, info=.test2.com/, deadline=2020/09/16 17:00, budget=CCC 80.00, important=false",OK

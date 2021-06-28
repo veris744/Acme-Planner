@@ -1,4 +1,4 @@
-package acme.entities.shouts;
+package acme.entities.deras;
 
 import java.util.Date;
 
@@ -7,7 +7,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -17,23 +17,21 @@ import lombok.Setter;
 @Entity
 @Setter
 @Getter
-public class ShoutInfo extends DomainEntity {
+public class Dera extends DomainEntity {
 
-	@Temporal(TemporalType.TIMESTAMP)
+	@Pattern(regexp="^\\w{3}-\\d{6}-\\w{2}$")
 	@NotNull
-	@Past
-	protected Date				moment2;
+	protected String				ticket;
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
-	@Past
-	protected Date				date;
+	protected Date				deadline;
 	
 	@NotNull
 	@Valid
-	protected Money				money;
+	protected Money				budget;
 
 	@NotNull
-	protected Boolean			bool;
+	protected Boolean			important;
 
 }

@@ -1,5 +1,6 @@
 package acme.features.manager.task;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -68,15 +69,20 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		final Double workload = entity.getWorkload();
 		
 		
-		
 		if(!errors.hasErrors("startPeriod") && !errors.hasErrors("endPeriod")) {
 			errors.state(request, entity.getStartPeriod().before(entity.getEndPeriod()), "startPeriod", "manager.task.form.error.startPeriodBefore");
 		}
 		
 		if(!errors.hasErrors("workload")) {
 			final Integer horas = workload.intValue();
-			final Double minutos = workload - horas;
-			errors.state(request, minutos<0.6, "workload", "manager.task.form.error.workloadminutes");
+			try{
+				final Integer minutos = BigDecimal.valueOf(workload).subtract(BigDecimal.valueOf(horas)).movePointRight(2).intValueExact(); //Usamos BigDecimal porque double no calcula correctamente la parte decimal
+				errors.state(request, minutos<=59, "workload", "manager.task.form.error.workloadminutes");
+			}catch (final Exception e) {
+				final boolean error=false;
+				errors.state(request, error, "workload", "manager.task.form.error.workloadminutes2");
+			}
+			errors.state(request, horas<=99, "workload", "manager.task.form.error.workloadhours");
 	
 		}
 		
@@ -96,6 +102,10 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 			
 			errors.state(request, entity.getStartPeriod().after(java.util.Calendar.getInstance().getTime()), "startPeriod", "manager.task.form.error.startPeriodCurrent");
 		}
+		
+
+	
+		
 		
 	}
 	

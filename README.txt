@@ -8,6 +8,17 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+***********************************************************************************************************************
+
+ACTUALIZACIÓN PARA EVALUACIÓN DE SEPTIEMBRE:
+Tan solo Jorge Luis Ruiz-Henestrosa Ruiz e Isabel de Vergara de Orellana se presentan a la evaluación de Septiembre.
+Hemos utilizado como base para esta convocatoria el proyecto presentado en la anterior ya que estaba aprobado. Hemos
+creado un proyecto en Github llamado: September Eval, donde hemos creado las tareas correspondientes a los cambios 
+necesarios, todo lo demás ha sido dejado igual que en la anterior convocatoria. 
+
+***********************************************************************************************************************
+
+
 This is the Acme Planner, which is the item 2 from the Deliverable 2 (D02 - Devising a WIS) 
 for the Design and Testing subject of the Software Engineering curriculum of the University
 of Seville.
@@ -28,3 +39,4 @@ que el plan de trabajo tenga al menos una tarea. La fecha recomendada también p
 periodo que no encaje con todas sus tareas.
 
 En el archivo cobertura.png hay una captura de la cobertura.
+

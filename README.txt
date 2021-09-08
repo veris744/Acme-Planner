@@ -11,10 +11,11 @@
 ***********************************************************************************************************************
 
 ACTUALIZACIÓN PARA EVALUACIÓN DE SEPTIEMBRE:
+
 Tan solo Jorge Luis Ruiz-Henestrosa Ruiz e Isabel de Vergara de Orellana se presentan a la evaluación de Septiembre.
-Hemos utilizado como base para esta convocatoria el proyecto presentado en la anterior ya que estaba aprobado. Hemos
-creado un proyecto en Github llamado: September Eval, donde hemos creado las tareas correspondientes a los cambios 
-necesarios, todo lo demás ha sido dejado igual que en la anterior convocatoria. 
+Hemos utilizado como base para esta convocatoria el proyecto e informes presentados en la anterior ya que estaba aprobado. 
+Hemos creado un proyecto en Github llamado: September Eval, donde hemos creado las tareas correspondientes a los cambios 
+necesarios. En los workplan y budget reports hemos añadido una sección de septiembre con las nuevas tareas.
 
 ***********************************************************************************************************************
 

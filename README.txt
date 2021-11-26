@@ -8,6 +8,13 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+ACTUALIZACIÓN PARA EVALUACIÓN DE DICIEMBRE:
+
+Tan solo Isabel de Vergara de Orellana se presenta a la convocatoria de Diciembre. 
+He utilizado como base el trabajo realizado en las convocatorias anteriores y actualizado los documentos necesarios
+además del proyecto cin los nuevos requisitos. Se han añadido las nuevas tareas en el proyecto de Github que 
+corresponde con esta convocatoria.
+
 ***********************************************************************************************************************
 
 ACTUALIZACIÓN PARA EVALUACIÓN DE SEPTIEMBRE:

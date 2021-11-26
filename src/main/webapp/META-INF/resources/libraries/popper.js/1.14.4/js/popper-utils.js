@@ -637,7 +637,7 @@ for (var i = 0; i < longerTimeoutBrowsers.length; i += 1) {
   }
 }
 
-function microtaskDebounce(fn) {
+function microdutyDebounce(fn) {
   var called = false;
   return function () {
     if (called) {
@@ -651,7 +651,7 @@ function microtaskDebounce(fn) {
   };
 }
 
-function taskDebounce(fn) {
+function dutyDebounce(fn) {
   var scheduled = false;
   return function () {
     if (!scheduled) {
@@ -664,7 +664,7 @@ function taskDebounce(fn) {
   };
 }
 
-var supportsMicroTasks = isBrowser && window.Promise;
+var supportsMicroDutys = isBrowser && window.Promise;
 
 /**
  * Create a debounced version of a method, that's asynchronously deferred but called in the minimum time possible.
@@ -674,7 +674,7 @@ var supportsMicroTasks = isBrowser && window.Promise;
  * @argument {Function} fn
  * @returns {Function}
  */
-var debounce = supportsMicroTasks ? microtaskDebounce : taskDebounce;
+var debounce = supportsMicroDutys ? microdutyDebounce : dutyDebounce;
 
 /**
  * Mimics the `find` method of Array

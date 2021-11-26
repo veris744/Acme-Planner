@@ -32,13 +32,13 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.recent-shouts = List recent shouts
 master.menu.anonymous.create-shout = Shout!
-master.menu.anonymous.recent-task = List non-finished public tasks
+master.menu.anonymous.recent-duty = List non-finished public duties
 master.menu.anonymous.recent-workplan = List non-finished public work plans
 
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated = Authenticated
-master.menu.authenticated.finished-tasks = List finished public tasks
+master.menu.authenticated.finished-duties = List finished public duties
 
 
 # master.menu.administrator ###################################################
@@ -52,13 +52,13 @@ master.menu.administrator.parameters.show = See customisation parameters
 master.menu.administrator.spam-word.list = See spam words
 master.menu.administrator.shutdown = Shut down
 
-# master.menu.manager ###################################################
+# master.menu.officer ###################################################
 
-master.menu.manager = Manager
-master.menu.manager.work-plan = List my work plans
-master.menu.manager.create-work-plan = Create a work plan
-master.menu.manager.create-task = Create task
-master.menu.manager.list-tasks = List tasks
+master.menu.officer = Officer
+master.menu.officer.work-plan = List my work plans
+master.menu.officer.create-work-plan = Create a work plan
+master.menu.officer.create-duty = Create duty
+master.menu.officer.list-duties = List duties
 
 # master.menu.provider ########################################################
 
@@ -78,8 +78,8 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
-master.menu.user-account.become-manager = Become a manager
-master.menu.user-account.manager = Manager data
+master.menu.user-account.become-officer = Become a officer
+master.menu.user-account.officer = Officer data
 
 # master.footer ###############################################################
 

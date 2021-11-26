@@ -1,0 +1,7 @@
+recordIndex,title,startPeriod,endPeriod,workload,description,link,isPublic
+0,Create a Causes functionality updated,2021/11/01 18:00,2021/12/05 18:30,90.30,Description,http://www.springupdate.com,true
+1,Repair the web updated,2021/08/25 14:00,2021/09/01 19:00,30.00,the website is down it need to be repair,,false
+2,Finish class updated,2022/01/25 12:00,2022/02/01 12:00,10.00,Finish the class Adoptions,,true
+3,Initiate starter updated,2021/08/01 14:00,2021/08/18 14:00,5.50,Description updated,,false
+4,Bring a laptop updated,2021/09/02 12:00,2021/09/03 08:00,2.20,Bring your personal laptop to the office,,false
+5,Implement SonarCloud updated,2021/09/03 19:25,2021/09/03 21:00,1.00,Implement SonarCloud in project,http://www.sonarcloud.com,true

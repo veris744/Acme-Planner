@@ -26,34 +26,34 @@
 	
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.number-of-public-tasks"/>
+			<acme:message code="administrator.dashboard.form.label.number-of-public-duties"/>
 		</th>
 		<td>
-			<acme:print value="${numberOfPublicTasks}"/>
+			<acme:print value="${numberOfPublicDuties}"/>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.number-of-private-tasks"/>
+			<acme:message code="administrator.dashboard.form.label.number-of-private-duties"/>
 		</th>
 		<td>
-			<acme:print value="${numberOfPrivateTasks}"/>
+			<acme:print value="${numberOfPrivateDuties}"/>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.number-of-finished-tasks"/>
+			<acme:message code="administrator.dashboard.form.label.number-of-finished-duties"/>
 		</th>
 		<td>
-			<acme:print value="${numberOfFinishedTasks}"/>
+			<acme:print value="${numberOfFinishedDuties}"/>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.number-of-non-finished-tasks"/>
+			<acme:message code="administrator.dashboard.form.label.number-of-non-finished-duties"/>
 		</th>
 		<td>
-			<acme:print value="${numberOfNonFinishedTasks}"/>
+			<acme:print value="${numberOfNonFinishedDuties}"/>
 		</td>
 	</tr>
 	<tr>

@@ -1,0 +1,28 @@
+officer.work-plan.list.label.title = Title
+officer.work-plan.list.label.startPeriod = Start execution period
+officer.work-plan.list.label.endPeriod = End execution period
+officer.work-plan.list.label.workload = Workload
+
+officer.work-plan.form.label.title = Title: 
+officer.work-plan.form.label.startPeriod = Start period: 
+officer.work-plan.form.label.endPeriod = End period: 
+officer.work-plan.form.label.workload = Workload:
+officer.work-plan.form.label.isPublic = Public
+officer.work-plan.form.label.dutyList = Dutys:
+officer.work-plan.form.label.empty = No duties
+officer.work-plan.form.label.addDuty = Add a duty
+officer.work-plan.form.label.deleteDuty = Delete a duty
+officer.work-plan.form.label.none = None
+
+officer.work-plan.form.button.create = Create
+officer.work-plan.form.button.update = Update
+officer.work-plan.form.button.delete = Delete
+officer.work-plan.form.button.return = Return
+
+officer.workplan.form.error.startPeriodBefore = Start execution period is after than End execution period
+officer.workplan.form.error.startPeriodCurrent = The date of the start execution period must be after the current date
+
+acme.validation.start-period = The start execution period should be: 
+acme.validation.end-period = The end execution period should be: 
+
+officer.work-plan.form.suggestedPeriod = Period suggested for the work plan

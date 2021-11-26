@@ -1,5 +1,0 @@
-recordIndex,title,startPeriod,endPeriod,workload,description,link,isPublic
-6,Task test 1,2021/12/01 12:00,2021/12/02 10:00,2.00,Create task test,http://www.test.com,false
-7,Task test 2,2022/01/01 12:00,2022/01/02 10:00,1.50,Create task test 2,,true
-8,Task test 3,2022/12/01 12:00,2022/12/02 10:00,1.00,test,http://www.test3.com,true
-9,Task test 4,2022/06/25 12:00,2022/07/14 10:00,0.50,description,,false

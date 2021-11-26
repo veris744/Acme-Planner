@@ -1,0 +1,13 @@
+authenticated.duty.list.label.title = Title
+authenticated.duty.list.label.startPeriod = Start execution period
+authenticated.duty.list.label.endPeriod = End execution period
+authenticated.duty.list.label.workload = Workload
+
+authenticated.duty.form.label.title = Title: 
+authenticated.duty.form.label.startPeriod = Start period: 
+authenticated.duty.form.label.endPeriod = End period: 
+authenticated.duty.form.label.workload = Workload: 
+authenticated.duty.form.label.description = Description: 
+authenticated.duty.form.label.link = Link: 
+
+authenticated.duty.form.button.return = Return

@@ -42,6 +42,6 @@ acme.validation.length = La longitud debe ser entre {0} y {1}
 acme.validation.range = Debe estar entre {0} y {1}
 acme.validation.script = El script "{0}" debe devolver true
 
-acme.validation.task-is-private = Un plan de trabajo público no puede contener una tarea privada
-acme.validation.task-not-in-period = Las tareas deben estar contenidas en el periodo de ejecución
-acme.validation.task-is-present = Esta tarea ya está en el plan de trabajo
+acme.validation.duty-is-private = Un plan de trabajo público no puede contener una tarea privada
+acme.validation.duty-not-in-period = Las tareas deben estar contenidas en el periodo de ejecución
+acme.validation.duty-is-present = Esta tarea ya está en el plan de trabajo

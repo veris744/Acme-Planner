@@ -42,6 +42,6 @@ acme.validation.length = Length must be between {0} and {1}
 acme.validation.range = Must be between {0} and {1}
 acme.validation.script = Script expression "{0}" must return true
 
-acme.validation.task-is-private = A public work plan can't have a private task
-acme.validation.task-not-in-period = Tasks must fit in the execution period
-acme.validation.task-is-present = This task is already on the work plan
+acme.validation.duty-is-private = A public work plan can't have a private duty
+acme.validation.duty-not-in-period = Duties must fit in the execution period
+acme.validation.duty-is-present = This duty is already on the work plan

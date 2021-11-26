@@ -18,7 +18,7 @@ import java.util.Date;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.tasks.Task;
+import acme.entities.duties.Duty;
 import acme.entities.workPlans.WorkPlan;
 import acme.framework.repositories.AbstractRepository;
 
@@ -27,32 +27,32 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 
 
 
-	@Query("select count(t) from Task t where t.isPublic = true")
-	Integer numberOfPublicTasks();
+	@Query("select count(t) from Duty t where t.isPublic = true")
+	Integer numberOfPublicDuties();
 
-	@Query("select count(t) from Task t where t.isPublic = false")
-	Integer numberOfPrivateTasks();
+	@Query("select count(t) from Duty t where t.isPublic = false")
+	Integer numberOfPrivateDuties();
 
-	@Query("select count(t) from Task t where t.endPeriod < :current")
-	Integer numberOfFinishedTasks(Date current);
+	@Query("select count(t) from Duty t where t.endPeriod < :current")
+	Integer numberOfFinishedDuties(Date current);
 
-	@Query("select count(t) from Task t where t.endPeriod > :current")
-	Integer numberOfNonFinishedTasks(Date current);
+	@Query("select count(t) from Duty t where t.endPeriod > :current")
+	Integer numberOfNonFinishedDuties(Date current);
 	
-	@Query("select min(t.workload) from Task t")
+	@Query("select min(t.workload) from Duty t")
 	Double minimumWorkload();
 
-	@Query("select max(t.workload) from Task t")
+	@Query("select max(t.workload) from Duty t")
 	Double maximumWorkload();
 	
-	@Query("select avg(t.workload) from Task t")
+	@Query("select avg(t.workload) from Duty t")
 	Double averageWorkload();
 
-	@Query("select sum((t.workload - :average)*(t.workload - :average)) from Task t")
+	@Query("select sum((t.workload - :average)*(t.workload - :average)) from Duty t")
 	Double deviationWorkload(Double average);
 
-	@Query("select t from Task t")
-	Collection<Task> getTasks();
+	@Query("select t from Duty t")
+	Collection<Duty> getDuties();
 	
 	
 	//Work plans

@@ -42,7 +42,7 @@ import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import acme.components.CustomCommand;
 import acme.framework.components.BasicCommand;
 import acme.framework.components.Command;
-import acme.framework.components.CommandManager;
+import acme.framework.components.CommandOfficer;
 import acme.framework.components.Errors;
 import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
@@ -72,7 +72,7 @@ public abstract class AbstractController<R extends UserRole, E> {
 	protected String						listViewName;
 	protected String						formViewName;
 
-	protected CommandManager<R, E>			commandManager;
+	protected CommandOfficer<R, E>			commandOfficer;
 
 	// Transaction management ------------------------------------------------.
 
@@ -114,18 +114,18 @@ public abstract class AbstractController<R extends UserRole, E> {
 
 	public void addBasicCommand(final BasicCommand basicCommand, final AbstractService<R, E> service) {
 		assert basicCommand != null;
-		assert !this.commandManager.isRegistered(basicCommand);
+		assert !this.commandOfficer.isRegistered(basicCommand);
 		assert service != null;
 
-		this.commandManager.addBasicCommand(basicCommand, service);
+		this.commandOfficer.addBasicCommand(basicCommand, service);
 	}
 
 	public void addCustomCommand(final CustomCommand customCommand, final BasicCommand baseCommand, final AbstractService<R, E> service) {
 		assert customCommand != null;
-		assert !this.commandManager.isRegistered(customCommand);
+		assert !this.commandOfficer.isRegistered(customCommand);
 		assert service != null;
 
-		this.commandManager.addCustomCommand(customCommand, baseCommand, service);
+		this.commandOfficer.addCustomCommand(customCommand, baseCommand, service);
 	}
 
 	// Constructor ------------------------------------------------------------
@@ -154,7 +154,7 @@ public abstract class AbstractController<R extends UserRole, E> {
 		this.listViewName = String.format("%s/%s/list", roleName, entityName);
 		this.formViewName = String.format("%s/%s/form", roleName, entityName);
 
-		this.commandManager = new CommandManager<R, E>();
+		this.commandOfficer = new CommandOfficer<R, E>();
 	}
 
 	// Handler ----------------------------------------------------------------
@@ -200,8 +200,8 @@ public abstract class AbstractController<R extends UserRole, E> {
 			servletMethod = servletRequest.getMethod();
 			method = HttpMethodHelper.parse(servletMethod);
 			command = CommandHelper.parse(endpoint);
-			Assert.state(this.commandManager.isRegistered(command), locale, "default.error.endpoint-unavailable");
-			baseCommand = this.commandManager.getBaseCommand(command);
+			Assert.state(this.commandOfficer.isRegistered(command), locale, "default.error.endpoint-unavailable");
+			baseCommand = this.commandOfficer.getBaseCommand(command);
 
 			// HINT: let's create the request object.
 
@@ -217,7 +217,7 @@ public abstract class AbstractController<R extends UserRole, E> {
 
 			// HINT: let's request authorisation from the service.
 
-			service = new ServiceWrapper<R, E>(this.commandManager.getService(command));
+			service = new ServiceWrapper<R, E>(this.commandOfficer.getService(command));
 			Assert.state(service.authorise(request), locale, "default.error.not-authorised");
 
 			// HINT: let's dispatch the request building on the HTTP method used.

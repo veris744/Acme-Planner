@@ -1,0 +1,41 @@
+timestamp,test-class,test-method,time,description,result
+2021-11-26 13:56:50.291,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,2360,"[1] recordIndex=0, moment=2021/11/26 12:30, author=Beatriz Vergara, text=I'm a fly, info=https://www.spotify.com/es/",OK
+2021-11-26 13:56:52.309,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1723,"[2] recordIndex=1, moment=2021/11/25 17:20, author=Ivan LLamas, text=I'm smart, info=https://www.spotify.com/es/",OK
+2021-11-26 13:56:54.321,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1743,"[3] recordIndex=2, moment=2021/11/25 12:30, author=Jorge Vergara, text=I'm weak, info=https://youtu.be/nCb_YtUslsw",OK
+2021-11-26 13:56:56.418,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1800,"[4] recordIndex=3, moment=2021/11/25 12:30, author=Jorge Vergara, text=I'm weak, info=https://youtu.be/nCb_YtUslsw",OK
+2021-11-26 13:56:58.459,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1787,"[5] recordIndex=4, moment=2021/11/25 12:00, author=Isabel Garcia, text=I'm strong, info=null",OK
+2021-11-26 13:57:00.492,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1767,"[6] recordIndex=5, moment=2021/11/25 12:00, author=Isabel Garcia, text=I'm strong, info=null",OK
+2021-11-26 13:57:02.52,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1773,"[7] recordIndex=6, moment=2021/11/25 10:00, author=Alejandro Ruiz, text=I'm a pro, info=https://www.youtube.com/",OK
+2021-11-26 13:57:04.5,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1741,"[8] recordIndex=7, moment=2021/11/25 10:00, author=Alejandro Ruiz, text=I'm a pro, info=https://www.youtube.com/",OK
+2021-11-26 13:57:06.482,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1739,"[9] recordIndex=8, moment=2021/11/25 10:00, author=Alejandro Ruiz, text=I'm sad, info=https://mail.google.com/",OK
+2021-11-26 13:57:08.413,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1674,"[10] recordIndex=9, moment=2021/11/24 12:15, author=Jorge Sanabria, text=I'm ugly, info=null",OK
+2021-11-26 13:57:10.462,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1815,"[11] recordIndex=10, moment=2021/11/23 18:00, author=Ivan LLamas, text=I'm a mad man, info=https://twitter.com",OK
+2021-11-26 13:57:12.424,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1725,"[12] recordIndex=11, moment=2021/11/22 12:30, author=Beatriz Vergara, text=I'm a moon, info=https://www.netflix.com/",OK
+2021-11-26 13:57:14.498,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1810,"[13] recordIndex=12, moment=2021/11/21 12:15, author=Jorge Sanabria, text=I'm spanish, info=null",OK
+2021-11-26 13:57:16.492,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1754,"[14] recordIndex=13, moment=2021/11/20 12:30, author=Jorge Vergara, text=I'm a sun, info=https://www.netflix.com/",OK
+2021-11-26 13:57:18.469,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1761,"[15] recordIndex=14, moment=2021/11/16 17:00, author=John Doe, text=I'm happy!, info=null",OK
+2021-11-26 13:57:20.485,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1773,"[16] recordIndex=15, moment=2021/11/15 19:00, author=Ivan Garcia, text=I'm angry!, info=https://twitter.com",OK
+2021-11-26 13:57:22.521,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1785,"[17] recordIndex=16, moment=2021/11/13 09:00, author=Alipiti doo, text=I'm shouting!, info=http://www.web.org",OK
+2021-11-26 13:57:24.482,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1735,"[18] recordIndex=17, moment=2021/11/11 10:00, author=Beatriz Ruiz, text=I'm bored, info=null",OK
+2021-11-26 13:57:39.817,acme.testing.anonymous.shouts.ShoutCreateTest,createPositive,3286,"[1] recordIndex=0, author=Shout Test, text=Esto es una prueba, info=https://www.test.com/",OK
+2021-11-26 13:57:43.416,acme.testing.anonymous.shouts.ShoutCreateTest,createPositive,3361,"[2] recordIndex=0, author=Prueba prueba, text=Esto es una prueba2, info=https://www.test2.com/",OK
+2021-11-26 13:57:45.514,acme.testing.anonymous.shouts.ShoutCreateTest,createNegative,1854,"[1] author=Shout Test, text=sex, info=https://www.test.com/",OK
+2021-11-26 13:57:47.671,acme.testing.anonymous.shouts.ShoutCreateTest,createNegative,1905,"[2] author=Prueba prueba, text=Esto es una prueba2, info=.test2.com/",OK
+2021-11-26 13:58:07.611,acme.testing.administrator.parameters.AdministratorParametersUpdateTest,updatePositive,6362,"[1] threshold=20.00",OK
+2021-11-26 13:58:13.368,acme.testing.administrator.parameters.AdministratorParametersUpdateTest,updateNegative,5509,"[1] threshold=-20.00",OK
+2021-11-26 13:58:19.138,acme.testing.administrator.parameters.AdministratorParametersUpdateTest,updateNegative,5534,"[2] threshold=test",OK
+2021-11-26 13:58:24.96,acme.testing.administrator.parameters.AdministratorParametersUpdateTest,updateNegative,5574,"[3] threshold=110.00",OK
+2021-11-26 13:58:38.203,acme.testing.administrator.parameters.AdministratorParametersShowTest,show,4107,"[1] threshold=10.00",OK
+2021-11-26 13:58:50.817,acme.testing.authenticated.duty.AuthenticatedDutyShowTest,list,4294,"[1] recordIndex=0, title=Play, startPeriod=2021/05/10 08:00, endPeriod=2021/05/16 20:00, workload=15.20, description=Pay lol with Malphite, link=null",OK
+2021-11-26 13:58:51.422,acme.testing.authenticated.duty.AuthenticatedDutyShowTest,showNegative,389,"[1] id=721",OK
+2021-11-26 13:58:51.904,acme.testing.authenticated.duty.AuthenticatedDutyShowTest,showNegative,260,"[2] id=5000",OK
+2021-11-26 13:59:05.316,acme.testing.authenticated.duty.AuthenticatedDutyListTest,list,5375,"[1] recordIndex=0, title=Play, startPeriod=2021/05/10 08:00, endPeriod=2021/05/16 20:00, workload=15.20, description=Pay lol with Malphite, link=null",OK
+2021-11-26 13:59:10.856,acme.testing.authenticated.duty.AuthenticatedDutyListTest,list,5319,"[2] recordIndex=1, title=Study on your tutorials, startPeriod=2021/05/10 08:00, endPeriod=2021/05/13 20:00, workload=12.50, description=Study on your tutorials to learn how to send an email correctly, link=null",OK
+2021-11-26 13:59:16.43,acme.testing.authenticated.duty.AuthenticatedDutyListTest,list,5327,"[3] recordIndex=2, title=See lectures, startPeriod=2021/05/10 08:00, endPeriod=2021/05/15 20:00, workload=12.20, description=See the latest conferences, link=null",OK
+2021-11-26 13:59:22.017,acme.testing.authenticated.duty.AuthenticatedDutyListTest,list,5343,"[4] recordIndex=3, title=Study, startPeriod=2021/05/10 08:00, endPeriod=2021/05/12 20:00, workload=12.00, description=Study the lessons of the last week, link=null",OK
+2021-11-26 13:59:27.566,acme.testing.authenticated.duty.AuthenticatedDutyListTest,list,5302,"[5] recordIndex=4, title=Run, startPeriod=2021/05/10 08:00, endPeriod=2021/05/16 20:00, workload=10.00, description=go out to exercise, link=null",OK
+2021-11-26 13:59:33.138,acme.testing.authenticated.duty.AuthenticatedDutyListTest,list,5336,"[6] recordIndex=5, title=Gym, startPeriod=2021/05/10 08:00, endPeriod=2021/05/10 20:00, workload=1.00, description=Pay gym, link=null",OK
+2021-11-26 13:59:43.254,acme.testing.anonymous.duty.AnonymousDutyShowTest,list,1717,"[1] recordIndex=0, title=Create a Causes functionality, startPeriod=2021/05/01 18:00, endPeriod=2022/05/05 18:30, workload=96.30, description=As a client, we can create a cause that contains a name and description (string), a budget target (numeric), and an acti-ve non profit organization (string) that will use the budget for the cause., link=http://www.spring.com",Expected value '2021/05/01 18:00' in input box 'startPeriod', but '2021/09/01 18:00' was found
+2021-11-26 13:59:43.783,acme.testing.anonymous.duty.AnonymousDutyShowTest,showNegative,260,"[1] id=600",OK
+2021-11-26 13:59:44.253,acme.testing.anonymous.duty.AnonymousDutyShowTest,showNegative,249,"[2] id=5000",OK
+2021-11-26 13:59:55.354,acme.testing.anonymous.duty.AnonymousDutyListTest,list,3025,"[1] recordIndex=0, title=Create a Causes functionality, startPeriod=2021/09/01 18:00, endPeriod=2022/09/05 18:30, workload=96.30, description=As a client, we can create a cause that contains a name and description (string), a budget target (numeric), and an acti-ve non profit organization (string) that will use the budget for the cause., link=http://www.spring.com",Timeout waiting for action to complete

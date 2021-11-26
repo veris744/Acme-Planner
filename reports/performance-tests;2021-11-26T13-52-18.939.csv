@@ -1,0 +1,23 @@
+timestamp,test-class,test-method,time,description,result
+2021-11-26 13:52:29.948,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1035,"[1] recordIndex=0, moment=2021/11/25 12:30, author=Beatriz Vergara, text=I'm a fly, info=https://www.spotify.com/es/",Expected value '2021/11/25 12:30' in attribute 0 of record 0, but found '2021/11/26 12:30'
+2021-11-26 13:52:31.908,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1701,"[2] recordIndex=1, moment=2021/11/25 17:20, author=Ivan LLamas, text=I'm smart, info=https://www.spotify.com/es/",OK
+2021-11-26 13:52:33.828,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1677,"[3] recordIndex=2, moment=2021/11/25 12:30, author=Jorge Vergara, text=I'm weak, info=https://youtu.be/nCb_YtUslsw",OK
+2021-11-26 13:52:35.765,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1700,"[4] recordIndex=3, moment=2021/11/25 12:30, author=Jorge Vergara, text=I'm weak, info=https://youtu.be/nCb_YtUslsw",OK
+2021-11-26 13:52:37.726,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1721,"[5] recordIndex=4, moment=2021/11/25 12:00, author=Isabel Garcia, text=I'm strong, info=null",OK
+2021-11-26 13:52:39.667,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1698,"[6] recordIndex=5, moment=2021/11/25 12:00, author=Isabel Garcia, text=I'm strong, info=null",OK
+2021-11-26 13:52:41.588,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1710,"[7] recordIndex=6, moment=2021/11/25 10:00, author=Alejandro Ruiz, text=I'm a pro, info=https://www.youtube.com/",OK
+2021-11-26 13:52:43.926,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,2085,"[8] recordIndex=7, moment=2021/11/25 10:00, author=Alejandro Ruiz, text=I'm a pro, info=https://www.youtube.com/",OK
+2021-11-26 13:52:45.89,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1731,"[9] recordIndex=8, moment=2021/11/25 10:00, author=Alejandro Ruiz, text=I'm sad, info=https://mail.google.com/",OK
+2021-11-26 13:52:47.899,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1753,"[10] recordIndex=9, moment=2021/11/24 12:15, author=Jorge Sanabria, text=I'm ugly, info=null",OK
+2021-11-26 13:52:49.845,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1691,"[11] recordIndex=10, moment=2021/11/23 18:00, author=Ivan LLamas, text=I'm a mad man, info=https://twitter.com",OK
+2021-11-26 13:52:51.773,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1707,"[12] recordIndex=11, moment=2021/11/22 12:30, author=Beatriz Vergara, text=I'm a moon, info=https://www.netflix.com/",OK
+2021-11-26 13:52:53.723,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1693,"[13] recordIndex=12, moment=2021/11/21 12:15, author=Jorge Sanabria, text=I'm spanish, info=null",OK
+2021-11-26 13:52:55.622,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1685,"[14] recordIndex=13, moment=2021/11/20 12:30, author=Jorge Vergara, text=I'm a sun, info=https://www.netflix.com/",OK
+2021-11-26 13:52:57.596,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1723,"[15] recordIndex=14, moment=2021/11/16 17:00, author=John Doe, text=I'm happy!, info=null",OK
+2021-11-26 13:52:59.547,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,1729,"[16] recordIndex=15, moment=2021/11/15 19:00, author=Ivan Garcia, text=I'm angry!, info=https://twitter.com",OK
+2021-11-26 13:53:00.75,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,994,"[17] recordIndex=16, moment=2021/11/13 11:00, author=Alipiti doo, text=I'm shouting!, info=http://www.web.org",Expected value '2021/11/13 11:00' in attribute 0 of record 16, but found '2021/11/13 09:00'
+2021-11-26 13:53:00.975,acme.testing.anonymous.shouts.AnonymousShoutListTest,list,0,"[18] recordIndex=17, moment=2021/11/11 10:00, author=Beatriz Ruiz, text=I'm bored",No ParameterResolver registered for parameter [final java.lang.String info] in method [public void acme.testing.anonymous.shouts.AnonymousShoutListTest.list(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String)].
+2021-11-26 13:53:12.865,acme.testing.anonymous.shouts.ShoutCreateTest,createPositive,3329,"[1] recordIndex=0, author=Shout Test, text=Esto es una prueba, info=https://www.test.com/",OK
+2021-11-26 13:53:16.414,acme.testing.anonymous.shouts.ShoutCreateTest,createPositive,3316,"[2] recordIndex=0, author=Prueba prueba, text=Esto es una prueba2, info=https://www.test2.com/",OK
+2021-11-26 13:53:18.484,acme.testing.anonymous.shouts.ShoutCreateTest,createNegative,1844,"[1] author=Shout Test, text=sex, info=https://www.test.com/",OK
+2021-11-26 13:53:20.551,acme.testing.anonymous.shouts.ShoutCreateTest,createNegative,1834,"[2] author=Prueba prueba, text=Esto es una prueba2, info=.test2.com/",OK

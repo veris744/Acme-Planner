@@ -40,7 +40,7 @@ Credenciales Clever-cloud:
 
 URL Clever-cloud: http://app-d2e3d3f5-adae-4ae1-afde-a76d76081b3d.cleverapps.io/Acme-Planner/
 
-Hay que escribir /Acme-Planner en la url para que funcione. Se ha modificado la dirección base para que no haya problemas con manager.
+Hay que escribir /Acme-Planner en la url para que funcione. Se ha modificado la dirección base para que no haya problemas con officer.
 
 La recomendación de fechas aparece al principio del formulario de actualización de un plan de trabajo. Para que aparezca es necesario
 que el plan de trabajo tenga al menos una tarea. La fecha recomendada también puede aparecer como mensaje de error al introducir un

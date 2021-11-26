@@ -13,10 +13,10 @@
 Dashboard
 --
 
-+ numberOfPublicTasks: integer
-+ numberOfPrivateTasks: integer
-+ numberOfFinishedTasks: integer
-+ numberOfNonFinishedTasks: integer
++ numberOfPublicDutys: integer
++ numberOfPrivateDutys: integer
++ numberOfFinishedDutys: integer
++ numberOfNonFinishedDutys: integer
 + minimumWorkload: double
 + maximumWorkload: double
 + averageWorkload: double
@@ -211,7 +211,7 @@ Shout
       <h>126</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;&gt;
-Task
+Duty
 
 --
 + title: String {NotBlank, Length(1,80)}
@@ -261,7 +261,7 @@ Parameters
       <w>70</w>
       <h>28</h>
     </coordinates>
-    <panel_attributes>Manager
+    <panel_attributes>Officer
 --
 
 bg=yellow</panel_attributes>
@@ -375,7 +375,7 @@ m2=1</panel_attributes>
       <h>49</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Role&gt;&gt;
-Manager
+Officer
 --
 </panel_attributes>
     <additional_attributes/>
@@ -544,7 +544,7 @@ bg=blue</panel_attributes>
       <h>42</h>
     </coordinates>
     <panel_attributes>WorkPlan end period must be
-before the latest Task end period.
+before the latest Duty end period.
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
@@ -557,7 +557,7 @@ bg=blue</panel_attributes>
       <h>42</h>
     </coordinates>
     <panel_attributes>WorkPlan start period must be
-before the earliest Task start period.
+before the earliest Duty start period.
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>

@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.tasks.Task;
+import acme.entities.duties.Duty;
 import acme.entities.workPlans.WorkPlan;
 import acme.forms.Dashboard;
 import acme.framework.components.Model;
@@ -52,7 +52,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert model != null;
 
 		request.unbind(entity, model, //
-			"numberOfPublicTasks", "numberOfPrivateTasks", "numberOfFinishedTasks", "numberOfNonFinishedTasks", 
+			"numberOfPublicDuties", "numberOfPrivateDuties", "numberOfFinishedDuties", "numberOfNonFinishedDuties", 
 			"minimumWorkload", "maximumWorkload", "averageWorkload", "deviationWorkload", 
 			"minimumPeriod", "maximumPeriod", "averagePeriod", "deviationPeriod",
 			"numberOfPublicWorkPlans","numberOfPrivateWorkPlans","numberOfFinishedWorkPlans",
@@ -70,10 +70,10 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		current = java.util.Calendar.getInstance().getTime();
 		
 		Dashboard result;
-		Integer numberOfPublicTasks;
-		Integer numberOfPrivateTasks;
-		Integer numberOfFinishedTasks;
-		Integer numberOfNonFinishedTasks;
+		Integer numberOfPublicDuties;
+		Integer numberOfPrivateDuties;
+		Integer numberOfFinishedDuties;
+		Integer numberOfNonFinishedDuties;
 		Double minimumWorkload;
 		Double maximumWorkload;
 		Double averageWorkload;
@@ -98,11 +98,11 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 
 
-		final Collection<Task> tasks = this.repository.getTasks();
-		minimumPeriod = tasks.stream().collect(Collectors.toList()).get(0).getPeriod();
-		maximumPeriod = tasks.stream().collect(Collectors.toList()).get(0).getPeriod();
+		final Collection<Duty> duties = this.repository.getDuties();
+		minimumPeriod = duties.stream().collect(Collectors.toList()).get(0).getPeriod();
+		maximumPeriod = duties.stream().collect(Collectors.toList()).get(0).getPeriod();
 		averagePeriod = 0.0;
-		for (final Task t:tasks) {
+		for (final Duty t:duties) {
 			if(minimumPeriod > t.getPeriod()) {
 				minimumPeriod = t.getPeriod();
 			}
@@ -111,12 +111,12 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 			}
 			averagePeriod += t.getPeriod();
 		}
-		averagePeriod = averagePeriod/tasks.size();
+		averagePeriod = averagePeriod/duties.size();
 		deviationPeriod = 0.0;
-		for (final Task t:tasks) {
+		for (final Duty t:duties) {
 			deviationPeriod += Math.pow(t.getPeriod()-averagePeriod, 2);
 		}
-		deviationPeriod = Math.sqrt(deviationPeriod/tasks.size());
+		deviationPeriod = Math.sqrt(deviationPeriod/duties.size());
 		
 		
 		
@@ -141,14 +141,14 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		deviationPeriodWorkPlans = Math.sqrt(deviationPeriodWorkPlans/workPlans.size());
 		
 
-		numberOfPublicTasks = this.repository.numberOfPublicTasks();
-		numberOfPrivateTasks = this.repository.numberOfPrivateTasks();
-		numberOfFinishedTasks = this.repository.numberOfFinishedTasks(current);
-		numberOfNonFinishedTasks = this.repository.numberOfNonFinishedTasks(current);
+		numberOfPublicDuties = this.repository.numberOfPublicDuties();
+		numberOfPrivateDuties = this.repository.numberOfPrivateDuties();
+		numberOfFinishedDuties = this.repository.numberOfFinishedDuties(current);
+		numberOfNonFinishedDuties = this.repository.numberOfNonFinishedDuties(current);
 		minimumWorkload = this.repository.minimumWorkload();
 		maximumWorkload = this.repository.maximumWorkload();
 		averageWorkload = this.repository.averageWorkload();
-		deviationWorkload = Math.sqrt(this.repository.deviationWorkload(averageWorkload)/this.repository.getTasks().size());
+		deviationWorkload = Math.sqrt(this.repository.deviationWorkload(averageWorkload)/this.repository.getDuties().size());
 		
 		
 		numberOfPublicWorkPlans = this.repository.numberOfPublicWorkPlans();
@@ -164,10 +164,10 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		
 		result = new Dashboard();
-		result.setNumberOfPublicTasks(numberOfPublicTasks);
-		result.setNumberOfPrivateTasks(numberOfPrivateTasks);
-		result.setNumberOfFinishedTasks(numberOfFinishedTasks);
-		result.setNumberOfNonFinishedTasks(numberOfNonFinishedTasks);
+		result.setNumberOfPublicDuties(numberOfPublicDuties);
+		result.setNumberOfPrivateDuties(numberOfPrivateDuties);
+		result.setNumberOfFinishedDuties(numberOfFinishedDuties);
+		result.setNumberOfNonFinishedDuties(numberOfNonFinishedDuties);
 		result.setMinimumWorkload(minimumWorkload);
 		result.setMaximumWorkload(maximumWorkload);
 		result.setAverageWorkload(averageWorkload);

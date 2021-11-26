@@ -22,12 +22,12 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.recent-shouts" action="/anonymous/shout/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.create-shout" action="/anonymous/shout/create"/>
-			<acme:menu-suboption code="master.menu.anonymous.recent-task" action="/anonymous/task/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.recent-duty" action="/anonymous/duty/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.recent-workplan" action="/anonymous/work-plan/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
-			<acme:menu-suboption code="master.menu.authenticated.finished-tasks" action="/authenticated/task/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.finished-duties" action="/authenticated/duty/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
@@ -43,11 +43,11 @@
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
 		
-		<acme:menu-option code="master.menu.manager" access="hasRole('Manager')">
-			<acme:menu-suboption code="master.menu.manager.work-plan" action="/manager/work-plan/list"/>
-			<acme:menu-suboption code="master.menu.manager.create-work-plan" action="/manager/work-plan/create"/>
-			<acme:menu-suboption code="master.menu.manager.create-task" action="/manager/task/create"/>
-			<acme:menu-suboption code="master.menu.manager.list-tasks" action="/manager/task/list"/>	
+		<acme:menu-option code="master.menu.officer" access="hasRole('Officer')">
+			<acme:menu-suboption code="master.menu.officer.work-plan" action="/officer/work-plan/list"/>
+			<acme:menu-suboption code="master.menu.officer.create-work-plan" action="/officer/work-plan/create"/>
+			<acme:menu-suboption code="master.menu.officer.create-duty" action="/officer/duty/create"/>
+			<acme:menu-suboption code="master.menu.officer.list-duties" action="/officer/duty/list"/>	
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
@@ -69,7 +69,7 @@
 			<acme:menu-suboption code="master.menu.user-account.provider" action="/authenticated/provider/update" access="hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-consumer" action="/authenticated/consumer/create" access="!hasRole('Consumer')"/>
 			<acme:menu-suboption code="master.menu.user-account.consumer" action="/authenticated/consumer/update" access="hasRole('Consumer')"/>
-			<acme:menu-suboption code="master.menu.user-account.become-manager" action="/authenticated/manager/create" access="!hasRole('Manager')"/>
+			<acme:menu-suboption code="master.menu.user-account.become-officer" action="/authenticated/officer/create" access="!hasRole('Officer')"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>

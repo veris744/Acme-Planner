@@ -1,0 +1,13 @@
+##### WORDS TO REPLACE
+Officer,Officer
+officer,officer
+Duty,Duty
+duty,duty
+##### EXTENSIONS TO REPLACE
+java
+csv
+jsp
+messages
+#### HAPPY PASS!
+#### IF YOU FEEL GRATEFUL 
+#### JUST SAY 'THX MR AB' IN THE CHAT

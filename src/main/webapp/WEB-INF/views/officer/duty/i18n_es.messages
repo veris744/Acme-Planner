@@ -1,0 +1,25 @@
+
+officer.duty.form.label.title = Titulo: 
+officer.duty.form.label.startPeriod = Inicio: 
+officer.duty.form.label.endPeriod = Fin: 
+officer.duty.form.label.workload = Carga de trabajo: 
+officer.duty.form.label.description = Descripcion: 
+officer.duty.form.label.link = Link: 
+officer.duty.form.label.isPublic = Es publica: 
+
+officer.duty.form.button.create = Crear
+officer.duty.form.button.update = Actualizar
+officer.duty.form.button.delete = Eliminar
+officer.duty.form.button.return = Volver
+
+officer.duty.list.label.title = Título
+officer.duty.list.label.startPeriod = Comienzo periodo de ejecución
+officer.duty.list.label.endPeriod = Finalización periodo de ejecución
+officer.duty.list.label.workload = Carga de trabajo
+
+officer.duty.form.error.startPeriodBefore = El periodo de ejecución inicial debe ser antes que el final
+officer.duty.form.error.workloadminutes = La carga de trabajo no puede tener más de 59 minutos
+officer.duty.form.error.workloadminutes2 = Los minutos de la carga de trabajo deben estar entre 0 y 59
+officer.duty.form.error.workloadhours = La carga de trabajo debe tener menos de 100 horas
+officer.duty.form.error.workloadmax = La carga de trabajo debe encajar dentro del período de ejecución
+officer.duty.form.error.startPeriodCurrent = La fecha del periodo de ejecución inicial debe ser posterior a la fecha actual

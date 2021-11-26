@@ -1,0 +1,13 @@
+anonymous.duty.list.label.title = Título
+anonymous.duty.list.label.startPeriod = Comienzo periodo de ejecución
+anonymous.duty.list.label.endPeriod = Finalización periodo de ejecución
+anonymous.duty.list.label.workload = Carga de trabajo
+
+anonymous.duty.form.label.title = Titulo: 
+anonymous.duty.form.label.startPeriod = Inicio: 
+anonymous.duty.form.label.endPeriod = Fin: 
+anonymous.duty.form.label.workload = Carga de trabajo: 
+anonymous.duty.form.label.description = Descripcion: 
+anonymous.duty.form.label.link = Link: 
+
+anonymous.duty.form.button.return = Volver

@@ -1,0 +1,14 @@
+recordIndex,title,startPeriod,endPeriod,workload,description,link,isPublic
+0,sex,2022/07/01 12:00,2022/07/02 10:00,2.00,descripcion,,false
+1,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,2022/07/01 12:00,2022/07/02 10:00,2.00,descripcion,,true
+3,title,2022/08/01 12:00,2022/07/02 10:00,2.00,descripcion,,true
+4,title,2022/07/01 12:00,2022/07/02 10:00,-2.00,descripcion,,false
+5,title,2022/07/01 12:00,2022/07/02 10:00,2.00,sexo,,true
+0,title,2022/07/01 12:00,2022/07/02 10:00,2.00,descripcion,test,true
+1,title,2022/07/01 12:00,2022/07/02 10:00,test,descripcion,,true
+2,,2022/07/01 12:00,2022/07/02 10:00,2.00,descripcion,,false
+3,title,,2022/07/02 10:00,2.00,descripcion,,false
+4,title,2022/07/01 12:00,,2.00,descripcion,,false
+5,title,2022/07/01 12:00,2022/07/02 10:00,,descripcion,,false
+0,title,2022/07/01 12:00,2022/07/02 10:00,2.00,,,false
+1,title,2022/07/01 12:00,2022/07/02 10:00,25.00,descripcion,,false

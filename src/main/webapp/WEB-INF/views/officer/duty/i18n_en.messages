@@ -1,0 +1,25 @@
+
+officer.duty.form.label.title = Title: 
+officer.duty.form.label.startPeriod = Start period: 
+officer.duty.form.label.endPeriod = End period: 
+officer.duty.form.label.workload = Workload: 
+officer.duty.form.label.description = Description: 
+officer.duty.form.label.link = Link: 
+officer.duty.form.label.isPublic = It's public: 
+
+officer.duty.form.button.create = Create
+officer.duty.form.button.update = Update
+officer.duty.form.button.delete = Delete
+officer.duty.form.button.return = Return
+
+officer.duty.list.label.title = Title
+officer.duty.list.label.startPeriod = Start execution period
+officer.duty.list.label.endPeriod = End execution period
+officer.duty.list.label.workload = Workload
+
+officer.duty.form.error.startPeriodBefore = Start execution period is after than End execution period
+officer.duty.form.error.workloadminutes = Workload cannot be more than 59 minutes
+officer.duty.form.error.workloadminutes2 = Workload minutes must be between 0 and 59
+officer.duty.form.error.workloadhours = Workload must be less than 100 hours
+officer.duty.form.error.workloadmax = Workload must fit within the execution period
+officer.duty.form.error.startPeriodCurrent = The date of the start execution period must be after the current date

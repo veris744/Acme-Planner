@@ -8,7 +8,11 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+#For the december evaluation call
 - Isabel de Vergara (isadede@alum.us.es)
+
+
+#From the beginning of the project
 - Fernando González (fergongar1@alum.us.es)
 - Beatriz Llamas (beallasai@alum.us.es)
 - Jorge Luis Ruiz-Henestrosa (jorruirui1@alum.us.es)

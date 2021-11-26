@@ -13,10 +13,10 @@ public class AdministratorDashboardTest extends AcmePlannerTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/dashboard/list.csv", encoding="utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void dashboardShow(final String publicTasks, final String privateTasks, final String finishedTasks,
-		final String nonFinishedTasks, final String minWorkloadTasks, final String maxWorkloadTasks,
-		final String avWorkloadTasks, final String devWorkloadTasks, final String minPeriodTasks, 
-		final String maxPeriodTasks, final String avPeriodTasks, final String devPeriodTasks,
+	public void dashboardShow(final String publicDutys, final String privateDutys, final String finishedDutys,
+		final String nonFinishedDutys, final String minWorkloadDutys, final String maxWorkloadDutys,
+		final String avWorkloadDutys, final String devWorkloadDutys, final String minPeriodDutys, 
+		final String maxPeriodDutys, final String avPeriodDutys, final String devPeriodDutys,
 		final String publicWP, final String privateWP, final String finishedWP,
 		final String nonFinishedWP, final String minWorkloadWP, final String maxWorkloadWP,
 		final String avWorkloadWP, final String devWorkloadWP, final String minPeriodWP, 
@@ -53,18 +53,18 @@ public class AdministratorDashboardTest extends AcmePlannerTest{
 		final String xpath26 = "//table[@id='dashboard']//tr[26]/td";
 		
 		
-		assert super.locateOne(By.xpath(xpath1)).getText().equals(publicTasks);
-		assert super.locateOne(By.xpath(xpath2)).getText().equals(privateTasks);
-		assert super.locateOne(By.xpath(xpath3)).getText().equals(finishedTasks);
-		assert super.locateOne(By.xpath(xpath4)).getText().equals(nonFinishedTasks);
-		assert super.locateOne(By.xpath(xpath5)).getText().equals(minWorkloadTasks);
-		assert super.locateOne(By.xpath(xpath6)).getText().equals(maxWorkloadTasks);
-		assert super.locateOne(By.xpath(xpath7)).getText().equals(avWorkloadTasks);
-		assert super.locateOne(By.xpath(xpath8)).getText().equals(devWorkloadTasks);
-		assert super.locateOne(By.xpath(xpath9)).getText().equals(minPeriodTasks);
-		assert super.locateOne(By.xpath(xpath10)).getText().equals(maxPeriodTasks);
-		assert super.locateOne(By.xpath(xpath11)).getText().equals(avPeriodTasks);
-		assert super.locateOne(By.xpath(xpath12)).getText().equals(devPeriodTasks);
+		assert super.locateOne(By.xpath(xpath1)).getText().equals(publicDutys);
+		assert super.locateOne(By.xpath(xpath2)).getText().equals(privateDutys);
+		assert super.locateOne(By.xpath(xpath3)).getText().equals(finishedDutys);
+		assert super.locateOne(By.xpath(xpath4)).getText().equals(nonFinishedDutys);
+		assert super.locateOne(By.xpath(xpath5)).getText().equals(minWorkloadDutys);
+		assert super.locateOne(By.xpath(xpath6)).getText().equals(maxWorkloadDutys);
+		assert super.locateOne(By.xpath(xpath7)).getText().equals(avWorkloadDutys);
+		assert super.locateOne(By.xpath(xpath8)).getText().equals(devWorkloadDutys);
+		assert super.locateOne(By.xpath(xpath9)).getText().equals(minPeriodDutys);
+		assert super.locateOne(By.xpath(xpath10)).getText().equals(maxPeriodDutys);
+		assert super.locateOne(By.xpath(xpath11)).getText().equals(avPeriodDutys);
+		assert super.locateOne(By.xpath(xpath12)).getText().equals(devPeriodDutys);
 		
 		assert super.locateOne(By.xpath(xpath15)).getText().equals(publicWP);
 		assert super.locateOne(By.xpath(xpath16)).getText().equals(privateWP);

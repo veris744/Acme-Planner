@@ -17,9 +17,9 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
-import acme.entities.roles.Manager;
+import acme.entities.roles.Officer;
 import acme.entities.spamWords.SpamWordsConstraint;
-import acme.entities.tasks.Task;
+import acme.entities.duties.Duty;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -55,7 +55,7 @@ public class WorkPlan extends DomainEntity{
 		// Derived attributes -----------------------------------------------------
 
 		public Double getWorkload() {
-			return this.tasks.stream().mapToDouble(Task::getWorkload).sum();
+			return this.duties.stream().mapToDouble(Duty::getWorkload).sum();
 		}
 		
 		public Double getPeriod() {
@@ -65,22 +65,22 @@ public class WorkPlan extends DomainEntity{
 		// Relationships ----------------------------------------------------------
 		
 		@ManyToMany(fetch = FetchType.EAGER)
-		@JoinTable(name = "task_work_plan", 
+		@JoinTable(name = "duty_work_plan", 
         joinColumns = @JoinColumn(name = "work_plan_id"), 
-        inverseJoinColumns = @JoinColumn(name = "task_id"))
-		protected Collection<@Valid Task> 		tasks;
+        inverseJoinColumns = @JoinColumn(name = "duty_id"))
+		protected Collection<@Valid Duty> 		duties;
 		
 		@NotNull
 		@Valid
 		@ManyToOne(optional = false)
-		protected Manager			manager;
+		protected Officer			officer;
 		
 		// Other methods ----------------------------------------------------------
 		
-		public boolean taskFitsOnPeriod(final Task task) {
+		public boolean dutyFitsOnPeriod(final Duty duty) {
 
-			return (this.startPeriod.before(task.getStartPeriod()) || this.startPeriod.equals(task.getStartPeriod()))
-				&& (this.endPeriod.after(task.getEndPeriod()) || this.endPeriod.equals(task.getEndPeriod()));
+			return (this.startPeriod.before(duty.getStartPeriod()) || this.startPeriod.equals(duty.getStartPeriod()))
+				&& (this.endPeriod.after(duty.getEndPeriod()) || this.endPeriod.equals(duty.getEndPeriod()));
 		}
 	
 }
